@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+
 
 public class Waypoint : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    protected float debugDrawRadius = 1.0f; //set gizmo radius
 
-    // Update is called once per frame
-    void Update()
+    public virtual void OnDrawGizmos()
     {
-        
+        Gizmos.color = Color.red; //set gizmo colour
+        Gizmos.DrawWireSphere(transform.position, debugDrawRadius); //generate sphere
     }
 }
