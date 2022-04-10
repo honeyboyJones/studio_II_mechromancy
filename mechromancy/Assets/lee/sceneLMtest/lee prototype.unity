@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 3557b792cf6d0354699905da419e630e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100002, guid: ff6dc36862fe41641bb21568d92147c9, type: 3}
     - target: {fileID: 919132149155446097, guid: 3557b792cf6d0354699905da419e630e, type: 3}
       propertyPath: m_Name
       value: backing_Cliff
@@ -274,6 +278,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 94d116b1276ba9c42a836e3b2e7cebbb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100002, guid: efe9381559c516743bd05cef82f39ebb, type: 3}
     - target: {fileID: 919132149155446097, guid: 94d116b1276ba9c42a836e3b2e7cebbb, type: 3}
       propertyPath: m_Name
       value: outer_plateau
@@ -718,7 +726,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ea865fa77dd7ba74aa44d58f533b7b82, type: 2}
+  - {fileID: 2100002, guid: efe9381559c516743bd05cef82f39ebb, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1096,6 +1104,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: d1c1ec8b704e8924b8151e4db3d35213, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100002, guid: ff6dc36862fe41641bb21568d92147c9, type: 3}
     - target: {fileID: 919132149155446097, guid: d1c1ec8b704e8924b8151e4db3d35213, type: 3}
       propertyPath: m_Name
       value: big_start_canyon
@@ -1374,6 +1386,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: be06e6231eefd4c43af60c7cf9633fba, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100002, guid: ff6dc36862fe41641bb21568d92147c9, type: 3}
     - target: {fileID: 919132149155446097, guid: be06e6231eefd4c43af60c7cf9633fba, type: 3}
       propertyPath: m_Name
       value: lower_lake_canyon
@@ -1875,6 +1891,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 62e6c7b7f2ba96b488d630278bad305a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100002, guid: ff6dc36862fe41641bb21568d92147c9, type: 3}
     - target: {fileID: 919132149155446097, guid: 62e6c7b7f2ba96b488d630278bad305a, type: 3}
       propertyPath: m_Name
       value: goal_mountain
@@ -2314,6 +2334,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: acdfed6dce912a2478e6d8feaa7ec47a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100002, guid: efe9381559c516743bd05cef82f39ebb, type: 3}
     - target: {fileID: 919132149155446097, guid: acdfed6dce912a2478e6d8feaa7ec47a, type: 3}
       propertyPath: m_Name
       value: background_canyon
