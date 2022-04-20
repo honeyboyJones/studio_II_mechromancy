@@ -2041,13 +2041,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319056215}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: -87.00998, y: 75.14549, z: -44.41}
   m_LocalScale: {x: 20, y: 0.5, z: 10}
   m_Children: []
   m_Father: {fileID: 2050559435}
   m_RootOrder: 24
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!65 &1319056217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3961,6 +3961,7 @@ MonoBehaviour:
   crouchBobAmount: 0.025
   defaultCamXpos: 0
   defaultCamYpos: 0
+  SlopeLimitation: 50
   mode: 1
   dir: {x: 0, y: 0, z: 0}
 --- !u!1 &4731837546654848841
