@@ -26,6 +26,7 @@ namespace PixelCrushers.DialogueSystem
 
         private Queue<QueuedUIAlert> m_alertQueue = new Queue<QueuedUIAlert>();
         private StandardUIRoot m_uiRoot = new StandardUIRoot();
+        private WaitForEndOfFrame endOfFrame = new WaitForEndOfFrame();
         public override AbstractUIRoot uiRootControls { get { return m_uiRoot; } }
         public override AbstractUIAlertControls alertControls { get { return alertUIElements; } }
         public override AbstractDialogueUIControls dialogueControls { get { return conversationUIElements; } }
@@ -234,13 +235,29 @@ namespace PixelCrushers.DialogueSystem
 
         protected virtual IEnumerator ShowSubtitleWhenMainPanelOpen(Subtitle subtitle)
         {
-            if (conversationUIElements.mainPanel == null) yield break;
-            float timeout = Time.realtimeSinceStartup + WaitForOpenTimeoutDuration;
-            while (conversationUIElements.mainPanel.panelState != UIPanel.PanelState.Open && Time.realtimeSinceStartup < timeout)
+            if (conversationUIElements.mainPanel == null)
             {
-                yield return null;
+                ShowSubtitleImmediate(subtitle);
             }
-            ShowSubtitleImmediate(subtitle);
+            else
+            {
+                var focusedPanel = conversationUIElements.standardSubtitleControls.StageFocusedPanel(subtitle);
+                float timeout = Time.realtimeSinceStartup + WaitForOpenTimeoutDuration;
+                var showContinueButton = false;
+                while (conversationUIElements.mainPanel.panelState != UIPanel.PanelState.Open && Time.realtimeSinceStartup < timeout)
+                {
+                    yield return endOfFrame;
+                    var isContinueButtonActive = focusedPanel != null && focusedPanel.continueButton != null && focusedPanel.continueButton.gameObject.activeSelf;
+                    showContinueButton = showContinueButton || isContinueButtonActive;
+                    if (isContinueButtonActive)
+                    {
+                        focusedPanel.continueButton.gameObject.SetActive(false);
+                    }
+                    yield return null;
+                }
+                ShowSubtitleImmediate(subtitle);
+                if (showContinueButton) focusedPanel.ShowContinueButton();
+            }
         }
 
         protected virtual void ShowSubtitleImmediate(Subtitle subtitle)

@@ -16,7 +16,7 @@ namespace PixelCrushers.DialogueSystem
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            int fieldCount = 5;
+            int fieldCount = 6;
             return fieldCount * EditorGUIUtility.singleLineHeight;
         }
 
@@ -25,6 +25,8 @@ namespace PixelCrushers.DialogueSystem
             SerializedProperty conversationProp = property.FindPropertyRelative(nameof(StartConversationBehaviour.conversation));
             SerializedProperty jumpToSpecificEntryProp = property.FindPropertyRelative(nameof(StartConversationBehaviour.jumpToSpecificEntry));
             SerializedProperty entryIDProp = property.FindPropertyRelative(nameof(StartConversationBehaviour.entryID));
+            SerializedProperty exclusiveProp = property.FindPropertyRelative(nameof(StartConversationBehaviour.exclusive));
+            SerializedProperty conversantProp = property.FindPropertyRelative(nameof(StartConversationBehaviour.conversant));
 
             Rect singleFieldRect = new Rect(position.x, position.y, position.width, EditorGUIUtility.singleLineHeight);
 
@@ -55,6 +57,9 @@ namespace PixelCrushers.DialogueSystem
                     EditorGUI.PropertyField(singleFieldRect, entryIDProp);
                 }
             }
+
+            singleFieldRect.y += EditorGUIUtility.singleLineHeight;
+            EditorGUI.PropertyField(singleFieldRect, exclusiveProp);
         }
 
         private void UpdateLength(string conversation, bool jumpToSpecificEntry, int entryID = -1)

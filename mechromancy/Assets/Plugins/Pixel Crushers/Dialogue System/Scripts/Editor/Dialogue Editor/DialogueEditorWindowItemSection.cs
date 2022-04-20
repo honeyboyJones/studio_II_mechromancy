@@ -37,6 +37,9 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         private bool showCompactQuestEntryList = true; // Thanks to Tasta for compact view idea.
 
         private HashSet<int> syncedItemIDs = null;
+
+        private int isAddingNewFieldToEntryNumber = -1;
+        private Field newEntryField;
         
         private void ResetItemSection()
         {
@@ -653,7 +656,7 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                 if (field.title == null) field.title = string.Empty;
                 if (!alreadyDrawn.Contains(field) && field.title.StartsWith(entryTitleWithSpace) && !string.Equals(field.title, entryIDTitle))
                 {
-                    if (field.type == FieldType.Text)
+                    if (field.type == FieldType.Text && field.typeString == "CustomFieldType_Text")
                     {
                         EditTextField(item.fields, field.title, field.title, true, null);
                     }
@@ -664,6 +667,37 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                         EditorGUILayout.EndHorizontal();
                     }
                     alreadyDrawn.Add(field);
+                }
+            }
+
+            // Add new entry field:
+            if (isAddingNewFieldToEntryNumber == entryNumber)
+            {
+                EditorGUILayout.BeginHorizontal();
+                if (newEntryField == null) newEntryField = new Field(string.Empty, string.Empty, FieldType.Text);
+                newEntryField.title = EditorGUILayout.TextField(GUIContent.none, newEntryField.title);
+                DrawFieldType(newEntryField);
+                if (GUILayout.Button("Create", GUILayout.Width(80)))
+                {
+                    newEntryField.title = "Entry " + entryNumber + " " + newEntryField.title;
+                    if (!item.FieldExists(newEntryField.title))
+                    {
+                        item.fields.Add(newEntryField);
+                        isAddingNewFieldToEntryNumber = -1;
+                    }
+                }
+                if (GUILayout.Button("Cancel", GUILayout.Width(80)))
+                {
+                    isAddingNewFieldToEntryNumber = -1;
+                }
+                EditorGUILayout.EndHorizontal();
+            }
+            else
+            {
+                if (GUILayout.Button("Add New Field To Entry"))
+                {
+                    isAddingNewFieldToEntryNumber = entryNumber;
+                    newEntryField = null;
                 }
             }
 

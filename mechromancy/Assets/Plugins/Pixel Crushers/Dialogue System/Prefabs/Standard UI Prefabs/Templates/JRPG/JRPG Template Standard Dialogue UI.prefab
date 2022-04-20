@@ -340,6 +340,7 @@ MonoBehaviour:
   showAnimationTrigger: Show
   hideAnimationTrigger: Hide
   startState: 2
+  waitForShowAnimationToSetOpen: 0
   m_deactivateOnHidden: 1
   onOpen:
     m_PersistentCalls:
@@ -1212,6 +1213,7 @@ MonoBehaviour:
   showAnimationTrigger: Show
   hideAnimationTrigger: Hide
   startState: 0
+  waitForShowAnimationToSetOpen: 0
   m_deactivateOnHidden: 1
   onOpen:
     m_PersistentCalls:
@@ -1237,6 +1239,7 @@ MonoBehaviour:
   pcImage: {fileID: 11450720}
   pcName:
     m_uiText: {fileID: 11402552}
+  usePortraitNativeSize: 0
   timerSlider: {fileID: 11494046}
   buttonAlignment: 0
   showUnusedButtons: 0
@@ -1985,6 +1988,7 @@ MonoBehaviour:
   showAnimationTrigger: Show
   hideAnimationTrigger: Hide
   startState: 0
+  waitForShowAnimationToSetOpen: 0
   m_deactivateOnHidden: 1
   onOpen:
     m_PersistentCalls:
@@ -2017,11 +2021,14 @@ MonoBehaviour:
   accumulateText: 0
   delayTypewriterUntilOpen: 0
   continueButton: {fileID: 11443574}
+  blockInputDuration: 0
   visibility: 3
   focusAnimationTrigger: 
   unfocusAnimationTrigger: 
-  useAnimatedPortraits: 0
   onlyShowNPCPortraits: 0
+  useAnimatedPortraits: 0
+  usePortraitNativeSize: 0
+  waitForOpen: 0
   waitForClose: 0
   clearTextOnClose: 1
   clearTextOnConversationStart: 0
@@ -2037,6 +2044,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_hasFocus: 1
+  m_isFocusing: 1
   m_actorOverridingPanel: {fileID: 0}
 --- !u!1 &155980
 GameObject:
@@ -2295,8 +2303,10 @@ MonoBehaviour:
   audioClip: {fileID: 0}
   alternateAudioClips: []
   audioSource: {fileID: 0}
-  interruptAudioClip: 0
   usePlayOneShot: 0
+  interruptAudioClip: 0
+  stopAudioOnSilentCharacters: 0
+  stopAudioOnPauseCodes: 0
   silentCharacters: 
   fullPauseCharacters: 
   quarterPauseCharacters: 
@@ -3056,6 +3066,7 @@ MonoBehaviour:
   showAnimationTrigger: Show
   hideAnimationTrigger: Hide
   startState: 2
+  waitForShowAnimationToSetOpen: 0
   m_deactivateOnHidden: 1
   onOpen:
     m_PersistentCalls:
@@ -3139,6 +3150,7 @@ MonoBehaviour:
   conversationUIElements:
     mainPanel: {fileID: 11473374}
     dontDeactivateMainPanel: 0
+    waitForMainPanelOpen: 0
     subtitlePanels:
     - {fileID: 11454534}
     defaultNPCSubtitlePanel: {fileID: 0}
@@ -3588,10 +3600,11 @@ MonoBehaviour:
   firstSelected: {fileID: 0}
   focusCheckFrequency: 0.2
   refreshSelectablesFrequency: 0
-  selectPreviousOnDisable: 1
+  selectPreviousOnDisable: 0
   showAnimationTrigger: Show
   hideAnimationTrigger: Hide
   startState: 0
+  waitForShowAnimationToSetOpen: 0
   m_deactivateOnHidden: 1
   onOpen:
     m_PersistentCalls:

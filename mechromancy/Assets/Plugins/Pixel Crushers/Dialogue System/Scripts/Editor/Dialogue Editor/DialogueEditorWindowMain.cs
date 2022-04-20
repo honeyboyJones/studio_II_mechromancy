@@ -67,6 +67,7 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         private const string TrimWhitespaceAroundPipesKey = "PixelCrushers.DialogueSystem.DialogueEditor.TrimWhitespaceAroundPipes";
         private const string LocalizationLanguagesKey = "PixelCrushers.DialogueSystem.DialogueEditor.LocalizationLanguages";
         private const string SequencerDragDropCommandsKey = "PixelCrushers.DialogueSystem.DialogueEditor.SequencerDragDropCommands";
+        private const string DialogueEditorPrefsKey = "PixelCrushers.DialogueSystem.DialogueEditor.Prefs";
 
         private const float RuntimeUpdateFrequency = 0.5f;
         private float timeSinceLastRuntimeUpdate = 0;
@@ -79,6 +80,8 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         private bool showDatabaseName = true;
 
         private bool syncOnOpen = true;
+
+        private DialogueEditorPrefs prefs = null;
 
         private const float MinWidth = 720f;
         private const float MinHeight = 240f;
@@ -156,6 +159,8 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
             trimWhitespaceAroundPipes = EditorPrefs.GetBool(TrimWhitespaceAroundPipesKey, true);
             if (EditorPrefs.HasKey(LocalizationLanguagesKey)) localizationLanguages = JsonUtility.FromJson<LocalizationLanguages>(EditorPrefs.GetString(LocalizationLanguagesKey));
             if (EditorPrefs.HasKey(SequencerDragDropCommandsKey)) SequenceEditorTools.RestoreDragDropCommands(EditorPrefs.GetString(SequencerDragDropCommandsKey));
+            if (EditorPrefs.HasKey(DialogueEditorPrefsKey)) prefs = JsonUtility.FromJson<DialogueEditorPrefs>(EditorPrefs.GetString(DialogueEditorPrefsKey));
+            if (prefs == null) prefs = new DialogueEditorPrefs();
         }
 
         private void SaveEditorSettings()
@@ -169,6 +174,7 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
             EditorPrefs.SetBool(TrimWhitespaceAroundPipesKey, trimWhitespaceAroundPipes);
             EditorPrefs.SetString(LocalizationLanguagesKey, JsonUtility.ToJson(localizationLanguages));
             EditorPrefs.SetString(SequencerDragDropCommandsKey, SequenceEditorTools.SaveDragDropCommands());
+            EditorPrefs.SetString(DialogueEditorPrefsKey, JsonUtility.ToJson(prefs));
         }
 
         private void LoadTemplateFromDatabase()

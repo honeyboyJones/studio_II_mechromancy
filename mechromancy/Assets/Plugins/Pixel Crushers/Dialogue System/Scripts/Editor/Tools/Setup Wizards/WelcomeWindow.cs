@@ -26,7 +26,7 @@ namespace PixelCrushers.DialogueSystem
         public static WelcomeWindow ShowWindow()
         {
             var window = GetWindow<WelcomeWindow>(false, "Welcome");
-            window.minSize = new Vector2(370, 530);
+            window.minSize = new Vector2(370, 560);
             window.showOnStart = true; // Can't check EditorPrefs when constructing window: showOnStartPrefs;
             return window;
         }
@@ -175,6 +175,7 @@ namespace PixelCrushers.DialogueSystem
             var define_USE_ADDRESSABLES = false;
             var define_USE_TIMELINE = false;
             var define_USE_CINEMACHINE = false;
+            var define_USE_ARCWEAVE = false;
             var define_USE_ARTICY = false;
             var define_USE_AURORA = false;
             var define_USE_CELTX = false;
@@ -190,6 +191,7 @@ namespace PixelCrushers.DialogueSystem
                 if (string.Equals(ScriptingSymbolNames.USE_ADDRESSABLES, defines[i].Trim())) define_USE_ADDRESSABLES = true;
                 if (string.Equals(ScriptingSymbolNames.USE_TIMELINE, defines[i].Trim())) define_USE_TIMELINE = true;
                 if (string.Equals(ScriptingSymbolNames.USE_CINEMACHINE, defines[i].Trim())) define_USE_CINEMACHINE = true;
+                if (string.Equals(ScriptingSymbolNames.USE_ARCWEAVE, defines[i].Trim())) define_USE_ARCWEAVE = true;
                 if (string.Equals(ScriptingSymbolNames.USE_ARTICY, defines[i].Trim())) define_USE_ARTICY = true;
                 if (string.Equals(ScriptingSymbolNames.USE_AURORA, defines[i].Trim())) define_USE_AURORA = true;
                 if (string.Equals(ScriptingSymbolNames.USE_CELTX, defines[i].Trim())) define_USE_CELTX = true;
@@ -204,6 +206,7 @@ namespace PixelCrushers.DialogueSystem
             define_USE_ADDRESSABLES = false;
             define_TMP_PRESENT = false;
             define_USE_STM = false;
+            define_USE_ARCWEAVE = false;
             define_USE_ARTICY = true;
             define_USE_AURORA = true;
             define_USE_CELTX = true;
@@ -246,18 +249,21 @@ namespace PixelCrushers.DialogueSystem
 
 #if EVALUATION_VERSION
             EditorGUI.BeginDisabledGroup(true);
+            EditorGUILayout.ToggleLeft(new GUIContent("Arcweave (USE_ARCWEAVE)", "Enable Dialogue System support for Arcweave import."), define_USE_ARCWEAVE);
             EditorGUILayout.ToggleLeft(new GUIContent("articy:draft (USE_ARTICY)", "Enable Dialogue System support for articy:draft XML import."), define_USE_ARTICY);
             EditorGUILayout.ToggleLeft(new GUIContent("Aurora Toolset (USE_AURORA)", "Enable Dialogue System support for Aurora (Neverwinter Nights) Toolset import."), define_USE_AURORA);
             EditorGUILayout.ToggleLeft(new GUIContent("Celtx (USE_CELTX)", "Enable Dialogue System support for Celtx JSON import."), define_USE_CELTX);
             EditorGUILayout.ToggleLeft(new GUIContent("Twine (USE_TWINE)", "Enable Dialogue System support for Twine Twison import."), define_USE_TWINE);
             EditorGUILayout.ToggleLeft(new GUIContent("Yarn (USE_YARN)", "Enable Dialogue System support for YarnSpinner import."), define_USE_YARN);
             EditorGUI.EndDisabledGroup();
+            var new_USE_ARCWEAVE = define_USE_ARCWEAVE;
             var new_USE_ARTICY = define_USE_ARTICY;
             var new_USE_AURORA = define_USE_AURORA;
             var new_USE_CELTX = define_USE_CELTX;
             var new_USE_TWINE = define_USE_TWINE;
             var new_USE_YARN = define_USE_YARN;
 #else
+            var new_USE_ARCWEAVE = EditorGUILayout.ToggleLeft(new GUIContent("Arcweave (USE_ARCWEAVE)", "Enable Dialogue System support for Arcweave import."), define_USE_ARCWEAVE);
             var new_USE_ARTICY = EditorGUILayout.ToggleLeft(new GUIContent("articy:draft (USE_ARTICY)", "Enable Dialogue System support for articy:draft XML import."), define_USE_ARTICY);
             var new_USE_AURORA = EditorGUILayout.ToggleLeft(new GUIContent("Aurora Toolset (USE_AURORA)", "Enable Dialogue System support for Aurora (Neverwinter Nights) Toolset import."), define_USE_AURORA);
             var new_USE_CELTX = EditorGUILayout.ToggleLeft(new GUIContent("Celtx (USE_CELTX)", "Enable Dialogue System support for Celtx JSON import."), define_USE_CELTX);
@@ -272,6 +278,7 @@ namespace PixelCrushers.DialogueSystem
             //if (new_USE_ADDRESSABLES != define_USE_ADDRESSABLES) MoreEditorUtility.ToggleScriptingDefineSymbol(ScriptingSymbolNames.USE_ADDRESSABLES, new_USE_ADDRESSABLES);
             if (new_USE_TIMELINE != define_USE_TIMELINE) MoreEditorUtility.ToggleScriptingDefineSymbol(ScriptingSymbolNames.USE_TIMELINE, new_USE_TIMELINE, true);
             //if (new_USE_CINEMACHINE != define_USE_CINEMACHINE) MoreEditorUtility.ToggleScriptingDefineSymbol(ScriptingSymbolNames.USE_CINEMACHINE, new_USE_CINEMACHINE);
+            //if (new_USE_ARCWEAVE != define_USE_ARCWEAVE) MoreEditorUtility.ToggleScriptingDefineSymbol(ScriptingSymbolNames.USE_ARCWEAVE, new_USE_ARCWEAVE);
             if (new_USE_ARTICY != define_USE_ARTICY) MoreEditorUtility.ToggleScriptingDefineSymbol(ScriptingSymbolNames.USE_ARTICY, new_USE_ARTICY);
             if (new_USE_AURORA != define_USE_AURORA) MoreEditorUtility.ToggleScriptingDefineSymbol(ScriptingSymbolNames.USE_AURORA, new_USE_AURORA);
             if (new_USE_CELTX != define_USE_CELTX) MoreEditorUtility.ToggleScriptingDefineSymbol(ScriptingSymbolNames.USE_CELTX, new_USE_CELTX);
@@ -349,6 +356,24 @@ namespace PixelCrushers.DialogueSystem
                 else
                 {
                     MoreEditorUtility.ToggleScriptingDefineSymbol(ScriptingSymbolNames.USE_STM, new_USE_STM);
+                }
+            }
+            if (new_USE_ARCWEAVE != define_USE_ARCWEAVE)
+            {
+                if (new_USE_ARCWEAVE)
+                {
+                    if (EditorUtility.DisplayDialog("Enable Arcweave Import", "This will enable the ability to import Arcweave projects. Newtonsoft Json.NET MUST already be installed in your project first. See the Arcweave Import instructions in the online manual if Newtonsoft Json.NET is not installed yet.\n\n*IMPORTANT*: Only press OK if Newtonsoft Json.NET is already installed!\n\nTo continue, press OK. If you need to install Newtonsoft Json.NET first, press Cancel.", "OK", "Cancel"))
+                    {
+                        MoreEditorUtility.ToggleScriptingDefineSymbol(ScriptingSymbolNames.USE_ARCWEAVE, new_USE_ARCWEAVE);
+                    }
+                    else
+                    {
+                        changed = false;
+                    }
+                }
+                else
+                {
+                    MoreEditorUtility.ToggleScriptingDefineSymbol(ScriptingSymbolNames.USE_ARCWEAVE, new_USE_ARCWEAVE);
                 }
             }
 

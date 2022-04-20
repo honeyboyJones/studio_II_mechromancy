@@ -1223,6 +1223,10 @@ namespace PixelCrushers.DialogueSystem
             {
                 return HandleStopConversationInternally();
             }
+            else if (string.Equals(commandName, "SequencerMessage"))
+            {
+                return HandleSequencerMessageInternally(commandName, args);
+            }
             return false;
         }
 
@@ -2392,11 +2396,11 @@ namespace PixelCrushers.DialogueSystem
         {
             string actorName = SequencerTools.GetParameter(args, 0);
             Transform actorTransform = null;
-            if (string.IsNullOrEmpty(actorName) || string.Equals("speaker", actorName, StringComparison.OrdinalIgnoreCase))
+            if (string.IsNullOrEmpty(actorName) || string.Equals(SequencerKeywords.Speaker, actorName, StringComparison.OrdinalIgnoreCase))
             {
                 actorTransform = speaker;
             }
-            else if (string.Equals("listener", actorName, StringComparison.OrdinalIgnoreCase))
+            else if (string.Equals(SequencerKeywords.Listener, actorName, StringComparison.OrdinalIgnoreCase))
             {
                 actorTransform = listener;
             }
@@ -2436,7 +2440,7 @@ namespace PixelCrushers.DialogueSystem
             {
                 // If no transform, override menu panel by actor ID:
                 if (DialogueDebug.logInfo) Debug.Log(string.Format("{0}: Sequencer: SetMenuPanel({1}, {2})", new System.Object[] { DialogueDebug.Prefix, actorName, menuPanelNumber }));
-                if (string.Equals(actorName, "speaker", StringComparison.OrdinalIgnoreCase))
+                if (string.Equals(actorName, SequencerKeywords.Speaker, StringComparison.OrdinalIgnoreCase))
                 {
                     var conversation = DialogueManager.masterDatabase.GetConversation(DialogueManager.lastConversationID);
                     if (conversation != null) actorName = DialogueManager.masterDatabase.GetActor(conversation.ActorID).Name;
@@ -2732,6 +2736,17 @@ namespace PixelCrushers.DialogueSystem
         {
             if (DialogueDebug.logInfo) Debug.Log(string.Format("{0}: Sequencer: StopConversation()", new System.Object[] { DialogueDebug.Prefix }));
             DialogueManager.StopConversation();
+            return true;
+        }
+
+        private bool HandleSequencerMessageInternally(string commandName, string[] args)
+        {
+            var message = SequencerTools.GetParameter(args, 0);
+            if (DialogueDebug.logInfo) Debug.Log(string.Format("{0}: Sequencer: SequencerMessage({1})", new System.Object[] { DialogueDebug.Prefix, message }));
+            if (!string.IsNullOrEmpty(message))
+            {
+                Sequencer.Message(message);
+            }
             return true;
         }
 

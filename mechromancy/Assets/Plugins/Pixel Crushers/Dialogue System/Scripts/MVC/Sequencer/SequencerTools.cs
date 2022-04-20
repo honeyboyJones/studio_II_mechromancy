@@ -100,6 +100,14 @@ namespace PixelCrushers.DialogueSystem
             {
                 return listener;
             }
+            else if (string.Compare(specifier, SequencerKeywords.SpeakerPortrait, System.StringComparison.OrdinalIgnoreCase) == 0)
+            {
+                return GetPortraitImage(speaker);
+            }
+            else if (string.Compare(specifier, SequencerKeywords.ListenerPortrait, System.StringComparison.OrdinalIgnoreCase) == 0)
+            {
+                return GetPortraitImage(listener);
+            }
             else
             {
                 GameObject go = FindSpecifier(specifier);
@@ -173,6 +181,37 @@ namespace PixelCrushers.DialogueSystem
                 {
                     return go;
                 }
+            }
+            return null;
+        }
+
+        /// <returns>
+        /// The transform of the Portrait Image GameObject, or null if not found.
+        /// Must be using Standard Dialogue UI. Not for use with simultaneous conversations.
+        /// </returns>
+        public static Transform GetPortraitImage(Transform subject)
+        {
+            if (DialogueManager.standardDialogueUI != null)
+            {
+                StandardUISubtitlePanel panel = null;
+                if (DialogueManager.IsConversationActive)
+                {
+                    DialogueActor dialogueActor;
+                    panel = DialogueManager.standardDialogueUI.conversationUIElements.standardSubtitleControls.GetPanel(DialogueManager.currentConversationState.subtitle, out dialogueActor);
+                }
+                else if (subject != null)
+                {
+                    DialogueActor dialogueActor = DialogueActor.GetDialogueActorComponent(subject);
+                    if (dialogueActor != null)
+                    {
+                        panel = DialogueManager.standardDialogueUI.conversationUIElements.standardSubtitleControls.GetDialogueActorPanel(dialogueActor);
+                    }
+                }
+                else
+                {
+                    panel = DialogueManager.standardDialogueUI.conversationUIElements.standardSubtitleControls.defaultNPCPanel;
+                }
+                if (panel != null && panel.portraitImage != null) return panel.portraitImage.transform;
             }
             return null;
         }

@@ -198,6 +198,7 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                 menu.AddItem(new GUIContent("Sort/Reorder IDs/This Conversation"), false, ConfirmReorderIDsThisConversation);
                 menu.AddItem(new GUIContent("Sort/Reorder IDs/All Conversations"), false, ConfirmReorderIDsAllConversations);
                 menu.AddItem(new GUIContent("Sort/Reorder IDs/Depth First Reordering"), reorderIDsDepthFirst, () => { reorderIDsDepthFirst = !reorderIDsDepthFirst; });
+                menu.AddItem(new GUIContent("Show/Prefer Titles For 'Links To' Menus"), prefs.preferTitlesForLinksTo, TogglePreferTitlesForLinksTo);
                 menu.AddItem(new GUIContent("Search Bar"), isSearchBarOpen, ToggleDialogueTreeSearchBar);
                 menu.AddItem(new GUIContent("Nodes"), false, ActivateNodeEditorMode);
                 if (currentConversation == null)
@@ -211,6 +212,12 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                 AddRelationsInspectorMenuItems(menu);
                 menu.ShowAsContext();
             }
+        }
+
+        private void TogglePreferTitlesForLinksTo()
+        {
+            prefs.preferTitlesForLinksTo = !prefs.preferTitlesForLinksTo;
+            linkToDestinationsFromEntry = null;
         }
 
         private void AddRelationsInspectorMenuItems(GenericMenu menu)

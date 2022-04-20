@@ -26,8 +26,8 @@ namespace PixelCrushers.DialogueSystem
         [Tooltip("Dialogue entry to jump to.")]
         public int entryID;
 
-        //[HideInInspector]
-        //public bool computed
+        [Tooltip("Stop any active conversations before starting this one.")]
+        public bool exclusive = false;
 
         public string GetEditorDialogueText()
         {

@@ -189,6 +189,8 @@ namespace PixelCrushers.DialogueSystem
             ActivateUIElements();
             Open();
             Focus();
+            RefreshSelectablesList();
+            CheckFocus();
             if (blockInputDuration > 0)
             {
                 DisableInput();

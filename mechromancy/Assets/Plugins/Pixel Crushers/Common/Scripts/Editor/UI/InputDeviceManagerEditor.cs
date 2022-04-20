@@ -199,9 +199,9 @@ namespace PixelCrushers
                 SerializedObject serializedObject = new SerializedObject(assets[0]);
                 SerializedProperty axesProperty = serializedObject.FindProperty("m_Axes");
 
-                axesProperty.Next(true);
-                axesProperty.Next(true);
-                while (axesProperty.Next(false))
+                var valid = axesProperty.Next(true);
+                valid = valid || axesProperty.Next(true);
+                while (valid && axesProperty.Next(false))
                 {
                     SerializedProperty axis = axesProperty.Copy();
                     if (axis.Next(true))

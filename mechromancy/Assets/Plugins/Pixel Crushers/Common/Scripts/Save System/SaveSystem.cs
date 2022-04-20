@@ -238,7 +238,10 @@ namespace PixelCrushers
 
         /// <summary>
         /// The saved game data recorded by the last call to SaveToSlot,
-        /// LoadScene, or RecordSavedGameData.
+        /// LoadScene, or RecordSavedGameData. 
+        /// 
+        /// Note: This saved game data stays in memory until you clear it by using
+        /// RestartGame() or ResetGameState(), or by loading a saved game.
         /// </summary>
         public static SavedGameData currentSavedGameData
         {

@@ -490,12 +490,15 @@ namespace PixelCrushers.DialogueSystem.Celtx
             {
                 if (celtxData.customVarListLookupByCxSequenceId.ContainsKey(sequenceCatalogId))
                 {
+                    if (!celtxData.customVarListLookupByCxSequenceId.ContainsKey(sequenceCatalogId)) Debug.LogError("Celtx Import: Can't find custom variable list for sequence ID " + sequenceCatalogId);
                     List<CxCustomVar> cxCustomVars = celtxData.customVarListLookupByCxSequenceId[sequenceCatalogId];
                     StringBuilder luaScript = new StringBuilder();
                     foreach (CxCustomVar cxCustomVar in cxCustomVars)
                     {
                         if (luaScript.Length != 0) { luaScript.Append("; "); }
+                        if (!celtxData.variableLookupByCeltxId.ContainsKey(cxCustomVar.id)) Debug.LogError("Celtx Import: Can't find variable with ID " + cxCustomVar.id);
                         Variable var = database.GetVariable(celtxData.variableLookupByCeltxId[cxCustomVar.id]);
+                        if (var == null) Debug.LogError("Celtx Import: Dialogue database doesn't contain variable named " + celtxData.variableLookupByCeltxId[cxCustomVar.id]);
                         StringBuilder stringBuilder = new StringBuilder();
                         stringBuilder.Append("Variable");
                         stringBuilder.Append("[\"" + var.Name + "\"]");
@@ -536,6 +539,7 @@ namespace PixelCrushers.DialogueSystem.Celtx
 
         private int GetActorIdForCharacter(CxContent characterContentItem)
         {
+            if (!celtxData.actorIdLookupByCxCharacterCatalogId.ContainsKey(characterContentItem.attrs.catalog_id)) Debug.LogError("Celtx Import: Lookup failed for actor with ID " + characterContentItem.attrs.catalog_id);
             return celtxData.actorIdLookupByCxCharacterCatalogId[characterContentItem.attrs.catalog_id];
         }
 
@@ -730,8 +734,11 @@ namespace PixelCrushers.DialogueSystem.Celtx
                     int actorID = template.GetNextActorID(database);
                     actor = template.CreateActor(actorID, catalogItemAttrs.title, IsPlayerCharacter(catalogItemAttrs));
                     database.actors.Add(actor);
-
                     celtxData.actorIdLookupByCxCharacterCatalogId.Add(catalogItemAttrs.id, actorID);
+                }
+                else
+                {
+                    Debug.LogWarning("Celtx Import: Actor " + catalogItemAttrs.title + " was already added with Celtx ID " + actor.LookupValue(CeltxFields.CatalogId) + " but another actor with same name has Celtx ID " + catalogItemAttrs.id);
                 }
 
                 AppendToField(actor.fields, CeltxFields.CatalogId, catalogItemAttrs.id, FieldType.Text);
@@ -977,7 +984,7 @@ namespace PixelCrushers.DialogueSystem.Celtx
                 if (condition.literals == null)
                 {
                     LogMessage(LogLevel.W,
-                            "Condition has no literals(literals list is null). Lua script generation will be skipped for this condition. Please add literals to the condition in CeltX", condition.id);
+                            "Condition has no literals(literals list is null). Lua script generation will be skipped for this condition. Please add literals to the condition in Celtx", condition.id);
                     return;
                 }
 
@@ -1047,7 +1054,9 @@ namespace PixelCrushers.DialogueSystem.Celtx
             try
             {
                 string variableId = literal.id;
+                if (!celtxData.variableLookupByCeltxId.ContainsKey(variableId)) Debug.LogError("Celtx Import: Can't find variable with ID " + variableId);
                 Variable var = database.GetVariable(celtxData.variableLookupByCeltxId[variableId]);
+                if (var == null) Debug.LogError("Celtx Import: Dialogue database doesn't contain variable named " + celtxData.variableLookupByCeltxId[variableId]);
                 FieldType varType = var.Type;
                 if (varType == FieldType.Text)
                 {
@@ -1176,7 +1185,7 @@ namespace PixelCrushers.DialogueSystem.Celtx
         private void LogMessage(LogLevel logLevel, string messageCore, string celtxId = null, string name = null)
         {
             StringBuilder logMessage = new StringBuilder();
-            if (celtxId != null) { logMessage.Append("CeltX Object : " + celtxId + "(" + name + ")"); }
+            if (celtxId != null) { logMessage.Append("Celtx Object : " + celtxId + "(" + name + ")"); }
             logMessage.Append(" | " + messageCore);
             if (logLevel == LogLevel.W)
             {

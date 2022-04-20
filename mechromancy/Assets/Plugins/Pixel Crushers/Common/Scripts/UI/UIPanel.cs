@@ -61,6 +61,7 @@ namespace PixelCrushers
         protected List<GameObject> selectables = new List<GameObject>();
         private float m_timeNextCheck = 0;
         private float m_timeNextRefresh = 0;
+        private int m_frameLastOpened = -1;
 
         /// <summary>
         /// If false, turns off checking of current selection to make sure a valid selectable is selected.
@@ -201,7 +202,7 @@ namespace PixelCrushers
         protected virtual void OnDisable()
         {
             StopAllCoroutines();
-            if (selectPreviousOnDisable && InputDeviceManager.autoFocus && UnityEngine.EventSystems.EventSystem.current != null && m_previousSelected != null && !selectables.Contains(m_previousSelected))
+            if (monitorSelection && selectPreviousOnDisable && InputDeviceManager.autoFocus && UnityEngine.EventSystems.EventSystem.current != null && m_previousSelected != null && !selectables.Contains(m_previousSelected))
             {
                 UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(m_previousSelected);
             }
@@ -211,6 +212,8 @@ namespace PixelCrushers
         public virtual void Open()
         {
             if (panelState == PanelState.Open || panelState == PanelState.Opening) return;
+            if (panelState == PanelState.Closing) animatorMonitor.CancelCurrentAnimation();
+            m_frameLastOpened = Time.frameCount;
             panelState = PanelState.Opening;
             gameObject.SetActive(true);
             onOpen.Invoke();
@@ -273,7 +276,10 @@ namespace PixelCrushers
             if (!(isOpen && topPanel == this)) return;
             if (InputDeviceManager.isBackButtonDown)
             {
-                onBackButtonDown.Invoke();
+                if (Time.frameCount != m_frameLastOpened)
+                {
+                    onBackButtonDown.Invoke();
+                }
             }
             else
             {

@@ -20,7 +20,7 @@ namespace PixelCrushers.DialogueSystem
     public class CeltxConverterWindow : EditorWindow
     {
 
-        [MenuItem("Tools/Pixel Crushers/Dialogue System/Import/CeltX", false, 1)]
+        [MenuItem("Tools/Pixel Crushers/Dialogue System/Import/Celtx...", false, 1)]
         public static void Init()
         {
             CeltxConverterWindow window = EditorWindow.GetWindow(typeof(CeltxConverterWindow), false, "Celtx") as CeltxConverterWindow;
@@ -269,9 +269,9 @@ namespace PixelCrushers.DialogueSystem
         }
 
         /// <summary>
-        /// Pre-processes the CeltX json data, converting the "item_data':'" pattern to "item_data_string':'"
+        /// Pre-processes the Celtx json data, converting the "item_data':'" pattern to "item_data_string':'"
         /// </summary> 
-        /// <param name="jsonData">CeltX json data to be processed</param>
+        /// <param name="jsonData">Celtx json data to be processed</param>
         /// <returns></returns>
         private static string PreProcessCeltxData(string jsonData)
         {

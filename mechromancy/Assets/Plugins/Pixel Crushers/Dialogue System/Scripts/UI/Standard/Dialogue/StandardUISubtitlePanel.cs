@@ -41,6 +41,9 @@ namespace PixelCrushers.DialogueSystem
         [Tooltip("(Optional) Continue button. Only shown if Dialogue Manager's Continue Button mode uses continue button.")]
         public UnityEngine.UI.Button continueButton;
 
+        [Tooltip("If non-zero, prevent continue button clicks for this duration in seconds when opening subtitle panel.")]
+        public float blockInputDuration = 0;
+
         [Tooltip("When the subtitle UI elements should be visible.")]
         public UIVisibility visibility = UIVisibility.OnlyDuringContent;
 
@@ -166,6 +169,7 @@ namespace PixelCrushers.DialogueSystem
 
         protected Coroutine m_focusWhenOpenCoroutine = null;
         protected Coroutine m_showAfterClosingCoroutine = null;
+        protected WaitForSeconds m_blockInputDelay = null;
 
         #endregion
 
@@ -459,6 +463,28 @@ namespace PixelCrushers.DialogueSystem
 
         public virtual void ShowContinueButton()
         {
+            if (blockInputDuration > 0)
+            {
+                StartCoroutine(ShowContinueButtonAfterBlockDuration());
+            }
+            else
+            {
+                ShowContinueButtonNow();
+            }
+        }
+
+        protected virtual IEnumerator ShowContinueButtonAfterBlockDuration()
+        {
+            if (continueButton == null) yield break;
+            continueButton.interactable = false;
+            if (m_blockInputDelay == null) m_blockInputDelay = new WaitForSeconds(blockInputDuration);
+            yield return m_blockInputDelay;
+            continueButton.interactable = true;
+            ShowContinueButtonNow();
+        }
+
+        protected virtual void ShowContinueButtonNow()
+        { 
             Tools.SetGameObjectActive(continueButton, true);
             if (InputDeviceManager.autoFocus) Select(); 
             if (continueButton != null && continueButton.onClick.GetPersistentEventCount() == 0)

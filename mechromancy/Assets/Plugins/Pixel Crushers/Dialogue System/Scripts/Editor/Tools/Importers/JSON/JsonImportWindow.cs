@@ -14,7 +14,7 @@ namespace PixelCrushers.DialogueSystem
         public override string prefsKey { get { return "PixelCrushers.DialogueSystem.JsonImportSettings"; } }
 
         //*** Customize this menu item:
-        [MenuItem("Tools/Pixel Crushers/Dialogue System/Import/JSON", false, 1)]
+        [MenuItem("Tools/Pixel Crushers/Dialogue System/Import/JSON...", false, 1)]
         public static void Init()
         {
             EditorWindow.GetWindow(typeof(JsonImportWindow), false, "JSON to DS");

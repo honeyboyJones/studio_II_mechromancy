@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace PixelCrushers.DialogueSystem.DialogueEditor
 {
@@ -37,6 +38,8 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         private bool globalSearchSpecificConversation = false;
         [SerializeField]
         private int globalSearchConversationIndex = -1;
+        [SerializeField]
+        private bool globalSearchUseRegex = false;
 
         [SerializeField]
         private DatabaseFoldouts databaseFoldouts = new DatabaseFoldouts();
@@ -94,6 +97,11 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         private EntrytagFormat entrytagFormat = EntrytagFormat.ActorName_ConversationID_EntryID;
         [SerializeField]
         private EncodingType encodingType = EncodingType.UTF8;
+
+        private static GUIContent GlobalSearchLabel = new GUIContent("Search For:");
+        private static GUIContent RegexSearchLabel = new GUIContent("Regex", "Use regular expressions in searches.");
+
+        private Regex globalSearchRegex;
 
         #endregion
 
@@ -223,7 +231,10 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         private void DrawGlobalReplaceSection()
         {
             EditorGUI.indentLevel++;
-            EditorGUILayout.LabelField("Search For:");
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField(GlobalSearchLabel, GUILayout.Width(130));
+            globalSearchUseRegex = EditorGUILayout.ToggleLeft(RegexSearchLabel, globalSearchUseRegex);
+            EditorGUILayout.EndHorizontal();
             globalSearchText = EditorGUILayout.TextArea(globalSearchText);
             EditorGUILayout.LabelField("Replace With:");
             globalReplaceText = EditorGUILayout.TextArea(globalReplaceText);
@@ -256,16 +267,18 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         {
             try
             {
+                globalSearchRegex = new Regex(globalSearchText);
+
                 var specificConversation = globalSearchSpecificConversation ? conversationTitles[globalSearchConversationIndex] : string.Empty;
                 var result = globalSearchSpecificConversation ? "Conversation '" + specificConversation + "' matches for '" + globalSearchText + "': (click this log entry to see full report)"
                     : "Database matches for '" + globalSearchText + "': (click this log entry to see full report)";
 
-                if (!globalSearchSpecificConversation && !string.IsNullOrEmpty(database.globalUserScript) && database.globalUserScript.Contains(globalSearchText))
+                if (!globalSearchSpecificConversation && !string.IsNullOrEmpty(database.globalUserScript) && GlobalSearchMatch(database.globalUserScript))
                 {
                     result += "\nGlobal User Script: " + database.globalUserScript;
                 }
 
-                if (!globalSearchSpecificConversation && !string.IsNullOrEmpty(database.description) && database.description.Contains(globalSearchText))
+                if (!globalSearchSpecificConversation && !string.IsNullOrEmpty(database.description) && GlobalSearchMatch(database.description))
                 {
                     result += "\nDescription: " + database.description;
                 }
@@ -282,7 +295,7 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                     result += LogSearchResultsInAssetList<Location>(database.locations, "Location");
                     if (EditorUtility.DisplayCancelableProgressBar("Searching Database", "Searching variables for '" + globalSearchText + "'. Please wait...", (database.actors.Count + database.items.Count + database.locations.Count) / size)) return;
                     result += LogSearchResultsInAssetList<Variable>(database.variables, "Variable");
-                }
+                }                
 
                 int numConversationsDone = 0;
                 foreach (var conversation in database.conversations)
@@ -293,7 +306,7 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                     foreach (var field in conversation.fields)
                     {
                         if (string.IsNullOrEmpty(field.title) || string.IsNullOrEmpty(field.value)) continue;
-                        if (field.title.Contains(globalSearchText) || field.value.Contains(globalSearchText))
+                        if (GlobalSearchMatch(field))
                         {
                             result += "\nConversation: '" + conversation.Title + "': Field '" + field.title + "': " + field.value;
                         }
@@ -303,16 +316,16 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                         foreach (var field in entry.fields)
                         {
                             if (string.IsNullOrEmpty(field.title) || string.IsNullOrEmpty(field.value)) continue;
-                            if (field.title.Contains(globalSearchText) || field.value.Contains(globalSearchText))
+                            if (GlobalSearchMatch(field))
                             {
                                 result += "\nConversation '" + conversation.Title + "' entry " + entry.id + ": Field '" + field.title + "': " + field.value;
                             }
                         }
-                        if (!string.IsNullOrEmpty(entry.conditionsString) && entry.conditionsString.Contains(globalSearchText))
+                        if (!string.IsNullOrEmpty(entry.conditionsString) && GlobalSearchMatch(entry.conditionsString))
                         {
                             result += "\nConversation '" + conversation.Title + "' entry " + entry.id + ": Script: " + entry.conditionsString;
                         }
-                        if (!string.IsNullOrEmpty(entry.userScript) && entry.userScript.Contains(globalSearchText))
+                        if (!string.IsNullOrEmpty(entry.userScript) && GlobalSearchMatch(entry.userScript))
                         {
                             result += "\nConversation '" + conversation.Title + "' entry " + entry.id + ": Script: " + entry.userScript;
                         }
@@ -327,6 +340,17 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
             }
         }
 
+        private bool GlobalSearchMatch(Field field)
+        {
+            if (field == null) return false;
+            return GlobalSearchMatch(field.title) || GlobalSearchMatch(field.value);
+        }
+
+        private bool GlobalSearchMatch(string s)
+        {
+            return globalSearchUseRegex ? globalSearchRegex.IsMatch(s) : s.Contains(globalSearchText);
+        }
+
         private string LogSearchResultsInAssetList<T>(List<T> assets, string assetTypeName) where T : Asset
         {
             var result = string.Empty;
@@ -334,7 +358,8 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
             {
                 foreach (var field in asset.fields)
                 {
-                    if (field.title.Contains(globalSearchText) || field.value.Contains(globalSearchText))
+                    if (string.IsNullOrEmpty(field.title) || string.IsNullOrEmpty(field.value)) continue;
+                    if (GlobalSearchMatch(field))
                     {
                         if (asset is Item)
                         {
@@ -355,10 +380,12 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
             int matches = 0;
             try
             {
+                globalSearchRegex = new Regex(globalSearchText);
+
                 var specificConversation = globalSearchSpecificConversation ? conversationTitles[globalSearchConversationIndex] : string.Empty;
 
                 bool cancel = false;
-                if (!globalSearchSpecificConversation && !string.IsNullOrEmpty(database.globalUserScript) && database.globalUserScript.Contains(globalSearchText))
+                if (!globalSearchSpecificConversation && !string.IsNullOrEmpty(database.globalUserScript) && GlobalSearchMatch(database.globalUserScript))
                 {
                     matches++;
                     var confirmed = !interactive || ConfirmReplacement("Global User Script:\n" + database.globalUserScript, out cancel);
@@ -369,7 +396,7 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                     }
                 }
 
-                if (!globalSearchSpecificConversation && !string.IsNullOrEmpty(database.description) && database.description.Contains(globalSearchText))
+                if (!globalSearchSpecificConversation && !string.IsNullOrEmpty(database.description) && GlobalSearchMatch(database.description))
                 {
                     matches++;
                     var confirmed = !interactive || ConfirmReplacement("Description:\n" + database.description, out cancel);
@@ -410,7 +437,7 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                     {
                         matches += RunGlobalSearchAndReplaceFieldList(entry.fields, null, interactive, out cancel);
                         if (cancel) return;
-                        if (!string.IsNullOrEmpty(entry.conditionsString) && entry.conditionsString.Contains(globalSearchText))
+                        if (!string.IsNullOrEmpty(entry.conditionsString) && GlobalSearchMatch(entry.conditionsString))
                         {
                             matches++;
                             var confirmed = !interactive || ConfirmReplacement("Dialogue Entry Conditions:\n" + entry.conditionsString, out cancel);
@@ -420,7 +447,7 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                                 entry.conditionsString = entry.conditionsString.Replace(globalSearchText, globalReplaceText);
                             }
                         }
-                        if (!string.IsNullOrEmpty(entry.userScript) && entry.userScript.Contains(globalSearchText))
+                        if (!string.IsNullOrEmpty(entry.userScript) && GlobalSearchMatch(entry.userScript))
                         {
                             matches++;
                             var confirmed = !interactive || ConfirmReplacement("Dialogue Entry Script:\n" + entry.userScript, out cancel);
@@ -479,7 +506,7 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
             cancel = false;
             foreach (var field in fields)
             {
-                if (field.title.Contains(globalSearchText) || field.value.Contains(globalSearchText))
+                if (GlobalSearchMatch(field))
                 {
                     matches++;
                     var confirmed = true;
@@ -798,10 +825,10 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         private void DrawNoDatabaseSection()
         {
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Select a dialogue database.");
-            GUILayout.FlexibleSpace();
+            var database = EditorGUILayout.ObjectField("Select dialogue database", null, typeof(DialogueDatabase), false);
             if (GUILayout.Button("Create New", GUILayout.Width(120))) CreateNewDatabase();
             EditorGUILayout.EndHorizontal();
+            if (database != null) SelectObject(database);
         }
 
         private void CreateNewDatabase()

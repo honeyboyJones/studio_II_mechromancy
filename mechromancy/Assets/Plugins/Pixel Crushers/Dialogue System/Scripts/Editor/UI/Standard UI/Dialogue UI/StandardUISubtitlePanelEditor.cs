@@ -20,6 +20,7 @@ namespace PixelCrushers.DialogueSystem
             EditorGUILayout.PropertyField(serializedObject.FindProperty("portraitName"), true);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("subtitleText"), true);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("continueButton"), true);
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("blockInputDuration"), true);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("onlyShowNPCPortraits"), true);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("useAnimatedPortraits"), true);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("usePortraitNativeSize"), true);

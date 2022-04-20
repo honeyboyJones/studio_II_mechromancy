@@ -50,6 +50,7 @@ namespace PixelCrushers
         protected void Update()
         {
             if (!monitorInput) return;
+            if (!(m_selectable.enabled && m_selectable.interactable && m_selectable.gameObject.activeInHierarchy)) return;
             if (InputDeviceManager.IsKeyDown(key) || 
                 (!string.IsNullOrEmpty(buttonName) && InputDeviceManager.IsButtonDown(buttonName)) ||
                 (anyKeyOrButton && InputDeviceManager.IsAnyKeyDown()))

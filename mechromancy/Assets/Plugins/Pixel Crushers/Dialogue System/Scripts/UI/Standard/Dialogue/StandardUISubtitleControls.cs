@@ -183,7 +183,7 @@ namespace PixelCrushers.DialogueSystem
             return panel;
         }
 
-        private StandardUISubtitlePanel GetActorTransformPanel(Transform speakerTransform, StandardUISubtitlePanel defaultPanel, out DialogueActor dialogueActor)
+        public StandardUISubtitlePanel GetActorTransformPanel(Transform speakerTransform, StandardUISubtitlePanel defaultPanel, out DialogueActor dialogueActor)
         {
             dialogueActor = null;
             if (speakerTransform == null) return defaultPanel;
@@ -217,13 +217,13 @@ namespace PixelCrushers.DialogueSystem
             return dialogueActor != null && dialogueActor.GetSubtitlePanelNumber() == SubtitlePanelNumber.UseBarkUI;
         }
 
-        private StandardUISubtitlePanel GetDialogueActorPanel(DialogueActor dialogueActor)
+        public StandardUISubtitlePanel GetDialogueActorPanel(DialogueActor dialogueActor)
         {
             if (dialogueActor == null) return null;
             return GetPanelFromNumber(dialogueActor.standardDialogueUISettings.subtitlePanelNumber, dialogueActor.standardDialogueUISettings.customSubtitlePanel);
         }
 
-        private StandardUISubtitlePanel GetPanelFromNumber(SubtitlePanelNumber subtitlePanelNumber, StandardUISubtitlePanel customPanel)
+        public StandardUISubtitlePanel GetPanelFromNumber(SubtitlePanelNumber subtitlePanelNumber, StandardUISubtitlePanel customPanel)
         {
             switch (subtitlePanelNumber)
             {
@@ -368,6 +368,20 @@ namespace PixelCrushers.DialogueSystem
         #endregion
 
         #region Show & Hide
+
+        /// <summary>
+        /// Sets the panel that will receive focus for the specified subtitle.
+        /// When delaying the display of the subtitle while the main dialogue
+        /// panel is opening, we still need a reference to the subtitle panel
+        /// to handle continue button stuff once the main panel is open.
+        /// 
+        /// </summary>
+        public StandardUISubtitlePanel StageFocusedPanel(Subtitle subtitle)
+        {
+            DialogueActor dialogueActor;
+            m_focusedPanel = GetPanel(subtitle, out dialogueActor);
+            return m_focusedPanel;
+        }
 
         /// <summary>
         /// Shows a subtitle. Opens a subtitle panel and sets the content. If the speaker

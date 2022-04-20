@@ -11,7 +11,7 @@ namespace PixelCrushers
     /// field in a TextTable.
     /// </summary>
     [Serializable]
-    public class StringField
+    public class StringField : IEquatable<StringField>
     {
 
         [Tooltip("The string that holds the value of this string field. Unused if String Asset or Text Table is assigned.")]
@@ -163,6 +163,27 @@ namespace PixelCrushers
                 this.textTable = source.textTable;
                 this.textTableFieldID = source.textTableFieldID;
             }
+        }
+
+        public static bool operator ==(StringField obj1, StringField obj2)
+        {
+            if (ReferenceEquals(obj1, obj2)) return true;
+            if (ReferenceEquals(obj1, null) && ReferenceEquals(obj2, null)) return true;
+            if (ReferenceEquals(obj1, null) || ReferenceEquals(obj2, null)) return false;
+            return string.Equals(obj1.value, obj2.value);
+        }
+
+        public static bool operator !=(StringField obj1, StringField obj2)
+        {
+            if (ReferenceEquals(obj1, obj2)) return false;
+            if (ReferenceEquals(obj1, null) && ReferenceEquals(obj2, null)) return false;
+            if (ReferenceEquals(obj1, null) || ReferenceEquals(obj2, null)) return true;
+            return !string.Equals(obj1.value, obj2.value);
+        }
+
+        public bool Equals(StringField other)
+        {
+            return (other != null) ? string.Equals(other.value, value) : false;
         }
 
         public override bool Equals(object obj)

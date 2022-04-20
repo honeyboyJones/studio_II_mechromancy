@@ -19,7 +19,7 @@ namespace PixelCrushers.DialogueSystem
     public class ChatMapperConverter : EditorWindow
     {
 
-        [MenuItem("Tools/Pixel Crushers/Dialogue System/Import/Chat Mapper", false, 1)]
+        [MenuItem("Tools/Pixel Crushers/Dialogue System/Import/Chat Mapper...", false, 1)]
         public static void Init()
         {
             ChatMapperConverter window = EditorWindow.GetWindow(typeof(ChatMapperConverter), false, "Chat Mapper") as ChatMapperConverter;

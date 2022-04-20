@@ -1163,7 +1163,10 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                     }
                     else
                     {
-                        destinationList.Add(new GUIContent(Tools.StripRichTextCodes(GetDialogueEntryText(destinationEntry)), string.Empty));
+                        var text = (prefs.preferTitlesForLinksTo && !string.IsNullOrEmpty(destinationEntry.Title))
+                            ? ("<" + destinationEntry.Title + ">")
+                            : GetDialogueEntryText(destinationEntry);
+                        destinationList.Add(new GUIContent(Tools.StripRichTextCodes(text)));
                     }
                 }
             }
@@ -1242,7 +1245,11 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                             {
                                 string linkText = (linkEntry == null) ? string.Empty
                                     : (linkEntry.isGroup ? GetDialogueEntryText(linkEntry) : linkEntry.responseButtonText);
-                                if (string.IsNullOrEmpty(linkText)) linkText = "<" + linkEntry.Title + ">";
+                                if (string.IsNullOrEmpty(linkText) ||
+                                    (prefs.preferTitlesForLinksTo && linkEntry != null && !string.IsNullOrEmpty(linkEntry.Title)))
+                                {
+                                    linkText = "<" + linkEntry.Title + ">";
+                                }
                                 GUIStyle linkButtonStyle = GetLinkButtonStyle(linkEntry);
                                 if (GUILayout.Button(linkText, linkButtonStyle))
                                 {

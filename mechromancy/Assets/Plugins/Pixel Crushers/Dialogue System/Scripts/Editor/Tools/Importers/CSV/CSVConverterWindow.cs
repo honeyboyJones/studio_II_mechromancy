@@ -91,7 +91,7 @@ namespace PixelCrushers.DialogueSystem
         /// <summary>
         /// Menu item code to create a CSVConverterWindow.
         /// </summary>
-        [MenuItem("Tools/Pixel Crushers/Dialogue System/Import/CSV", false, 1)]
+        [MenuItem("Tools/Pixel Crushers/Dialogue System/Import/CSV...", false, 1)]
         public static void Init()
         {
             EditorWindow.GetWindow(typeof(CSVConverterWindow), false, "CSV Import");

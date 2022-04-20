@@ -25,6 +25,8 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         private class LocalizationLanguages
         {
             public List<string> languages = new List<string>();
+            public List<string> extraEntryFields = new List<string>();
+            public List<string> extraQuestFields = new List<string>();
             public int importMainTextIndex = -1;
             public string outputFolder;
         }
@@ -33,6 +35,8 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         private LocalizationLanguages localizationLanguages = new LocalizationLanguages();
 
         private ReorderableList exportLanguageList = null;
+        private ReorderableList exportLanguageExtraEntryFieldsList = null;
+        private ReorderableList exportLanguageExtraQuestFieldsList = null;
 
         [SerializeField]
         private bool exportLocalizationConversationTitle = false;
@@ -44,11 +48,17 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         private bool exportAssignFieldValues = false;
 
         [SerializeField]
+        private bool exportLocalizationCreateNewFields = false;
+
+        [SerializeField]
         private string localizationKeyField = "Articy Id";
 
         private GUIContent exportLocalizationConversationTitleLabel = new GUIContent("Export Conversation Title Instead Of ID", "Export conversation title instead of ID. Titles should be unique.");
         private GUIContent exportLocalizationKeyFieldLabel = new GUIContent("Use Key Field", "Tie each dialogue entry row to a key field (e.g., 'Articy Id' or 'Celtx ID') instead of conversation & entry IDs.");
         private GUIContent exportAssignFieldValuesLabel = new GUIContent("Assign Values", "If key field is blank for dialogue entry, assign a unique value to it.");
+        private GUIContent exportLocalizationCreateNewFieldsLabel = new GUIContent("Create New Fields", "If Extra Dialogue Entry field doesn't exist in an entry or if Extra Quest Field doesn't exist for a quest, create field when importing.");
+        private GUIContent exportExtraEntryFieldsLabel = new GUIContent("Extra Dialogue Entry Fields", "(Optional) Extra dialogue entry fields to localize.");
+        private GUIContent exportExtraQuestFieldsLabel = new GUIContent("Extra Quest Fields", "(Optional) Extra quest fields to localize.");
 
         #endregion
 
@@ -67,6 +77,24 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
             }
             exportLanguageList.DoLayoutList();
 
+            if (exportLanguageExtraEntryFieldsList == null)
+            {
+                exportLanguageExtraEntryFieldsList = new ReorderableList(localizationLanguages.extraEntryFields, typeof(string), true, true, true, true);
+                exportLanguageExtraEntryFieldsList.drawHeaderCallback += OnDrawExportLanguageExtraEntryFieldsListHeader;
+                exportLanguageExtraEntryFieldsList.drawElementCallback = OnDrawExportLanguageExtraEntryFieldsListElement;
+                exportLanguageExtraEntryFieldsList.onAddCallback += OnAddExportLanguageExtraEntryFieldsListElement;
+            }
+            exportLanguageExtraEntryFieldsList.DoLayoutList();
+
+            if (exportLanguageExtraQuestFieldsList == null)
+            {
+                exportLanguageExtraQuestFieldsList = new ReorderableList(localizationLanguages.extraQuestFields, typeof(string), true, true, true, true);
+                exportLanguageExtraQuestFieldsList.drawHeaderCallback += OnDrawExportLanguageExtraQuestFieldsListHeader;
+                exportLanguageExtraQuestFieldsList.drawElementCallback = OnDrawExportLanguageExtraQuestFieldsListElement;
+                exportLanguageExtraQuestFieldsList.onAddCallback += OnAddExportLanguageExtraQuestFieldsListElement;
+            }
+            exportLanguageExtraQuestFieldsList.DoLayoutList();
+
             exportLocalizationConversationTitle = EditorGUILayout.ToggleLeft(exportLocalizationConversationTitleLabel, exportLocalizationConversationTitle);
             EditorGUILayout.BeginHorizontal();
             exportLocalizationKeyField = EditorGUILayout.ToggleLeft(exportLocalizationKeyFieldLabel, exportLocalizationKeyField, GUILayout.Width(160));
@@ -76,6 +104,7 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                 exportAssignFieldValues = EditorGUILayout.ToggleLeft(exportAssignFieldValuesLabel, exportAssignFieldValues, GUILayout.Width(160));
             }
             EditorGUILayout.EndHorizontal();
+            exportLocalizationCreateNewFields = EditorGUILayout.ToggleLeft(exportLocalizationCreateNewFieldsLabel, exportLocalizationCreateNewFields, GUILayout.Width(160));
 
             EditorGUILayout.BeginHorizontal();
             GUILayout.FlexibleSpace();
@@ -130,6 +159,39 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
         private void OnAddExportLanguageListElement(ReorderableList list)
         {
             localizationLanguages.languages.Add(string.Empty);
+        }
+        private void OnDrawExportLanguageExtraEntryFieldsListHeader(Rect rect)
+        {
+            EditorGUI.LabelField(rect, exportExtraEntryFieldsLabel);
+        }
+
+        private void OnDrawExportLanguageExtraEntryFieldsListElement(Rect rect, int index, bool isActive, bool isFocused)
+        {
+            if (!(0 <= index && index < localizationLanguages.extraEntryFields.Count)) return;
+            var langRect = new Rect(rect.x, rect.y, rect.width, EditorGUIUtility.singleLineHeight);
+            localizationLanguages.extraEntryFields[index] = EditorGUI.TextField(langRect, localizationLanguages.extraEntryFields[index]);
+        }
+
+        private void OnAddExportLanguageExtraEntryFieldsListElement(ReorderableList list)
+        {
+            localizationLanguages.extraEntryFields.Add(string.Empty);
+        }
+
+        private void OnDrawExportLanguageExtraQuestFieldsListHeader(Rect rect)
+        {
+            EditorGUI.LabelField(rect, exportExtraQuestFieldsLabel);
+        }
+
+        private void OnDrawExportLanguageExtraQuestFieldsListElement(Rect rect, int index, bool isActive, bool isFocused)
+        {
+            if (!(0 <= index && index < localizationLanguages.extraQuestFields.Count)) return;
+            var langRect = new Rect(rect.x, rect.y, rect.width, EditorGUIUtility.singleLineHeight);
+            localizationLanguages.extraQuestFields[index] = EditorGUI.TextField(langRect, localizationLanguages.extraQuestFields[index]);
+        }
+
+        private void OnAddExportLanguageExtraQuestFieldsListElement(ReorderableList list)
+        {
+            localizationLanguages.extraQuestFields.Add(string.Empty);
         }
 
         private void FindLanguagesForLocalizationExportImport()
@@ -221,6 +283,11 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                             "Original Menu",
                             "Translated Menu [" + language + "]",
                             "Description");
+                        foreach (string field in localizationLanguages.extraEntryFields)
+                        {
+                            if (string.IsNullOrEmpty(field)) continue;
+                            line += "," + field + "," + field + " [" + language + "]";
+                        }
                         if (exportLocalizationKeyField)
                         {
                             line = localizationKeyField + "," + line;
@@ -236,6 +303,12 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                                 {
                                     var f = de.fields.Find(x => x.title == s);
                                     fields.Add((f != null) ? f.value : string.Empty);
+                                }
+                                foreach (var field in localizationLanguages.extraEntryFields)
+                                {
+                                    if (string.IsNullOrEmpty(field)) continue;
+                                    fields.Add(Field.LookupValue(de.fields, field));
+                                    fields.Add(Field.LookupValue(de.fields, field + " " + language));
                                 }
                                 var sb = new StringBuilder();
                                 if (exportLocalizationKeyField)
@@ -294,6 +367,11 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                                 "Translated Success Description [" + language + "]",
                                 "Failure Description",
                                 "Translated Failure Description [" + language + "]");
+                            foreach (string field in localizationLanguages.extraQuestFields)
+                            {
+                                if (string.IsNullOrEmpty(field)) continue;
+                                sb.AppendFormat(",{0},{1} [{2}]", field, field, language);
+                            }
                             for (int j = 0; j < maxEntryCount; j++)
                             {
                                 sb.AppendFormat(",{0},{1}",
@@ -306,6 +384,8 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                                 if (item.IsItem) continue;
                                 var quest = item;
                                 sb = new StringBuilder();
+
+                                // Main quest fields:
                                 sb.AppendFormat("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10}",
                                     WrapCSVValue(quest.Name),
                                     WrapCSVValue(quest.LookupValue("Display Name")),
@@ -318,6 +398,15 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                                     WrapCSVValue(quest.LookupValue("Success Description " + language)),
                                     WrapCSVValue(quest.LookupValue("Failure Description")),
                                     WrapCSVValue(quest.LookupValue("Failure Description " + language)));
+
+                                // Extra quest fields:
+                                foreach (string field in localizationLanguages.extraQuestFields)
+                                {
+                                    if (string.IsNullOrEmpty(field)) continue;
+                                    sb.AppendFormat(",{0},{1}", quest.LookupValue(field), quest.LookupValue(field + " " + language));
+                                }
+
+                                // Quest entry fields:
                                 var entryCount = quest.LookupInt("Entry Count");
                                 for (int j = 0; j < maxEntryCount; j++)
                                 {
@@ -486,6 +575,28 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                                     entry.DialogueText = columns[3];
                                     entry.MenuText = columns[5];
                                 }
+
+                                // Extra entry fields:
+                                for (int k = 0; k < localizationLanguages.extraEntryFields.Count; k++)
+                                {
+                                    var field = localizationLanguages.extraEntryFields[k];
+                                    int columnIndex = 8 + (k * 2) + 1;
+                                    if (string.IsNullOrEmpty(field)) continue;
+
+                                    if (!exportLocalizationCreateNewFields &&
+                                        !Field.FieldExists(entry.fields, field) && 
+                                        string.IsNullOrEmpty(columns[columnIndex - 1]))
+                                    {
+                                        continue;
+                                    }
+
+                                    Field.SetValue(entry.fields, field + " " + language, columns[columnIndex]);
+
+                                    if (alsoImportMainText)
+                                    {
+                                        Field.SetValue(entry.fields, field, columns[columnIndex - 1]);
+                                    }
+                                }
                             }
                         }
                     }
@@ -528,11 +639,41 @@ namespace PixelCrushers.DialogueSystem.DialogueEditor
                                     Field.SetValue(quest.fields, "Description " + language, columns[6], FieldType.Localization);
                                     Field.SetValue(quest.fields, "Success Description " + language, columns[8], FieldType.Localization);
                                     Field.SetValue(quest.fields, "Failure Description " + language, columns[10], FieldType.Localization);
+
+                                    // Extra quest fields:
+                                    int numExtraQuestFields = 0;
+                                    for (int k = 0; k < localizationLanguages.extraQuestFields.Count; k++)
+                                    {
+                                        var field = localizationLanguages.extraQuestFields[k];
+                                        if (string.IsNullOrEmpty(field)) continue;
+
+                                        int columnIndex = 11 + (k * 2) + 1;
+                                        numExtraQuestFields++;
+
+                                        if (!exportLocalizationCreateNewFields &&
+                                            !Field.FieldExists(quest.fields, field) && 
+                                            string.IsNullOrEmpty(columns[columnIndex - 1]))
+                                        {
+                                            continue;
+                                        }
+
+                                        Field.SetValue(quest.fields, field + " " + language, columns[columnIndex]);
+
+                                        if (alsoImportMainText)
+                                        { 
+                                            Field.SetValue(quest.fields, field, columns[columnIndex - 1]); 
+                                        }
+                                    }
+
+                                    // Quest entry fields:
                                     var entryCount = quest.LookupInt("Entry Count");
                                     for (int k = 0; k < entryCount; k++)
                                     {
-                                        Field.SetValue(quest.fields, "Entry " + (k + 1) + " " + language, columns[12 + 2 * k], FieldType.Localization);
+                                        var index = 12 + (2 * numExtraQuestFields) + (k * 2);
+                                        Field.SetValue(quest.fields, "Entry " + (k + 1) + " " + language, columns[index], FieldType.Localization);
                                     }
+
+                                    // Check if we need to also import main text:
                                     if (alsoImportMainText)
                                     {
                                         if (quest.FieldExists("Display Name")) Field.SetValue(quest.fields, "Display Name", displayName);
