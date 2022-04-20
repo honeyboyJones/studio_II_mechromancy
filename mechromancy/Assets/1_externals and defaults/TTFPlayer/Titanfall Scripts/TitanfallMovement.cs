@@ -78,7 +78,7 @@ public class TitanfallMovement : MonoBehaviour
         , offset_x;
 
     #endregion
-
+    public float SlopeLimitation;
 
     public enum Mode
     //this controlled uses modes to manage which inputs are valid at any point in time and to change vector from wall to ground to air
@@ -120,6 +120,7 @@ public class TitanfallMovement : MonoBehaviour
         col.material.dynamicFriction = 0f;
         //set dir == to current player direction on each update frame
         dir = Direction();
+        OnSlope();
         //Debug.Log("dir" + dir);
         //in update we only check for run, crouch, and jump - these 3 inputs work in all modes, independent of mode
         running = (Input.GetKey(KeyCode.LeftShift) && Input.GetAxisRaw("Vertical") > 0.9);
@@ -148,7 +149,8 @@ public class TitanfallMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(mode != Mode.Flying)
+        
+        if (mode != Mode.Flying)
         {
             HandleHeadbob(dir);
         }
@@ -192,17 +194,50 @@ public class TitanfallMovement : MonoBehaviour
             //walking is boring
             case Mode.Walking:
                 camCon.SetTilt(0);
-                Walk(dir, crouched ? crouchSpeed : running ? runSpeed : groundSpeed, grAccel);
+                if(!OnSlope())
+                {
+                    Walk(dir, crouched ? crouchSpeed : running ? runSpeed : groundSpeed, grAccel);
+                }
                 break;
 
             //flying is slightly less boring but still boring
-            case Mode.Flying:
+/*            case Mode.Flying:
                 camCon.SetTilt(0);
                 AirMove(dir, airSpeed, airAccel);
-                break;
+                break;*/
         }
 
         jump = false;
+    }
+    public bool OnSlope()
+    {
+        //Debug.Log(dir);
+       // Debug.DrawRay(transform.position, dir, Color.red, 3f);
+        RaycastHit hitGround,hitSide;
+
+        if (Physics.Raycast(transform.position, Vector3.down, out hitGround, 3f))
+        {
+            Debug.DrawRay(transform.position, hitGround.point - transform.position, Color.blue, Vector3.Distance(transform.position, hitGround.point));
+            if (Physics.Raycast(transform.position, dir, out hitSide, 3f))
+            {
+                Debug.DrawRay(transform.position, hitSide.point - transform.position, Color.green, Vector3.Distance(transform.position, hitSide.point));
+                Debug.Log("Angle "+Vector3.Angle(transform.position-hitSide.point, hitGround.point- hitSide.point));
+                if(Vector3.Angle(transform.position - hitSide.point, hitGround.point - hitSide.point)> SlopeLimitation)
+                {
+                    return true;
+                }
+                else
+                    return false;
+            }
+            return false;
+        }
+        return false;
+
+        /*        if (Physics.SphereCast(transform.position,4f,Vector3.right,out hitMesh , 4f))
+                {
+                    Debug.DrawRay(transform.position, Vector3.right, Color.red, 4f);
+                    Debug.DrawRay(transform.position, hitMesh.point - transform.position, Color.green, 4f);
+                }*/
     }
 
 
@@ -349,7 +384,7 @@ public class TitanfallMovement : MonoBehaviour
         if (mode != Mode.Wallruning)
         {
             //check to ensure the player is actually on a wall and not on the ground - no wall running on the floor!
-            if (VectorToGround().magnitude > 0.2f && CanRunOnThisWall(bannedGroundNormal) && wallStickTimer == 0f)
+            if (VectorToGround().magnitude > 0.2f && CanRunOnThisWall(bannedGroundNormal) && wallStickTimer == 0f&&running)
             {
                 //on a true wallrun, start timer (for anti-gravity function), reset the double jump bool, enter wallrun
                 gameObject.SendMessage("OnStartWallrunning");

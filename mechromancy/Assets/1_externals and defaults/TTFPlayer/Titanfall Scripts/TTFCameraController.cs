@@ -88,7 +88,7 @@ public class TTFCameraController : MonoBehaviour
     void HandleCameraSway(Vector3 dir)
     {
         float _xAmount = Input.GetAxisRaw("Horizontal");
-        Debug.Log(dir.x);
+        //Debug.Log(dir.x);
         m_xAmountThisFrame = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetAxisRaw("Horizontal") != 0f) // if we have some input
