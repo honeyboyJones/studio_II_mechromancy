@@ -46,6 +46,7 @@ namespace Assets.Code
 
                     if (allWaypoints.Length > 0)
                     {
+                        Debug.Log("rkgfjze");
                         while (_currentWaypoint == null)
                         {
                             int random = UnityEngine.Random.Range(0, allWaypoints.Length); //randomise
@@ -69,8 +70,9 @@ namespace Assets.Code
 
         private void Update()
         {
-            if (_travelling && _navMeshAgent.remainingDistance <= 1.0f) //if close to destination
+            if (_travelling && _navMeshAgent.remainingDistance <= 5.0f) //if close to destination, 2 > 5
             {
+                Debug.Log("waypoint reached");
                 _travelling = false;
                 _waypointsVisited++;
 
@@ -85,7 +87,7 @@ namespace Assets.Code
                 }
             }
 
-            if (_waiting) //if waiting
+            if (_waiting) //if waiting, duration
             {
                 _waitTimer += Time.deltaTime;
                 if (_waitTimer >= _totalWaitTime)
@@ -104,6 +106,7 @@ namespace Assets.Code
                 ConnectedWaypoint nextWaypoint = _currentWaypoint.NextWaypoint(_previousWaypoint);
                 _previousWaypoint = _currentWaypoint;
                 _currentWaypoint = nextWaypoint;
+                Debug.Log("next waypoint " + nextWaypoint.name);
             }
 
             Vector3 targetVector = _currentWaypoint.transform.position;
