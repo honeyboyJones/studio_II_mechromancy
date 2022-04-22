@@ -9,8 +9,8 @@ public class TTFCameraController : MonoBehaviour
     //public Camera weaponCamera;
     public float sensX = 1f;
     public float sensY = 1f;
-    float baseFov = 80f;
-    float maxFov = 130f;
+    [SerializeField]float baseFov = 80f;
+    [SerializeField] float maxFov = 120f;
     float wallRunTilt = 15f;
 
     float wishTilt = 0;
@@ -88,7 +88,7 @@ public class TTFCameraController : MonoBehaviour
     void HandleCameraSway(Vector3 dir)
     {
         float _xAmount = Input.GetAxisRaw("Horizontal");
-        Debug.Log(dir.x);
+        //Debug.Log(dir.x);
         m_xAmountThisFrame = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetAxisRaw("Horizontal") != 0f) // if we have some input
