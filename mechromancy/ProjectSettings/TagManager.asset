@@ -7,6 +7,7 @@ TagManager:
   - dayModel
   - nightModel
   - Waypoint
+  - Story
   layers:
   - Default
   - TransparentFX
