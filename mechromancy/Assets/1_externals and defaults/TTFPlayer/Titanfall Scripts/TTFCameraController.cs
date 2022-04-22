@@ -9,8 +9,8 @@ public class TTFCameraController : MonoBehaviour
     //public Camera weaponCamera;
     public float sensX = 1f;
     public float sensY = 1f;
-    float baseFov = 120f;
-    float maxFov = 160f;
+    float baseFov = 80f;
+    float maxFov = 130f;
     float wallRunTilt = 15f;
 
     float wishTilt = 0;
