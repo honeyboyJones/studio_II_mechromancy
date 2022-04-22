@@ -60,7 +60,8 @@ public class TitanfallMovement : MonoBehaviour
 
     Vector3 groundNormal = Vector3.up;
 
-    CapsuleCollider col;
+    SphereCollider col;
+    //SphereCollider sphereCol;
     #region HeadBod
     public float idleBodSpeed = 10f;
     public float idleBodAmount = 0.02f;
@@ -96,7 +97,7 @@ public class TitanfallMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         camCon = GetComponentInChildren<TTFCameraController>();
-        col = GetComponent<CapsuleCollider>();
+        col = GetComponent<SphereCollider>();
         defaultCamXpos = camCon.mainCamera.transform.localPosition.x;
         defaultCamYpos = camCon.mainCamera.transform.localPosition.y;
 
@@ -157,11 +158,11 @@ public class TitanfallMovement : MonoBehaviour
         //set collider height lower when crouched
         if (crouched)
         {
-            col.height = Mathf.Max(0.6f, col.height - Time.deltaTime * 10f);
+            //col.height = Mathf.Max(0.6f, col.height - Time.deltaTime * 10f);
         }
         else
         {
-            col.height = Mathf.Min(1.8f, col.height + Time.deltaTime * 10f);
+            //col.height = Mathf.Min(1.8f, col.height + Time.deltaTime * 10f);
         }
 
         //this checks to see if the player has recently wall run and sets the ground vector as non-wall-runnable
@@ -257,7 +258,7 @@ public class TitanfallMovement : MonoBehaviour
     #region Collisions
     void OnCollisionStay(Collision collision)
     {
-        if (collision.contactCount > 0)
+        if (collision.contactCount ==1)
         {
             float angle;
             foreach (ContactPoint contact in collision.contacts)
@@ -824,7 +825,7 @@ public class TitanfallMovement : MonoBehaviour
     Vector3 VectorToWall()
     {
         Vector3 direction;
-        Vector3 position = transform.position + Vector3.up * col.height / 2f;
+        Vector3 position = transform.position + Vector3.up * col.radius / 2f;
         RaycastHit hit;
         if (Physics.Raycast(position, -groundNormal, out hit, wallStickDistance) && Vector3.Angle(groundNormal, hit.normal) < 70)
         {
