@@ -123,7 +123,17 @@ public class TitanfallMovement : MonoBehaviour
         dir = Direction();
         //Debug.Log("dir" + dir);
         //in update we only check for run, crouch, and jump - these 3 inputs work in all modes, independent of mode
-        running = (Input.GetKey(KeyCode.LeftShift) && Input.GetAxisRaw("Vertical") > 0.9);
+        //running = (Input.GetKey(KeyCode.LeftShift) && Input.GetAxisRaw("Vertical") > 0.9);
+
+        if(Input.GetKeyDown(KeyCode.LeftShift) && Input.GetAxisRaw("Vertical") > 0.9)
+        {
+            if(!running)
+            running = true;
+            else
+            {
+                running = false;
+            }
+        }
         //crouched = (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.C));
         if(Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKey(KeyCode.C))
         {
@@ -258,7 +268,20 @@ public class TitanfallMovement : MonoBehaviour
     #region Collisions
     void OnCollisionStay(Collision collision)
     {
-        if (collision.contactCount ==1)
+        RaycastHit[] hits = Physics.SphereCastAll(transform.position, 1f, transform.forward, 0f);
+
+        Debug.Log("hit length" + hits.Length);
+
+
+        if (hits.Length > 2)
+        {
+            grounded = true;
+            groundNormal = Vector3.up;
+            ground = collision.collider;
+            EnterWalking();
+            return;
+        }
+        else if(collision.contactCount ==1)
         {
             float angle;
             foreach (ContactPoint contact in collision.contacts)
@@ -315,7 +338,7 @@ public class TitanfallMovement : MonoBehaviour
                 }
             }
         }
-        else
+        else if (collision.contactCount > 1)
         {
             EnterWalking();
             grounded = true;
@@ -323,6 +346,7 @@ public class TitanfallMovement : MonoBehaviour
             ground = collision.collider;
             return;
         }
+        
         /*        RaycastHit[] hits = Physics.SphereCastAll(transform.position,1f, transform.forward, 0f);
 
                 Debug.Log("hit length" + hits.Length);
