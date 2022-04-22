@@ -5,7 +5,7 @@ using UnityEngine;
 public class Nate : MonoBehaviour
 {
     public Transform startPoint;
-    public GameObject player = GameObject.Find("zTTFPlayer");
+    public GameObject player;
     // Update is called once per frame
     void Update()
     {

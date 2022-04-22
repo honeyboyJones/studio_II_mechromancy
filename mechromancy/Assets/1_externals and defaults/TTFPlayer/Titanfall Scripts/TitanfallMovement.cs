@@ -120,7 +120,6 @@ public class TitanfallMovement : MonoBehaviour
         col.material.dynamicFriction = 0f;
         //set dir == to current player direction on each update frame
         dir = Direction();
-        OnSlope();
         //Debug.Log("dir" + dir);
         //in update we only check for run, crouch, and jump - these 3 inputs work in all modes, independent of mode
         running = (Input.GetKey(KeyCode.LeftShift) && Input.GetAxisRaw("Vertical") > 0.9);
@@ -194,22 +193,22 @@ public class TitanfallMovement : MonoBehaviour
             //walking is boring
             case Mode.Walking:
                 camCon.SetTilt(0);
-                if(!OnSlope())
+                if(!CanOnSlope())
                 {
                     Walk(dir, crouched ? crouchSpeed : running ? runSpeed : groundSpeed, grAccel);
                 }
                 break;
 
             //flying is slightly less boring but still boring
-/*            case Mode.Flying:
+            case Mode.Flying:
                 camCon.SetTilt(0);
-                AirMove(dir, airSpeed, airAccel);
-                break;*/
+                //AirMove(dir, airSpeed, airAccel);
+                break;
         }
 
         jump = false;
     }
-    public bool OnSlope()
+    public bool CanOnSlope()
     {
         //Debug.Log(dir);
        // Debug.DrawRay(transform.position, dir, Color.red, 3f);
@@ -221,8 +220,8 @@ public class TitanfallMovement : MonoBehaviour
             if (Physics.Raycast(transform.position, dir, out hitSide, 3f))
             {
                 Debug.DrawRay(transform.position, hitSide.point - transform.position, Color.green, Vector3.Distance(transform.position, hitSide.point));
-                Debug.Log("Angle "+Vector3.Angle(transform.position-hitSide.point, hitGround.point- hitSide.point));
-                if(Vector3.Angle(transform.position - hitSide.point, hitGround.point - hitSide.point)> SlopeLimitation)
+                //Debug.Log("Angle "+Vector3.Angle(transform.position-hitSide.point, hitGround.point- hitSide.point));
+                if(Vector3.Angle(transform.position - hitSide.point, hitGround.point - hitSide.point)> wallFloorBarrier)
                 {
                     return true;
                 }
@@ -299,6 +298,7 @@ public class TitanfallMovement : MonoBehaviour
                         //if player successfully hits a wall between our barrier angle and 120degrees (nearly a ceiling)
                         //then they can enter WallRun state
                         angle = Vector3.Angle(contact.normal, Vector3.up);
+                        Debug.Log("angle: "+angle);
                         if (angle > wallFloorBarrier && angle < 120f)
 
                         {
@@ -314,6 +314,93 @@ public class TitanfallMovement : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            EnterWalking();
+            grounded = true;
+            groundNormal = Vector3.up;
+            ground = collision.collider;
+            return;
+        }
+        /*        RaycastHit[] hits = Physics.SphereCastAll(transform.position,1f, transform.forward, 0f);
+
+                Debug.Log("hit length" + hits.Length);
+
+                *//*if (hits.Length > 2)
+                {
+                    grounded = true;
+                    groundNormal = Vector3.up;
+                    ground = collision.collider;
+                    EnterWalking();
+                    return;
+                }*//*
+                if (collision.contactCount ==1)
+                {
+                    float angle;
+                    foreach (ContactPoint contact in collision.contacts)
+                    //on collision we find the angle of the surface relative to the Y axis
+                    //then compare to our wallFloorBarrier, if it's below we get rejected and enter walk state
+                    //if it's above, we enter WallRun state
+                    {
+                        //angle to compare against the wall-to-floor angle minimum is the angle perpendicular and up from the contact point's normal angle 
+                        //unity can give us the contact.normal (this is perpendicular to the wall-run-surface), we can use Vector3.up to get the perpendicular & up angle from this.
+                        angle = Vector3.Angle(contact.normal, Vector3.up);
+
+                        //if our up angle is less  than the wallfloorbarrier, we get kicked back into walk mode
+                        if (angle < wallFloorBarrier)
+                        {
+                            EnterWalking();
+                            grounded = true;
+                            groundNormal = contact.normal;
+                            ground = contact.otherCollider;
+                            return;
+                        }
+                    }
+
+                    //before checking wallFloorBarrier we first check distance to ground. 
+                    //if player is basically on the ground, no wallrun for you
+                    if (VectorToGround().magnitude > 0.2f)
+                    {
+                        grounded = false;
+                    }
+
+                    //if our surface of contact is sufficiently perpendicular to the ground AND we are not grounded (not yet attached to a wall or on the ground)
+                    //then we can finally trigger wallrun
+                    if (grounded == false)
+                    {
+                        foreach (ContactPoint contact in collision.contacts)
+                        {
+                            if (contact.otherCollider.tag != "NoWallrun" && contact.otherCollider.tag != "Player" && mode != Mode.Walking)
+                            {
+                                //if player successfully hits a wall between our barrier angle and 120degrees (nearly a ceiling)
+                                //then they can enter WallRun state
+                                angle = Vector3.Angle(contact.normal, Vector3.up);
+                                if (angle > wallFloorBarrier && angle < 120f)
+
+                                {
+                                    //set grounded to true and enter wallrun so player cannot enter wallrun on a second wall and then immediately enters
+                                    //wallrun on the contact wall
+                                    grounded = true;
+                                    groundNormal = contact.normal;
+                                    ground = contact.otherCollider;
+                                    EnterWallrun();
+                                    return;
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {           
+                    grounded = true;
+                    groundNormal = Vector3.up;
+                    ground = collision.collider;
+                    EnterWalking();
+                    return;
+
+
+                }*/
+
     }
 
     void OnCollisionExit(Collision collision)
@@ -354,7 +441,7 @@ public class TitanfallMovement : MonoBehaviour
             //bHopCoroutine with Leniency is probably a way to add a "forgiveness" period to bunny hopping (surfing)
             //we should DEFINITELY add a leniency period to bunny hopping, current controll is like frame-perfect and hard
             //StartCoroutine(bHopCoroutine(bhopLeniency));
-            gameObject.SendMessage("OnStartWalking");
+            //gameObject.SendMessage("OnStartWalking");
             mode = Mode.Walking;
         }
     }
@@ -387,7 +474,7 @@ public class TitanfallMovement : MonoBehaviour
             if (VectorToGround().magnitude > 0.2f && CanRunOnThisWall(bannedGroundNormal) && wallStickTimer == 0f&&running)
             {
                 //on a true wallrun, start timer (for anti-gravity function), reset the double jump bool, enter wallrun
-                gameObject.SendMessage("OnStartWallrunning");
+                //gameObject.SendMessage("OnStartWallrunning");
                 wrTimer = wallRunTime;
                 canDJump = true;
                 mode = Mode.Wallruning;
@@ -410,7 +497,7 @@ public class TitanfallMovement : MonoBehaviour
         //just a lil jump debug and function
         if (jump && canJump)
         {
-            gameObject.SendMessage("OnJump");
+            //gameObject.SendMessage("OnJump");
             Jump();
         }
         //if we're not calling the jump function, we'll continue walking
