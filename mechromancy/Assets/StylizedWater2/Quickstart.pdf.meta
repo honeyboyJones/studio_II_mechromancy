@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:mechromancy/Assets/Fantasy Adventure Environment.meta
+guid: dd31c72e44451ad4da752ecbd5105ad2
+folderAsset: yes
+========
 guid: 0ed677062fe80e645b990863ab31ebce
+>>>>>>>> main:mechromancy/Assets/StylizedWater2/Quickstart.pdf.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

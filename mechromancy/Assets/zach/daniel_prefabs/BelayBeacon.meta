@@ -1,3 +1,4 @@
+<<<<<<< HEAD:mechromancy/Assets/zach/daniel_prefabs/BelayBeacon.meta
 fileFormatVersion: 2
 guid: c2a13a7bc4e018e41bd0e21309544921
 folderAsset: yes
@@ -6,3 +7,13 @@ DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+fileFormatVersion: 2
+guid: 5fba1977a4da91d4ea67e34aa4151a53
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> 785b7e5e84e21cab0e89954b92dc6ade4cc11492:mechromancy/Assets/Fantasy Adventure Environment/Materials/Effects/Textures.meta
