@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 122179002024348668}
   - component: {fileID: 122179002024348162}
   - component: {fileID: 122179002024348669}
+  - component: {fileID: 973391751427600666}
   m_Layer: 0
   m_Name: crab
   m_TagString: Untagged
@@ -136,6 +137,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122179002024348664}
   m_Mesh: {fileID: 4300074, guid: 1b77d6c7e7fbcb84c883cf63da0a79a5, type: 3}
+--- !u!95 &973391751427600666
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122179002024348664}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: bff429107601444d59c67940e6ad78c4, type: 3}
+  m_Controller: {fileID: 9100000, guid: 8df5b386369d54778a922298504d1aba, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &122179003272444273
 PrefabInstance:
   m_ObjectHideFlags: 0
