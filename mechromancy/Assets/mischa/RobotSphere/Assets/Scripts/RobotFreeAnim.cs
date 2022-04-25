@@ -12,8 +12,8 @@ public class RobotFreeAnim : MonoBehaviour {
 	void Awake()
 	{
 		anim = gameObject.GetComponent<Animator>();
-		//gameObject.transform.eulerAngles = rot;
-		gameObject.transform.localEulerAngles = rot;
+		//gameObject.transform.eulerAngles = rot; //get global orientation
+		gameObject.transform.localEulerAngles = rot; //get local angle orientation
 
 	}
 
@@ -21,8 +21,8 @@ public class RobotFreeAnim : MonoBehaviour {
 	void Update()
 	{
 		CheckKey();
-		//gameObject.transform.eulerAngles = rot;
-		gameObject.transform.localEulerAngles = rot;
+		//gameObject.transform.eulerAngles = rot; //get global orientation
+		gameObject.transform.localEulerAngles = rot; //get local angle orientation
 	}
 
 	void CheckKey()

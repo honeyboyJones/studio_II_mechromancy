@@ -16,7 +16,7 @@ public class Raycaster : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         Ray ray = new Ray(transform.position, transform.TransformDirection(Vector3.down)); //transform = origin (crab), transformDirection = orientation
 
@@ -26,7 +26,7 @@ public class Raycaster : MonoBehaviour
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hitInfo.distance, Color.red); //draw ray between object and target, object-target distance
 
             Vector3 surfaceNormal = hitInfo.normal; //target normal when hit
-
+            transform.rotation = Quaternion.FromToRotation(transform.up, surfaceNormal); //set rotation in relation to normal in upwards direction
         }
     }
 }

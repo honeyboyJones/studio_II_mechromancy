@@ -908,6 +908,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327894556}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &436878683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 123707898207522903, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
+  m_PrefabInstance: {fileID: 122179002981482242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &436878684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436878683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eef1bc195754469ba4779ca552df72e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &466640712
 GameObject:
   m_ObjectHideFlags: 0
@@ -3029,7 +3049,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566485950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LMTerrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3850,7 +3870,7 @@ GameObject:
   - component: {fileID: 6093839494462675296}
   - component: {fileID: 7328500750589541876}
   - component: {fileID: 211856760607978258}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3891,7 +3911,7 @@ GameObject:
   - component: {fileID: 5783544784024298987}
   - component: {fileID: 7018575760016785791}
   - component: {fileID: 441994279471599515}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3924,7 +3944,7 @@ GameObject:
   - component: {fileID: 4634433286554910893}
   - component: {fileID: 8175557951218066489}
   - component: {fileID: 1599288759086885597}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3957,7 +3977,7 @@ GameObject:
   - component: {fileID: 1846002861001353748}
   - component: {fileID: 1846002861001353747}
   - component: {fileID: 1846002861001353746}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DayCube
   m_TagString: dayModel
   m_Icon: {fileID: 0}
@@ -4060,7 +4080,7 @@ GameObject:
   - component: {fileID: 8494762198845108246}
   - component: {fileID: 4955876139390669954}
   - component: {fileID: 2558736268391881320}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4160,7 +4180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2662280280104737673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: background_canyon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4231,7 +4251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4329071246069579542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: goal_mountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4338,7 +4358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5101862948259266153}
   - component: {fileID: 5101862948259266152}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EventManagerTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4369,7 +4389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5101862948923756860}
   - component: {fileID: 5101862948923756863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShaderControllerTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4429,7 +4449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5101862948989819729}
   - component: {fileID: 5101862948989819728}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EventTriggerTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4445,7 +4465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5101862949872832957}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SwitchTestPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4481,7 +4501,7 @@ GameObject:
   - component: {fileID: 2068533431540299524}
   - component: {fileID: 3283495846470587280}
   - component: {fileID: 5392471286243302774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4522,7 +4542,7 @@ GameObject:
   - component: {fileID: 312237808171651995}
   - component: {fileID: 3850842117423740687}
   - component: {fileID: 5923441340283664875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4555,7 +4575,7 @@ GameObject:
   - component: {fileID: 5925825280309899772}
   - component: {fileID: 5925825280309899773}
   - component: {fileID: 5925825280309899774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NightCube
   m_TagString: nightModel
   m_Icon: {fileID: 0}
@@ -4684,7 +4704,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6144157118497503236}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: outer_plateau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4811,7 +4831,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6987277561259952319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lower_lake_canyon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4920,7 +4940,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8134728223733575161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: big_start_canyon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5076,7 +5096,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8374076086536802674}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: backing_Cliff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
