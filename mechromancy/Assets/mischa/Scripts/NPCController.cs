@@ -28,7 +28,6 @@ public class NPCController : MonoBehaviour
         Util.ObjSide(player, gameObject);
     }
 
-    #region //attempt 2
     private void FixedUpdate()
     {
         GetComponent<Rigidbody>().velocity = getInput * moveSpeed; //locate rb comp, set velocity
@@ -40,5 +39,4 @@ public class NPCController : MonoBehaviour
             );
         transform.LookAt(lookPos);
     }
-    #endregion
 }
