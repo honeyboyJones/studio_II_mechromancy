@@ -32,6 +32,7 @@ namespace Assets.Code
         public void Start()
         {
             _navMeshAgent = this.GetComponent<NavMeshAgent>();
+            //_navMeshAgent.updateRotation = false;
 
             if (_navMeshAgent == null)
             {

@@ -12,14 +12,17 @@ public class RobotFreeAnim : MonoBehaviour {
 	void Awake()
 	{
 		anim = gameObject.GetComponent<Animator>();
-		gameObject.transform.eulerAngles = rot;
+		//gameObject.transform.eulerAngles = rot;
+		gameObject.transform.localEulerAngles = rot;
+
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
 		CheckKey();
-		gameObject.transform.eulerAngles = rot;
+		//gameObject.transform.eulerAngles = rot;
+		gameObject.transform.localEulerAngles = rot;
 	}
 
 	void CheckKey()
