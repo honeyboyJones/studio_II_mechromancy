@@ -61,7 +61,8 @@ public class Raycaster : MonoBehaviour
             //transform.localEulerAngles = tempEulerAngle; //direct setup, no smoothing
 
             Quaternion tempQuaternion = Quaternion.Euler(tempEulerAngle); //convert to Quaternion
-            transform.rotation = Quaternion.Slerp(transform.rotation, tempQuaternion, 0.1f); //set local to transition between local transform + temp @ rate of 0.1f; convert to Quaternion
+            //transform.rotation = Quaternion.Slerp(transform.rotation, tempQuaternion, 0.1f); //set local to transition between local transform + temp @ rate of 0.1f; convert to Quaternion
+            transform.localRotation = Quaternion.Slerp(transform.localRotation, tempQuaternion, 0.1f); //set local to transition between local transform + temp @ rate of 0.1f; convert to Quaternion
 
         }
 
