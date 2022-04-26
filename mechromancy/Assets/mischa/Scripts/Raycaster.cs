@@ -56,6 +56,13 @@ public class Raycaster : MonoBehaviour
             {
                 tempEulerAngle = new Vector3(Mathf.Abs(tempEulerAngle.x) * -1, 0, tempEulerAngle.z); //hard reset y axis, clamp to 0; ensure obj is pointing to right position/direction; invert x, set to (-); convert to use Euler angles
             }
+
+            //transform.localEulerAngles = Vector3.Slerp(transform.localEulerAngles, tempEulerAngle, 0.1f); //set local to transition between local transform + temp @ rate of 0.1f
+            //transform.localEulerAngles = tempEulerAngle; //direct setup, no smoothing
+
+            Quaternion tempQuaternion = Quaternion.Euler(tempEulerAngle); //convert to Quaternion
+            transform.rotation = Quaternion.Slerp(transform.rotation, tempQuaternion, 0.1f); //set local to transition between local transform + temp @ rate of 0.1f; convert to Quaternion
+
         }
 
         //Transform child = transform.GetChild(0); //crab (1)
