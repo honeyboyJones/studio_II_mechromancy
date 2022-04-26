@@ -42,15 +42,19 @@ public class Raycaster : MonoBehaviour
             //transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRotation, rotationSpeed * Time.deltaTime); //change local rotation
             savedRotation = Quaternion.RotateTowards(savedRotation, targetRotation, rotationSpeed * Time.deltaTime); //assign rotate function return value, rotate from current to target position @ set speed ≠ snap (saved rotation)
 
-            transform.rotation = savedRotation; //assign transform as new default, invert default
-            transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 0, transform.localEulerAngles.z); //hard reset y axis, clamp to 0; ensure obj is pointing to right position/direction
 
+            Vector3 tempEulerAngle = savedRotation.eulerAngles; //convert rotation to use Euler angles
+
+
+            //transform.rotation = savedRotation; //assign transform as new default, invert default
+            //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 0, transform.localEulerAngles.z); //hard reset y axis, clamp to 0; ensure obj is pointing to right position/direction
+            tempEulerAngle = new Vector3(tempEulerAngle.x, 0, tempEulerAngle.z); //hard reset y axis, clamp to 0; ensure obj is pointing to right position/direction; convert to use Euler angles
 
             float dotProduct = Vector3.Dot(transform.parent.forward, surfaceNormal); //compute dotProduct between parent forward position and surface normal
 
             if(dotProduct < 0) //if negative, walking uphill
             {
-                transform.localEulerAngles = new Vector3(Mathf.Abs(transform.localEulerAngles.x) * -1, 0, transform.localEulerAngles.z); //hard reset y axis, clamp to 0; ensure obj is pointing to right position/direction; invert x, set to (-)
+                tempEulerAngle = new Vector3(Mathf.Abs(tempEulerAngle.x) * -1, 0, tempEulerAngle.z); //hard reset y axis, clamp to 0; ensure obj is pointing to right position/direction; invert x, set to (-); convert to use Euler angles
             }
         }
 
