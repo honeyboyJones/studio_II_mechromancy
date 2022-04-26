@@ -11,10 +11,12 @@ public class Raycaster : MonoBehaviour
 
     public float rotationSpeed;
 
+    Quaternion savedRotation; //non-inverted rotation, default value for calculations
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        savedRotation = transform.rotation; //set default rotation
     }
 
     // Update is called once per frame
@@ -22,7 +24,7 @@ public class Raycaster : MonoBehaviour
     {
         Ray ray = new Ray(transform.position + new Vector3(0, 2, 0), transform.TransformDirection(Vector3.down)); //transform = origin (crab), transformDirection = orientation
 
-        if(Physics.Raycast(ray, out RaycastHit hitInfo, 50f, layerMask)) //set raycast, if shooting ray; 50f = ray travel distance
+        if(Physics.Raycast(ray, out RaycastHit hitInfo, 50f, layerMask)) //set raycast, if shooting ray; 50f = ray travel distance; always happening, when on ground
         {
             Debug.Log("hit something"); //show if hit
             Debug.DrawRay(transform.position + new Vector3(0, 2, 0), transform.TransformDirection(Vector3.down) * hitInfo.distance, Color.red); //draw ray between object and target, object-target distance
@@ -33,12 +35,23 @@ public class Raycaster : MonoBehaviour
             //transform.rotation = Quaternion.FromToRotation(transform.up, newDir); //set rotation in relation new dir, align y-axis to new dir
 
             //transform.rotation = Quaternion.FromToRotation(transform.up, surfaceNormal); //set rotation in relation to normal in upwards direction
-            Quaternion targetRotation = Quaternion.FromToRotation(transform.up, surfaceNormal); //get target rotation
+            //Quaternion targetRotation = Quaternion.FromToRotation(transform.up, surfaceNormal); //get target rotation (local upwards)
+            Quaternion targetRotation = Quaternion.FromToRotation(Vector3.up, surfaceNormal); //get target rotation; vector3 = world upwards
 
             //transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime); //assign rotate function return value, rotate from current to target position @ set speed ≠ snap (world rotation)
-            transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRotation, rotationSpeed * Time.deltaTime); //change local rotation
+            //transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRotation, rotationSpeed * Time.deltaTime); //change local rotation
+            savedRotation = Quaternion.RotateTowards(savedRotation, targetRotation, rotationSpeed * Time.deltaTime); //assign rotate function return value, rotate from current to target position @ set speed ≠ snap (saved rotation)
 
-            //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 0, transform.localEulerAngles.z); //hard reset y axis, clamp to 0; ensure obj is pointing to right position/direciton
+            transform.rotation = savedRotation; //assign transform as new default, invert default
+            transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 0, transform.localEulerAngles.z); //hard reset y axis, clamp to 0; ensure obj is pointing to right position/direction
+
+
+            float dotProduct = Vector3.Dot(transform.parent.forward, surfaceNormal); //compute dotProduct between parent forward position and surface normal
+
+            if(dotProduct < 0) //if negative, walking uphill
+            {
+                transform.localEulerAngles = new Vector3(Mathf.Abs(transform.localEulerAngles.x) * -1, 0, transform.localEulerAngles.z); //hard reset y axis, clamp to 0; ensure obj is pointing to right position/direction; invert x, set to (-)
+            }
         }
 
         //Transform child = transform.GetChild(0); //crab (1)
