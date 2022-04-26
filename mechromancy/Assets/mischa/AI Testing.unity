@@ -3748,49 +3748,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1305468683}
     m_Modifications:
-    - target: {fileID: 11252090391211687, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 63248803149604069, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 117879249317610053, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 117879249317610053, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 117879249317610053, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 117879249317610053, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 117879249317610053, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 122179001272593750, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 122179002024348162, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_ProbeAnchor
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 122179002024348664, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
       propertyPath: m_Name
       value: crab
-      objectReference: {fileID: 0}
-    - target: {fileID: 122179002024348664, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 122179002024348665, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
       propertyPath: m_RootOrder
@@ -3835,18 +3795,6 @@ PrefabInstance:
     - target: {fileID: 122179002024348665, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 123707898207522903, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_Name
-      value: robotSphere
-      objectReference: {fileID: 0}
-    - target: {fileID: 2008008688004790922, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2008008688004790922, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
-      propertyPath: rotationSpeed
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7085523c9de4a45d5a7501f2d5da0cc4, type: 3}
