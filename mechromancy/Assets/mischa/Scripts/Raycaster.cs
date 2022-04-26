@@ -34,9 +34,15 @@ public class Raycaster : MonoBehaviour
 
             //transform.rotation = Quaternion.FromToRotation(transform.up, surfaceNormal); //set rotation in relation to normal in upwards direction
             Quaternion targetRotation = Quaternion.FromToRotation(transform.up, surfaceNormal); //get target rotation
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime); //assign rotate function return value, rotate from current to target position @ set speed ≠ snap
 
-            transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 0, transform.localEulerAngles.z); //hard reset y axis, clamp to 0; ensure obj is pointing to right position/direciton
+            //transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime); //assign rotate function return value, rotate from current to target position @ set speed ≠ snap (world rotation)
+            transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRotation, rotationSpeed * Time.deltaTime); //change local rotation
+
+            //transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 0, transform.localEulerAngles.z); //hard reset y axis, clamp to 0; ensure obj is pointing to right position/direciton
         }
+
+        //Transform child = transform.GetChild(0); //crab (1)
+        //transform.localPosition += child.localPosition; //parent position + child movement = new parent position
+        //child.localPosition = Vector3.zero; //reset child local position to 0
     }
 }
