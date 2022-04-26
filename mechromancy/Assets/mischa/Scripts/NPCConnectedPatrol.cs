@@ -47,7 +47,7 @@ namespace Assets.Code
 
                     if (allWaypoints.Length > 0)
                     {
-                        Debug.Log("rkgfjze");
+                        //Debug.Log("rkgfjze"); //check if waypoint length returns true/executes correctly
                         while (_currentWaypoint == null)
                         {
                             int random = UnityEngine.Random.Range(0, allWaypoints.Length); //randomise
