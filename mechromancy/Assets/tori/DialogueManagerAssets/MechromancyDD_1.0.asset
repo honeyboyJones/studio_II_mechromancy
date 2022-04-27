@@ -3841,8 +3841,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Hold down Shift to run and press Spacebar to jump, twice to double
-          jump.
+        value: Press Shift to toggle running and press Spacebar to jump, twice to
+          double jump.
         type: 0
         typeString: 
       - title: Sequence
@@ -6899,7 +6899,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: See if you can reach it, it should be a beautiful spot.
+        value: See if you can reach it. It should be a beautiful spot.
         type: 0
         typeString: 
       - title: Sequence
@@ -7147,7 +7147,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 112
+        y: 113.00539
         width: 160
         height: 30
     - id: 3
@@ -7173,7 +7173,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Enjoy the view.
+        value: 'Enjoy the scenery. '
         type: 0
         typeString: 
       - title: Sequence
@@ -7199,7 +7199,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 32
+        x: 30.994614
         y: 159
         width: 160
         height: 30
@@ -8029,7 +8029,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 409.94183
-        y: 554.549
+        y: 556.00397
         width: 160
         height: 30
     - id: 16
@@ -8473,8 +8473,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 435.1034}
-    canvasZoom: 0.67480785
+    canvasScrollPosition: {x: 0, y: 450.4396}
+    canvasZoom: 0.7013081
   - id: 8
     fields:
     - title: Title
@@ -9241,7 +9241,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.9731205
+    canvasZoom: 0.859119
   - id: 10
     fields:
     - title: Title
