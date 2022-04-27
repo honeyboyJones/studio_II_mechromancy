@@ -2765,6 +2765,10 @@ PrefabInstance:
       value: NVBoids Bird
       objectReference: {fileID: 0}
     - target: {fileID: 418150528903127083, guid: b43f2b58a4fa2934b97c7024f3af9e7b, type: 3}
+      propertyPath: birdsNum
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 418150528903127083, guid: b43f2b58a4fa2934b97c7024f3af9e7b, type: 3}
       propertyPath: flockNum
       value: 40
       objectReference: {fileID: 0}
