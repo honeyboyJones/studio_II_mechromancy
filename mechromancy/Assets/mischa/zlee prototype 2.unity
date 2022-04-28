@@ -1030,15 +1030,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670768, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 531.1
+      value: 613.7
       objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670768, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -72.3
+      value: -70.65
       objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670768, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 522
+      value: 605.5
       objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670768, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1046,15 +1046,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670768, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670768, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670768, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670768, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1074,7 +1074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670773, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
@@ -7323,6 +7323,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e7aeda48b981349e499ec05683edef94, type: 2}
+    - target: {fileID: 13767526, guid: 2357bdd96b6ce844fa79e39acd2bdbbc, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300016, guid: a2cd2cbace323984280bd454427467b3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2357bdd96b6ce844fa79e39acd2bdbbc, type: 3}
 --- !u!4 &1503075207 stripped
@@ -9971,7 +9975,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670773, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
