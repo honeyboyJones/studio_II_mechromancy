@@ -87,7 +87,7 @@ Material:
     - _Cutoff: 0.5
     - _Depth: 2.45
     - _DepthExp: 1
-    - _DepthHorizontal: 0.2
+    - _DepthHorizontal: 0.33
     - _DepthMode: 0
     - _DepthTexture: 1
     - _DepthVertical: 0.01
