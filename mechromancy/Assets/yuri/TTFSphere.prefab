@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4311339819091670773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -74.09542, y: 95.58384, z: -140.83}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4311339820749028360}
   m_Father: {fileID: 0}
@@ -111,12 +111,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crouchSpeed: 0.5
-  groundSpeed: 2
-  runSpeed: 4
+  groundSpeed: 4
+  runSpeed: 8
   grAccel: 20
   airSpeed: 3
   airAccel: 20
-  jumpUpSpeed: 6
+  jumpUpSpeed: 10
   dashSpeed: 6
   wallSpeed: 8
   wallClimbSpeed: 4
@@ -125,6 +125,10 @@ MonoBehaviour:
   wallStickDistance: 1
   wallFloorBarrier: 40
   wallBanTime: 4
+  canJump: 1
+  canDJump: 1
+  JumpColdDown_Time: 1
+  jump: 0
   grounded: 0
   idleBodSpeed: 2
   idleBodAmount: 0.01
@@ -255,7 +259,7 @@ MonoBehaviour:
   mainCamera: {fileID: 4311339820749028372}
   sensX: 1
   sensY: 1
-  baseFov: 80
+  baseFov: 70
   maxFov: 120
   swayAmount: 1.5
   swaySpeed: 1
