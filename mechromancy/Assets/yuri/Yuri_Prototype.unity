@@ -3621,7 +3621,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh44010
+  m_Name: pb_Mesh24894
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4885,9 +4885,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4311339819091670772, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
+      propertyPath: runSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311339819091670772, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
+      propertyPath: groundSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670773, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_Name
       value: TTFSphere
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311339819091670774, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311339819091670775, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
+      propertyPath: m_Radius
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311339820749028360, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311339820749028362, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
+      propertyPath: maxFov
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311339820749028362, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
+      propertyPath: baseFov
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311339820749028372, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
+      propertyPath: field of view
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
@@ -5292,7 +5324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4731837546654848841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -86.9, y: 97.39, z: -141.38}
+  m_LocalPosition: {x: -73.47, y: 95.47, z: -141.38}
   m_LocalScale: {x: 0.60355675, y: 0.8467902, z: 0.60355675}
   m_Children:
   - {fileID: 4731837546588852287}

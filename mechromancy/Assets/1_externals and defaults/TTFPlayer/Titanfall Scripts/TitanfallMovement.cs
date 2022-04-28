@@ -38,7 +38,9 @@ public class TitanfallMovement : MonoBehaviour
     Vector3 bannedGroundNormal;
 
     //Cooldowns
+    [SerializeField]
     bool canJump = true;
+    [SerializeField]
     bool canDJump = true;
     //wallban is used in fixedUpdate to check and see if player is already wallrunning, do not modify
     float wallBan = 0f;
@@ -46,9 +48,12 @@ public class TitanfallMovement : MonoBehaviour
     float wrTimer = 0f;
     //wallsticktimer is also used in fixedUpdate to check and see if player is already wallrunning, do not modify
     float wallStickTimer = 0f;
-    
+
+    [SerializeField]
+    float JumpColdDown_Time;
     //States
     bool running;
+    [SerializeField]
     bool jump;
     bool crouched;
 
@@ -159,6 +164,10 @@ public class TitanfallMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+/*        if(mode==Mode.Walking)
+        {
+            canDJump = false;
+        }*/
         
         if (mode != Mode.Flying)
         {
@@ -168,11 +177,11 @@ public class TitanfallMovement : MonoBehaviour
         //set collider height lower when crouched
         if (crouched)
         {
-            //col.height = Mathf.Max(0.6f, col.height - Time.deltaTime * 10f);
+            col.radius = Mathf.Max(0.3f, col.radius - Time.deltaTime * 10f);
         }
         else
         {
-            //col.height = Mathf.Min(1.8f, col.height + Time.deltaTime * 10f);
+            col.radius = Mathf.Min(0.6f, col.radius + Time.deltaTime * 10f);
         }
 
         //this checks to see if the player has recently wall run and sets the ground vector as non-wall-runnable
@@ -213,7 +222,7 @@ public class TitanfallMovement : MonoBehaviour
             //flying is slightly less boring but still boring
             case Mode.Flying:
                 camCon.SetTilt(0);
-                //AirMove(dir, airSpeed, airAccel);
+                AirMove(dir, airSpeed, airAccel);
                 break;
         }
 
@@ -270,7 +279,7 @@ public class TitanfallMovement : MonoBehaviour
     {
         RaycastHit[] hits = Physics.SphereCastAll(transform.position, 1f, transform.forward, 0f);
 
-        Debug.Log("hit length" + hits.Length);
+        //Debug.Log("hit length" + hits.Length);
 
 
         if (hits.Length > 2)
@@ -322,7 +331,7 @@ public class TitanfallMovement : MonoBehaviour
                         //if player successfully hits a wall between our barrier angle and 120degrees (nearly a ceiling)
                         //then they can enter WallRun state
                         angle = Vector3.Angle(contact.normal, Vector3.up);
-                        Debug.Log("angle: "+angle);
+                        //Debug.Log("angle: "+angle);
                         if (angle > wallFloorBarrier && angle < 120f)
 
                         {
@@ -435,6 +444,14 @@ public class TitanfallMovement : MonoBehaviour
         {
             EnterFlying();
         }
+        /*        if (Physics.Raycast(this.transform.position,Vector3.down, 1f))
+                {
+                    Debug.DrawRay(this.transform.position, Vector3.down,Color.green,1f);
+                }
+                else
+                {
+                    EnterFlying();
+                }*/
     }
     #endregion
 
@@ -485,9 +502,9 @@ public class TitanfallMovement : MonoBehaviour
         {
 
             //if in air, reset wallBan, turn double jump back on, set mode to flying
-            wallBan = wallBanTime;
-            canDJump = true;
+            wallBan = wallBanTime;        
             mode = Mode.Flying;
+            canDJump = true;
         }
     }
 
@@ -496,7 +513,7 @@ public class TitanfallMovement : MonoBehaviour
         if (mode != Mode.Wallruning)
         {
             //check to ensure the player is actually on a wall and not on the ground - no wall running on the floor!
-            if (VectorToGround().magnitude > 0.2f && CanRunOnThisWall(bannedGroundNormal) && wallStickTimer == 0f&&running)
+            if (VectorToGround().magnitude > 0.2f && CanRunOnThisWall(bannedGroundNormal) && wallStickTimer == 0f)
             {
                 //on a true wallrun, start timer (for anti-gravity function), reset the double jump bool, enter wallrun
                 //gameObject.SendMessage("OnStartWallrunning");
@@ -571,7 +588,7 @@ public class TitanfallMovement : MonoBehaviour
     {
         if (jump && !crouched)
         {
-            gameObject.SendMessage("OnDoubleJump");
+            //gameObject.SendMessage("OnDoubleJump");
             DoubleJump(wishDir);
         }
 
@@ -679,7 +696,7 @@ public class TitanfallMovement : MonoBehaviour
             float upForce = Mathf.Clamp(jumpUpSpeed - rb.velocity.y, 0, Mathf.Infinity);
             rb.AddForce(new Vector3(0, upForce, 0), ForceMode.VelocityChange);
             //start a coroutine to stop the player from jumping again for a sec and enter flying state!
-            StartCoroutine(jumpCooldownCoroutine(0.2f));
+            StartCoroutine(jumpCooldownCoroutine(JumpColdDown_Time));
             EnterFlying(true);
         }
     }
