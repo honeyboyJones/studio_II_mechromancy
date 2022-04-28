@@ -21,11 +21,13 @@ public class Beacon_controll : MonoBehaviour
         rayDistance = beacon.raycastDistance;
         layerMask = beacon.layerMask;
         playerMomvement = FindObjectOfType<TitanfallMovement>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Input.mouseScrollDelta);
         if (Input.GetKeyDown(KeyCode.U)) 
         {
             save();
