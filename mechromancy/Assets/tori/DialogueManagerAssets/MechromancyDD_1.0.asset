@@ -9235,7 +9235,8 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["MajorStoryVisited"] = Variable["MajorStoryVisited"] +
+        1;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9246,8 +9247,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 115.84607}
-    canvasZoom: 0.27622837
+    canvasScrollPosition: {x: 0, y: 541.58856}
+    canvasZoom: 0.5233264
   - id: 8
     fields:
     - title: Title
@@ -10549,19 +10550,20 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["MajorStoryVisited"] = Variable["MajorStoryVisited"] +
+        1;
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 138.86755
-        y: 843.3834
+        y: 846.16113
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.4047519
+    canvasScrollPosition: {x: 44.517914, y: 371.77765}
+    canvasZoom: 0.6451243
   - id: 9
     fields:
     - title: Title
