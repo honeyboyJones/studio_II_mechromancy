@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/1_externals and defaults/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/tori/Scenes/Cockpit_Prologue 1.unity
+    guid: 534e9c085b8c64951857ac3de650b22a
+  - enabled: 1
+    path: Assets/tori/Scenes/Cockpit_Resolution.unity
+    guid: ea3e151953d6e4d0499b1e225c992770
+  - enabled: 1
+    path: Assets/tori/Scenes/DS_TraversalLayoutTest.unity
+    guid: 7f5dc1f7486cd4a05b765237f055ea82
   m_configObjects: {}
