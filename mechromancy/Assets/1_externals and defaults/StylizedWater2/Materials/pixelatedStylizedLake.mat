@@ -81,24 +81,24 @@ Material:
     - _CausticsDistortion: 0.691
     - _CausticsOn: 1
     - _CausticsSpeed: 0.19000033
-    - _CausticsTiling: 0.045
+    - _CausticsTiling: 0.027
     - _CrossPan_IntersectionOn: 1
     - _Cull: 0
     - _Cutoff: 0.5
     - _Depth: 2.45
     - _DepthExp: 1
-    - _DepthHorizontal: 0.75
+    - _DepthHorizontal: 0.2
     - _DepthMode: 0
     - _DepthTexture: 1
-    - _DepthVertical: 6.91
+    - _DepthVertical: 0.01
     - _DisableDepthTexture: 0
     - _DstBlend: 0
-    - _EdgeFade: 1.2
+    - _EdgeFade: 10
     - _EnvironmentReflections: 1
     - _FoamOpacity: 1
     - _FoamSize: 0.01
     - _FoamSpeed: 0.1
-    - _FoamTiling: 0.02
+    - _FoamTiling: 0.01
     - _FoamWaveMask: 0
     - _FoamWaveMaskExp: 6.97
     - _GlossMapScale: 0
@@ -107,18 +107,18 @@ Material:
     - _HorizonDistance: 8
     - _IntersectionClipping: 0.508
     - _IntersectionFalloff: 0.735
-    - _IntersectionLength: 2.18
+    - _IntersectionLength: 5
     - _IntersectionRippleDist: 0.2
     - _IntersectionRippleStrength: 0.039
     - _IntersectionSource: 0
     - _IntersectionSpeed: 0.2
     - _IntersectionStyle: 1
-    - _IntersectionTiling: 0.05
+    - _IntersectionTiling: 0.01
     - _Metallic: 0
     - _NormalMapOn: 1
     - _NormalSpeed: 0.1
     - _NormalStrength: 0.05
-    - _NormalTiling: 0.02
+    - _NormalTiling: 0.004
     - _OcclusionStrength: 1
     - _PlanarReflectionsEnabled: 0
     - _PlanarReflectionsParams: 0
@@ -168,7 +168,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _AnimationParams: {r: -1, g: -1, b: 1.4000001, a: 0}
-    - _BaseColor: {r: 0, g: 0.08244562, b: 1, a: 0.91764706}
+    - _BaseColor: {r: 0, g: 0.08244562, b: 1, a: 0.7529412}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DepthMapBounds: {r: 0, g: 0, b: 0, a: 0}
     - _DistanceNormalParams: {r: 100, g: 300, b: 0.324, a: 0}
@@ -176,7 +176,7 @@ Material:
     - _FoamColor: {r: 1.8443027, g: 1.8443027, b: 1.8443027, a: 0.41960785}
     - _HorizonColor: {r: 0.41037738, g: 0.71931076, b: 1, a: 1}
     - _IntersectionColor: {r: 2, g: 2, b: 2, a: 1}
-    - _ShallowColor: {r: 0, g: 2, b: 1.9607843, a: 0.38431373}
+    - _ShallowColor: {r: 0, g: 2, b: 1.9607843, a: 0.44705883}
     - _SlopeParams: {r: 0.364, g: 1.96, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _TranslucencyParams: {r: 1, g: 1, b: 1, a: 0}
