@@ -22,6 +22,6 @@ public class SceneChanger : MonoBehaviour
      IEnumerator DelaySceneLoad()
      {
          yield return new WaitForSeconds(1.5f); // Wait 1.5 seconds
-         SceneManager.LoadScene("zlee prototype 1"); // Change to the ID or Name of the scene to load
+         SceneManager.LoadScene("zlee prototype_new"); // Change to the ID or Name of the scene to load
      }
 }
