@@ -25,6 +25,7 @@ public class BelayStateManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
+        isSaved = beacon.isSaved;
     }
 
     public void TransitState(BelayStateBase nextState) 

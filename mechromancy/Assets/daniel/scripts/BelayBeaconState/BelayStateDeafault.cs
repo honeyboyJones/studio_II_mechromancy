@@ -12,6 +12,7 @@ public class BelayStateDeafault : BelayStateBase
     public override void UpdateState(BelayStateManager stateManager) 
     {
         if (Input.GetKeyDown(KeyCode.F)) 
+            
         {
             if (stateManager.isSaved) 
                 //load if it's saved

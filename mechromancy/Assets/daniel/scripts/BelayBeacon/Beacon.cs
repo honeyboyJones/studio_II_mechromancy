@@ -10,6 +10,7 @@ public class Beacon : MonoBehaviour
     public Mesh mesh;
     public float raycastDistance;
     public int layerMask;
+    public bool isSaved;
     [SerializeField]
     private Vector3 scale;
     private Vector3 PlayerPos;
@@ -47,6 +48,7 @@ public class Beacon : MonoBehaviour
         meshRenderer.enabled = true;
         savePosition = PlayerPos;
         saveRotation = playerRotation;
+        isSaved = true;
     }
 
     public void load() 
@@ -55,6 +57,7 @@ public class Beacon : MonoBehaviour
         player.GetComponent<Transform>().position = savePosition;
         player.GetComponent<Transform>().rotation = saveRotation;
         meshRenderer.enabled = false;
+        isSaved = false;
     }
 
     public Vector3 groudDetect(Vector3 player_pos) 
