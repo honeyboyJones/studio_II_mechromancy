@@ -18,9 +18,12 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/zach/Test Scenes/main_menu_test.unity
+    path: Assets/zach/main_menu_test.unity
     guid: 0e9f27ebabb7a43799f57885a5a36e38
-  - enabled: 1
-    path: Assets/zach/Test Scenes/zlee prototype 1.unity
+  - enabled: 0
+    path: Assets/zach/zlee prototype 1.unity
     guid: f9c3746f7aacd400b82a9d7279124d53
+  - enabled: 1
+    path: Assets/zach/zlee prototype_new.unity
+    guid: b789b007b9b944d4e81258df931dc5e2
   m_configObjects: {}
