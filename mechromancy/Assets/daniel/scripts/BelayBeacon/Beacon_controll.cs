@@ -27,7 +27,7 @@ public class Beacon_controll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Input.mouseScrollDelta);
+        //Debug.Log(Input.mouseScrollDelta);
         if (Input.GetKeyDown(KeyCode.U)) 
         {
             save();

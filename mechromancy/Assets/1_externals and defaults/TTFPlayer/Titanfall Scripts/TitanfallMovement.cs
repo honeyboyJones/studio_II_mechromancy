@@ -270,7 +270,7 @@ public class TitanfallMovement : MonoBehaviour
     {
         RaycastHit[] hits = Physics.SphereCastAll(transform.position, 1f, transform.forward, 0f);
 
-        Debug.Log("hit length" + hits.Length);
+        //Debug.Log("hit length" + hits.Length);
 
 
         if (hits.Length > 2)
@@ -322,7 +322,7 @@ public class TitanfallMovement : MonoBehaviour
                         //if player successfully hits a wall between our barrier angle and 120degrees (nearly a ceiling)
                         //then they can enter WallRun state
                         angle = Vector3.Angle(contact.normal, Vector3.up);
-                        Debug.Log("angle: "+angle);
+                        //Debug.Log("angle: "+angle);
                         if (angle > wallFloorBarrier && angle < 120f)
 
                         {
@@ -728,7 +728,7 @@ public class TitanfallMovement : MonoBehaviour
 
     void HandleHeadbob(Vector3 dir)
     {
-        Debug.Log(mode);
+       // Debug.Log(mode);
         if (Mathf.Abs(dir.magnitude)>0)
         {
             timer += Time.deltaTime * (crouched? crouchBobSpeed:running||mode==Mode.Wallruning? sprintBobSpeed:walkBobSpeed) ;

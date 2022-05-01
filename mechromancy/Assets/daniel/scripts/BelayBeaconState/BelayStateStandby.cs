@@ -8,18 +8,60 @@ public class BelayStateStandby : BelayStateBase
     //transit to save state when F key released.
     public override void EnterState(BelayStateManager stateManager)
     {
-
+        Debug.Log("enter standby state");
+        stateManager.particleManager.ParticleBegin();
     }
     public override void UpdateState(BelayStateManager stateManager)
     {
-        //render the trial and landing point.
-        if (Input.GetKeyUp(KeyCode.F)) 
+        ModelStandBy(stateManager);
+
+        if (isReachable(stateManager))
         {
-            stateManager.BelayStateSave();
+            stateManager.particleManager.particle.startColor = new Color(0, 1, 0, 1);
+            if (Input.GetKeyUp(KeyCode.F))
+            {
+                stateManager.BelayStateSave();
+            }
         }
+        else 
+        {
+            stateManager.particleManager.particle.startColor = new Color(1, 0, 0, 1);
+            if (Input.GetKeyUp(KeyCode.F))
+            {
+                stateManager.BelayDefault();
+            }
+        }
+
+        
     }
     public override void ExitState(BelayStateManager stateManager)
     {
+        stateManager.particleManager.ParticlePause();
+    }
+    public void ModelStandBy(BelayStateManager manager) 
+    {
+        
+        //relocate the belay beacon model
+        manager.beacon.gameObject.GetComponent<Transform>().position = manager.particleManager.collisionPosition;
 
+        //rotate the belay beacon model
+        Vector3 DeltaRotation = manager.particleManager.collisionNormal - manager.beacon.gameObject.GetComponent<Transform>().up;
+        manager.beacon.gameObject.GetComponent<Transform>().Rotate(DeltaRotation);
+    }
+
+    //to calculate if the distance is near enough to save
+    public bool isReachable(BelayStateManager manager) 
+    {
+        Debug.Log((manager.particleManager.collisionPosition
+            - manager.player.gameObject.GetComponent<Transform>().position).magnitude);
+        if ((manager.particleManager.collisionPosition
+            - manager.player.gameObject.GetComponent<Transform>().position).magnitude < manager.maxSaveDistance)
+        {
+            return true;
+        }
+        else 
+        {
+            return false;
+        }
     }
 }
