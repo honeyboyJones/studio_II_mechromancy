@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TitanfallMovement : MonoBehaviour
 {
@@ -85,6 +86,12 @@ public class TitanfallMovement : MonoBehaviour
 
     #endregion
     public float SlopeLimitation;
+    public float BodScaleX = 1.5f;
+    public float BodScaleY = 1.5f;
+
+    //Screen
+    public TextMeshPro DebugMode;
+    public TextMeshPro DebugSpeed;
 
     public enum Mode
     //this controlled uses modes to manage which inputs are valid at any point in time and to change vector from wall to ground to air
@@ -122,6 +129,16 @@ public class TitanfallMovement : MonoBehaviour
 
     void Update()
     {
+        if(running&mode==Mode.Walking)
+        {
+            DebugMode.text = "Mode: Running";
+        }
+        else
+        {
+            DebugMode.text = "Mode: " + mode.ToString();
+        }
+        DebugSpeed.text ="Speed:"+ rb.velocity.magnitude.ToString("00");
+
         //dynamicFriction is only mentioned once here - is this a built in Unity thing? if we modify what does it do? (0f by default)
         col.material.dynamicFriction = 0f;
         //set dir == to current player direction on each update frame
@@ -171,17 +188,17 @@ public class TitanfallMovement : MonoBehaviour
         
         if (mode != Mode.Flying)
         {
-            HandleHeadbob(dir);
+            HandleHeadbob(dir, BodScaleX, BodScaleY);
         }
 
         //set collider height lower when crouched
         if (crouched)
         {
-            col.radius = Mathf.Max(0.3f, col.radius - Time.deltaTime * 10f);
+            col.radius = Mathf.Max(0.6f, col.radius - Time.deltaTime * 10f);
         }
         else
         {
-            col.radius = Mathf.Min(0.6f, col.radius + Time.deltaTime * 10f);
+            col.radius = Mathf.Min(1.2f, col.radius + Time.deltaTime * 10f);
         }
 
         //this checks to see if the player has recently wall run and sets the ground vector as non-wall-runnable
@@ -222,6 +239,7 @@ public class TitanfallMovement : MonoBehaviour
             //flying is slightly less boring but still boring
             case Mode.Flying:
                 camCon.SetTilt(0);
+                running = false;
                 AirMove(dir, airSpeed, airAccel);
                 break;
         }
@@ -440,18 +458,19 @@ public class TitanfallMovement : MonoBehaviour
     void OnCollisionExit(Collision collision)
     {
         //when exiting a wall/zero collisions, send player into Flying mode
-        if (collision.contactCount == 0)
+/*        if (collision.contactCount == 0)
+        {
+            EnterFlying();
+        }*/
+        RaycastHit[] hits = Physics.SphereCastAll(transform.position, 1f, transform.forward, 0f);
+        if(hits.Length > 0)
+        {
+
+        }
+        else
         {
             EnterFlying();
         }
-        /*        if (Physics.Raycast(this.transform.position,Vector3.down, 1f))
-                {
-                    Debug.DrawRay(this.transform.position, Vector3.down,Color.green,1f);
-                }
-                else
-                {
-                    EnterFlying();
-                }*/
     }
     #endregion
 
@@ -707,7 +726,7 @@ public class TitanfallMovement : MonoBehaviour
         if (canDJump)
         {
             //Vertical force on double jump - because we should *always* be flying when in double jump, we want a slightly different feeling here
-            float upForce = Mathf.Clamp(jumpUpSpeed - rb.velocity.y, 0, Mathf.Infinity);
+            float upForce = Mathf.Clamp(jumpUpSpeed*2 - rb.velocity.y, 0, Mathf.Infinity);
 
             rb.AddForce(new Vector3(0, upForce, 0), ForceMode.VelocityChange);
 
@@ -743,15 +762,15 @@ public class TitanfallMovement : MonoBehaviour
         }
     }
 
-    void HandleHeadbob(Vector3 dir)
+    void HandleHeadbob(Vector3 dir, float BodScaleX, float BodScaleY)
     {
         Debug.Log(mode);
         if (Mathf.Abs(dir.magnitude)>0)
         {
             timer += Time.deltaTime * (crouched? crouchBobSpeed:running||mode==Mode.Wallruning? sprintBobSpeed:walkBobSpeed) ;
             camCon.mainCamera.transform.localPosition = new Vector3
-                (defaultCamXpos + Mathf.Cos(timer/2) *1.5f* (crouched ? crouchBobAmount : running || mode == Mode.Wallruning ? sprintBobAmount : walkBobAmount),
-                 defaultCamYpos + Mathf.Sin(timer) * (crouched ? crouchBobAmount : running || mode == Mode.Wallruning ? sprintBobAmount : walkBobAmount),
+                (defaultCamXpos + Mathf.Cos(timer/2) * BodScaleX * (crouched ? crouchBobAmount : running || mode == Mode.Wallruning ? sprintBobAmount : walkBobAmount),
+                 defaultCamYpos + Mathf.Sin(timer) * BodScaleY*(crouched ? crouchBobAmount : running || mode == Mode.Wallruning ? sprintBobAmount : walkBobAmount),
                  camCon.mainCamera.transform.localPosition.z);
         }
         else
@@ -793,14 +812,14 @@ public class TitanfallMovement : MonoBehaviour
             if (Mathf.Abs(offset_y) > 0&& Mathf.Abs(offset_x)>0)
             {
                 camCon.mainCamera.transform.localPosition = new Vector3
-                    (defaultCamYpos + Mathf.Cos(timer/2) * 1.5f*idleBodAmount + offset_x,
+                    (defaultCamYpos + Mathf.Cos(timer/2) * BodScaleY * idleBodAmount + offset_x,
                     defaultCamYpos + Mathf.Sin(timer) * idleBodAmount + offset_y,
                     camCon.mainCamera.transform.localPosition.z);
             }
             else
             {
                 camCon.mainCamera.transform.localPosition = new Vector3
-                    (defaultCamXpos + Mathf.Cos(timer / 2) * 1.5f * idleBodAmount,
+                    (defaultCamXpos + Mathf.Cos(timer / 2) * BodScaleX * idleBodAmount,
                     defaultCamYpos + Mathf.Cos(timer) * idleBodAmount,
                     camCon.mainCamera.transform.localPosition.z);
             }
