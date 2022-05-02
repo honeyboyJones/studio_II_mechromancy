@@ -13,7 +13,7 @@ namespace Assets.Code
 
         List<ConnectedWaypoint> _connections; //waypoint list
 
-        // Start is called before the first frame update
+        #region //start
         public void Start()
         {
             GameObject[] allWaypoints = GameObject.FindGameObjectsWithTag("Waypoint"); //get all waypoint objects in scene
@@ -33,7 +33,9 @@ namespace Assets.Code
                 }
             }
         }
+        #endregion
 
+        #region //gizmos
         public override void OnDrawGizmos()
         {
             Gizmos.color = Color.red; //set gizmo colour
@@ -42,7 +44,9 @@ namespace Assets.Code
             Gizmos.color = Color.yellow; //set connectivity radius colour
             Gizmos.DrawWireSphere(transform.position, _connectivityRadius); //set connectivity radius
         }
+        #endregion
 
+        #region //waypoints
         public ConnectedWaypoint NextWaypoint(ConnectedWaypoint previousWaypoint)
         {
             if (_connections.Count == 0) //if 0 connections
@@ -69,5 +73,6 @@ namespace Assets.Code
                 return nextWaypoint; //return
             }
         }
+        #endregion
     }
 }
