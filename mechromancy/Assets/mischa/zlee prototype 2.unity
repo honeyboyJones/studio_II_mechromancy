@@ -11077,6 +11077,10 @@ MonoBehaviour:
   defaultCamXpos: 0
   defaultCamYpos: 0
   SlopeLimitation: 0
+  BodScaleX: 1.5
+  BodScaleY: 1.5
+  DebugMode: {fileID: 0}
+  DebugSpeed: {fileID: 0}
   mode: 1
   dir: {x: 0, y: 0, z: 0}
 --- !u!1 &4731837546654848841
