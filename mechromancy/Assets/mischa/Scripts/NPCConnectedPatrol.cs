@@ -18,10 +18,11 @@ namespace Assets.Code
         [SerializeField] //probability of switching directions
         float _switchProbability = 0.2f;
 
-        //private variables for base behaviour
+        #region //private variables for base behaviour
         NavMeshAgent _navMeshAgent;
         ConnectedWaypoint _currentWaypoint;
         ConnectedWaypoint _previousWaypoint;
+        #endregion
 
         bool _travelling;
         bool _waiting;
@@ -34,9 +35,10 @@ namespace Assets.Code
             _navMeshAgent = this.GetComponent<NavMeshAgent>();
             //_navMeshAgent.updateRotation = false;
 
+            #region //null nav mesh agent
             if (_navMeshAgent == null)
             {
-                Debug.LogError("nav mesh agent comp not attached to " + gameObject.name);
+                //Debug.LogError("nav mesh agent comp not attached to " + gameObject.name);
             }
             else
             {
@@ -47,7 +49,6 @@ namespace Assets.Code
 
                     if (allWaypoints.Length > 0)
                     {
-                        //Debug.Log("rkgfjze"); //check if waypoint length returns true/executes correctly
                         while (_currentWaypoint == null)
                         {
                             int random = UnityEngine.Random.Range(0, allWaypoints.Length); //randomise
@@ -67,10 +68,12 @@ namespace Assets.Code
 
                 SetDestination();
             }
+            #endregion
         }
 
         private void Update()
         {
+            #region //travelling
             if (_travelling && _navMeshAgent.remainingDistance <= 5.0f) //if close to destination, 2 > 5
             {
                 Debug.Log("waypoint reached");
@@ -87,7 +90,9 @@ namespace Assets.Code
                     SetDestination();
                 }
             }
+            #endregion
 
+            #region //waiting
             if (_waiting) //if waiting, duration
             {
                 _waitTimer += Time.deltaTime;
@@ -98,21 +103,23 @@ namespace Assets.Code
                     SetDestination();
                 }
             }
+            #endregion
         }
 
+        #region //set destination
         private void SetDestination()
         {
-            if (_waypointsVisited > 0)
+            if (_waypointsVisited > 0) //if waypoints visited
             {
                 ConnectedWaypoint nextWaypoint = _currentWaypoint.NextWaypoint(_previousWaypoint);
-                _previousWaypoint = _currentWaypoint;
-                _currentWaypoint = nextWaypoint;
-                Debug.Log("next waypoint " + nextWaypoint.name);
+                _previousWaypoint = _currentWaypoint; //set previous as current
+                _currentWaypoint = nextWaypoint; //set current as next
             }
 
-            Vector3 targetVector = _currentWaypoint.transform.position;
-            _navMeshAgent.SetDestination(targetVector);
-            _travelling = true;
+            Vector3 targetVector = _currentWaypoint.transform.position; //set target to current waypoint location
+            _navMeshAgent.SetDestination(targetVector); //set destination
+            _travelling = true; //set to travelling
         }
+        #endregion
     }
 }
