@@ -35,7 +35,7 @@ namespace Assets.Code
             #region //null nav mesh
             if (_navMeshAgent == null)
             {
-                Debug.LogError("nav mesh agent comp not attached to " + gameObject.name);
+                //Debug.LogError("nav mesh agent comp not attached to " + gameObject.name);
             }
             else
             {
