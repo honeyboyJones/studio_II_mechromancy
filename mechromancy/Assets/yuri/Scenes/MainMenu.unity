@@ -372,6 +372,9 @@ MonoBehaviour:
   clickAudio: {fileID: 290776172}
   LoadingSlider: {fileID: 1763850695}
   LoadingText: {fileID: 428594988}
+  MainMenu: {fileID: 0}
+  PauseMenu: {fileID: 0}
+  LoadingScreen: {fileID: 0}
 --- !u!82 &290776172
 AudioSource:
   m_ObjectHideFlags: 0
@@ -929,7 +932,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 290776171}
         m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: ReStartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2366,7 +2369,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 290776171}
         m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: BackMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

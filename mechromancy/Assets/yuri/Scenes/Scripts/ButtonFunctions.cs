@@ -10,6 +10,7 @@ public class ButtonFunctions : MonoBehaviour
     public static event Btn_Clicked OnClick_StartGame;
     public static event Btn_Clicked OnClick_PauseMenu;
     public static event Btn_Clicked OnClose_PauseMenu;
+    public static event Btn_Clicked backMainMenu;
 
     [Header ("AudioScources DB")]   
     public AudioData audioDB;
@@ -19,14 +20,17 @@ public class ButtonFunctions : MonoBehaviour
     public Slider LoadingSlider;
     public Text LoadingText;
 
+    public GameObject MainMenu, PauseMenu, LoadingScreen;
+
     private void Awake()
     {
+        InitGameObject();
+
         aduioSources = audioDB.Fectch();
 
         //Start button
         ButtonFunctions.OnClick_StartGame += ClickAudio;
         ButtonFunctions.OnClick_StartGame += HideMainMenu;
-        ButtonFunctions.OnClick_StartGame += HidePasueMenu;
         ButtonFunctions.OnClick_StartGame += ShowLoadingScreen;
 
         //pop ou Pause menu
@@ -39,6 +43,12 @@ public class ButtonFunctions : MonoBehaviour
         ButtonFunctions.OnClose_PauseMenu += HidePasueMenu;
         ButtonFunctions.OnClose_PauseMenu += ResumeGame;
 
+        //Back to Main Menu
+        ButtonFunctions.backMainMenu += OnClose_PauseMenu;
+        ButtonFunctions.backMainMenu += ShowMainMenu;
+        ButtonFunctions.backMainMenu += UnloadAllScenes;
+
+
     }
 
 
@@ -49,9 +59,9 @@ public class ButtonFunctions : MonoBehaviour
     private void Update()
     {
         Debug.Log("TimeScale"+ Time.timeScale);
-        if(Input.GetKey(KeyCode.Escape)&& !this.transform.Find("MainMenu").gameObject.activeSelf)
+        if(Input.GetKeyDown(KeyCode.Escape)&& !MainMenu.activeSelf)
         {
-            if(!this.transform.Find("PauseMenu").gameObject.activeSelf)
+            if(!PauseMenu.activeSelf)
             {
 
                 OnClick_PauseMenu();
@@ -70,14 +80,25 @@ public class ButtonFunctions : MonoBehaviour
         //SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
         StartCoroutine(LoadAsync());
     }
+    public void ReStartGame()
+    {
+        Debug.Log("Restart Game");
+        OnClose_PauseMenu();
+        OnClick_StartGame();
+        //SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
+        StartCoroutine(LoadAsync());
+    }
+
     public void Quit()
     {
-        OnClick_StartGame();
+        Debug.Log("Quit Game");
+        ClickAudio();
         Application.Quit();
     }
     public void BackMainMenu()
     {
-        OnClick_StartGame();
+        Debug.Log("BackToMenu");
+        backMainMenu();
     }
     #endregion
 
@@ -103,42 +124,62 @@ public class ButtonFunctions : MonoBehaviour
             yield return null;
         }
         HideLoadingScreen();
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Level1"));
 
     }
     #endregion
     #region UI thing
     public void HideMainMenu()
     {
-        this.transform.Find("MainMenu").gameObject.SetActive(false);
+        MainMenu.SetActive(false);
     }
     public void ShowMainMenu()
     {
-        this.transform.Find("MainMenu").gameObject.SetActive(false);
+        MainMenu.SetActive(true);
         
     }
     public void HideLoadingScreen()
     {
-        this.transform.Find("LoadingScreen").gameObject.SetActive(false);
+        LoadingScreen.SetActive(false);
     }
     public void ShowLoadingScreen()
     {
-        this.transform.Find("LoadingScreen").gameObject.SetActive(true);
+        LoadingScreen.gameObject.SetActive(true);
         //StartCoroutine(LoadAsync());
     }
 
     public void HidePasueMenu()
     {
-        this.transform.Find("PauseMenu").gameObject.SetActive(false);
+        PauseMenu.SetActive(false);
     }
     public void ShowPasueMenu()
     {
-        this.transform.Find("PauseMenu").gameObject.SetActive(true);
+        PauseMenu.SetActive(true);
         //StartCoroutine(LoadAsync());
     }
 
     #endregion
 
     #region GameSystem
+
+    void UnloadAllScenes()
+    {
+        Scene [] loadedScene = SceneManager.GetAllScenes();
+        for (int i = 0; i < loadedScene.Length; i++)
+        {
+            Debug.Log(loadedScene[i].name);
+            if(loadedScene[i].name!="MainMenu")
+            {
+                SceneManager.UnloadSceneAsync(loadedScene[i]);
+            }
+        }
+    }
+    void InitGameObject()
+    {
+        MainMenu = this.transform.Find("MainMenu").gameObject;
+        LoadingScreen = this.transform.Find("LoadingScreen").gameObject;
+        PauseMenu = this.transform.Find("PauseMenu").gameObject;
+    }
     public void PauseGame()
     {
         if(Time.timeScale!=0)
@@ -151,7 +192,7 @@ public class ButtonFunctions : MonoBehaviour
     {
         if (Time.timeScale != 1)
         {
-            //Time.timeScale = 1;
+            Time.timeScale = 1;
         }
     }
     #endregion
