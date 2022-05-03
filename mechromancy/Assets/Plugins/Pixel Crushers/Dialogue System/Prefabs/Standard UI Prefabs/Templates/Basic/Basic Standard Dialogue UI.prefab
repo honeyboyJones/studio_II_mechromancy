@@ -1365,8 +1365,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightToLeft: 0
   charactersPerSecond: 50
-  audioClip: {fileID: 0}
-  alternateAudioClips: []
+  audioClip: {fileID: 8300000, guid: 6685a1aba35bd40d29200d98bd1db9d5, type: 3}
+  alternateAudioClips:
+  - {fileID: 8300000, guid: 276130f9bec97431f9ed8fdbdb82515d, type: 3}
+  - {fileID: 8300000, guid: 9b6e4d147b3d14b12bb07d194594b4e1, type: 3}
+  - {fileID: 8300000, guid: f52e06d539422455886bec161c90961e, type: 3}
+  - {fileID: 8300000, guid: 6f8096c5f41014d458cb89076e61b7d3, type: 3}
+  - {fileID: 8300000, guid: 094c57a5d755c47a18b1e336e8e47832, type: 3}
+  - {fileID: 8300000, guid: 06290907c30ff4967bbfcedbe63e01a3, type: 3}
+  - {fileID: 8300000, guid: e815d8e8df5f24f4b8587b56212427ff, type: 3}
   audioSource: {fileID: 0}
   usePlayOneShot: 0
   interruptAudioClip: 0
