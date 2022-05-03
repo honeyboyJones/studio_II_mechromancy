@@ -29,6 +29,8 @@ namespace Assets.Code
         float _waitTimer;
         int _waypointsVisited;
 
+        public string currentWaypointName; //debug ref
+
         // Start is called before the first frame update
         public void Start()
         {
@@ -74,7 +76,7 @@ namespace Assets.Code
         private void Update()
         {
             #region //travelling
-            if (_travelling && _navMeshAgent.remainingDistance <= 5.0f) //if close to destination, 2 > 5
+            if (_travelling && _navMeshAgent.remainingDistance <= 30f) //if close to destination, 2 > 5
             {
                 Debug.Log("waypoint reached");
                 _travelling = false;
@@ -104,6 +106,8 @@ namespace Assets.Code
                 }
             }
             #endregion
+
+            currentWaypointName = _currentWaypoint.name; //update target location
         }
 
         #region //set destination
@@ -111,7 +115,13 @@ namespace Assets.Code
         {
             if (_waypointsVisited > 0) //if waypoints visited
             {
-                ConnectedWaypoint nextWaypoint = _currentWaypoint.NextWaypoint(_previousWaypoint);
+                ConnectedWaypoint nextWaypoint = _currentWaypoint.NextWaypoint(_previousWaypoint); //find next from current, avoid previous
+
+                if(nextWaypoint == null)
+                {
+                    Debug.Log("no waypoints in proximity");
+                }
+
                 _previousWaypoint = _currentWaypoint; //set previous as current
                 _currentWaypoint = nextWaypoint; //set current as next
             }

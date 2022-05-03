@@ -17,9 +17,11 @@ namespace Assets.Code
         public void Start()
         {
             GameObject[] allWaypoints = GameObject.FindGameObjectsWithTag("Waypoint"); //get all waypoint objects in scene
+            GameObject[] allWaypoints2 = GameObject.FindGameObjectsWithTag("Waypoint2"); //get all waypoint objects in scene
 
             _connections = new List<ConnectedWaypoint>(); //create list of waypoint refs
 
+            #region //waypoints
             for (int i = 0; i < allWaypoints.Length; i++)
             {
                 ConnectedWaypoint nextWaypoint = allWaypoints[i].GetComponent<ConnectedWaypoint>(); //check for connected waypoint
@@ -32,6 +34,23 @@ namespace Assets.Code
                     }
                 }
             }
+            #endregion
+
+            #region //waypoints 2
+            for (int i = 0; i < allWaypoints2.Length; i++)
+            {
+                ConnectedWaypoint nextWaypoint = allWaypoints2[i].GetComponent<ConnectedWaypoint>(); //check for connected waypoint
+
+                if (nextWaypoint != null) //if found + not null
+                {
+                    if (Vector3.Distance(this.transform.position, nextWaypoint.transform.position) <= _connectivityRadius && nextWaypoint != this) //if distance between current + next waypoint, + does not equal this
+                    {
+                        _connections.Add(nextWaypoint); //add to current position
+                    }
+                }
+            }
+            #endregion
+
         }
         #endregion
 
@@ -66,6 +85,9 @@ namespace Assets.Code
                 do
                 {
                     nextIndex = UnityEngine.Random.Range(0, _connections.Count); //randomise
+
+                    Debug.Log(nextIndex);
+
                     nextWaypoint = _connections[nextIndex]; //add to index
                 }
                 while (nextWaypoint == previousWaypoint);
