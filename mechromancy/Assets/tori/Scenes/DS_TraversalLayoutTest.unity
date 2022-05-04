@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 23884649}
   m_Layer: 0
   m_Name: Mew Flock 3
-  m_TagString: Scannable
+  m_TagString: Mews
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,7 +227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23884648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.2, y: 1.4, z: -10.9}
+  m_LocalPosition: {x: 20.2, y: 1.4, z: -19.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 428884193}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 85155153}
   m_Layer: 0
   m_Name: Mew Flock 1
-  m_TagString: Scannable
+  m_TagString: Mews
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -571,6 +571,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 361161620}
+        m_TargetAssemblyTypeName: ScannedVariables, Assembly-CSharp
+        m_MethodName: ChangeCroboScanAmount
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5663,6 +5675,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 2
   dialogueObject: {fileID: 0}
+--- !u!114 &361161620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361161618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d90e0bb73cba4c3da0633f1e645e7e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mewsScanned: 0
+  plexiiScanned: 0
+  croboScanned: 0
+  simumScanned: 0
 --- !u!1 &399608140 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8319645292940522350, guid: f7cb4e9b3dac2438e9edbc0dfe013d8b, type: 3}
@@ -5724,8 +5752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: 32
   condition:
-    luaConditions:
-    - Variable["Mews_Scanned"] < 3
+    luaConditions: []
     questConditions: []
     acceptedTags: []
     acceptedGameObjects: []
@@ -5803,6 +5830,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 361161620}
+        m_TargetAssemblyTypeName: ScannedVariables, Assembly-CSharp
+        m_MethodName: ChangeMewScanAmount
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10725,8 +10764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: 32
   condition:
-    luaConditions:
-    - Variable["Mews_Scanned"] < 3
+    luaConditions: []
     questConditions: []
     acceptedTags: []
     acceptedGameObjects: []
@@ -10804,6 +10842,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 361161620}
+        m_TargetAssemblyTypeName: ScannedVariables, Assembly-CSharp
+        m_MethodName: ChangeMewScanAmount
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15712,8 +15762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: 32
   condition:
-    luaConditions:
-    - Variable["Mews_Scanned"] < 3
+    luaConditions: []
     questConditions: []
     acceptedTags: []
     acceptedGameObjects: []
@@ -15791,6 +15840,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 361161620}
+        m_TargetAssemblyTypeName: ScannedVariables, Assembly-CSharp
+        m_MethodName: ChangeMewScanAmount
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20763,8 +20824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: 32
   condition:
-    luaConditions:
-    - Variable["Mews_Scanned"] < 3
+    luaConditions: []
     questConditions: []
     acceptedTags: []
     acceptedGameObjects: []
@@ -20842,6 +20902,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 361161620}
+        m_TargetAssemblyTypeName: ScannedVariables, Assembly-CSharp
+        m_MethodName: ChangeMewScanAmount
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -25727,7 +25799,7 @@ GameObject:
   - component: {fileID: 921041248}
   m_Layer: 0
   m_Name: Plexii 1
-  m_TagString: Scannable
+  m_TagString: Plexii
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25823,7 +25895,7 @@ GameObject:
   - component: {fileID: 955783720}
   m_Layer: 0
   m_Name: Crobo 1
-  m_TagString: Scannable
+  m_TagString: Crobo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26220,6 +26292,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 361161620}
+        m_TargetAssemblyTypeName: ScannedVariables, Assembly-CSharp
+        m_MethodName: ChangePlexiiScanAmount
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -31105,7 +31189,7 @@ GameObject:
   - component: {fileID: 1494368827}
   m_Layer: 0
   m_Name: Mew Flock 4
-  m_TagString: Scannable
+  m_TagString: Mews
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31180,7 +31264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494368826}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.2, y: 1.4, z: -20.87}
+  m_LocalPosition: {x: 20.2, y: 1.4, z: -39.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 407483785}
@@ -31244,7 +31328,7 @@ GameObject:
   - component: {fileID: 1536530724}
   m_Layer: 0
   m_Name: Mew Flock 2
-  m_TagString: Scannable
+  m_TagString: Mews
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31319,7 +31403,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536530723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.2, y: 1.4, z: -4.3}
+  m_LocalPosition: {x: 20.2, y: 1.4, z: -8.710001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 881825150}
@@ -32189,6 +32273,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 361161620}
+        m_TargetAssemblyTypeName: ScannedVariables, Assembly-CSharp
+        m_MethodName: ChangeSimumScanAmount
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -37074,7 +37170,7 @@ GameObject:
   - component: {fileID: 2007929000}
   m_Layer: 0
   m_Name: Simum 1
-  m_TagString: Scannable
+  m_TagString: Simum
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
