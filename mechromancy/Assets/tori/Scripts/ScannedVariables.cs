@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScannedVariables : MonoBehaviour
 {
-    private int scanNum = 1; //1 for testing, 3 IRL
+    public int scanNum = 1; //1 for testing, 3 IRL
 
     public float mewsScanned = 0f; //mew scanned variable, not sure if it needs to be public.
     public float plexiiScanned = 0f;
