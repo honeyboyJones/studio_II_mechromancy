@@ -2351,6 +2351,10 @@ PrefabInstance:
       propertyPath: conversationEvents.onConversationStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_enabled
       objectReference: {fileID: 0}
+    - target: {fileID: 588082388, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
+      propertyPath: selectAt
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4311339819091670768, guid: a50edcc0418425e44b5184fd9a1988de, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -28903,11 +28907,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 380119526172675657, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 588082385}
+    - target: {fileID: 454723461061179131, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 588082385}
     - target: {fileID: 492334448409498921, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
       propertyPath: conversationActor
       value: 
       objectReference: {fileID: 588082385}
-    - target: {fileID: 3516349347428520028, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+    - target: {fileID: 1673471064634060613, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: conversationActor
+      value: 
+      objectReference: {fileID: 588082385}
+    - target: {fileID: 1996572077283446688, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
       propertyPath: conversationActor
       value: 
       objectReference: {fileID: 588082385}
@@ -28959,11 +28975,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5166513335382107751, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
-      propertyPath: conversationActor
-      value: 
-      objectReference: {fileID: 588082385}
-    - target: {fileID: 7311946321728173002, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+    - target: {fileID: 8928123245324761301, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
       propertyPath: conversationActor
       value: 
       objectReference: {fileID: 588082385}
