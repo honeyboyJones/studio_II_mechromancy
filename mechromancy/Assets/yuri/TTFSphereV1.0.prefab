@@ -465,7 +465,7 @@ MonoBehaviour:
   wallClimbSpeed: 4
   wallAccel: 20
   wallRunTime: 3
-  wallStickDistance: 1
+  wallStickDistance: 5
   wallFloorBarrier: 40
   wallBanTime: 4
   canJump: 1

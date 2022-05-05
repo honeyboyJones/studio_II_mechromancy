@@ -37,6 +37,8 @@ public class TTFCameraController : MonoBehaviour
     #endregion
 
     bool OnLockCamera =false;
+
+    AudioData audioData;
     void Start()
     {
         rb = GetComponentInParent<Rigidbody>();

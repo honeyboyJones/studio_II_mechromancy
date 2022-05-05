@@ -6,15 +6,21 @@ using UnityEngine;
 public class AudioData : ScriptableObject
 {
     public List<AudioClip> aduioSources = new List<AudioClip>();
-/*    //Mech
+    /*    //Mech
+        public AudioClip Step;
+        public AudioClip Jump;
+        public AudioClip DJump;
+        //UI
+        public AudioClip Click;*/
     public AudioClip Step;
-    public AudioClip Jump;
-    public AudioClip DJump;
-    //UI
-    public AudioClip Click;*/
 
     public List<AudioClip> Fectch()
     {
         return aduioSources;
+    }
+
+    public AudioClip FectchAudio_Step()
+    {
+        return Step;
     }
 }
