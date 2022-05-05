@@ -207,7 +207,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: False
+      value: True
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -221,7 +221,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: False
+      value: True
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -235,7 +235,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: False
+      value: True
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -249,7 +249,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: 0
+      value: 3
       type: 1
       typeString: CustomFieldType_Number
     - title: Description
@@ -263,7 +263,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: 0
+      value: 3
       type: 1
       typeString: CustomFieldType_Number
     - title: Description
@@ -277,7 +277,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: 0
+      value: 3
       type: 1
       typeString: CustomFieldType_Number
     - title: Description
@@ -291,7 +291,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: 0
+      value: 3
       type: 1
       typeString: CustomFieldType_Number
     - title: Description
@@ -2545,7 +2545,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 2214.612
+        x: 2212.7676
         y: 194.9866
         width: 160
         height: 30
@@ -5504,8 +5504,8 @@ MonoBehaviour:
         width: 239.67438
         height: 370.2698
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 1650.8578, y: 27.074066}
-    canvasZoom: 0.52362543
+    canvasScrollPosition: {x: 2514.8, y: 379.33624}
+    canvasZoom: 0.8939205
   - id: 11
     fields:
     - title: Title
