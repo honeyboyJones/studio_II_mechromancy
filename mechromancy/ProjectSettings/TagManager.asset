@@ -9,6 +9,10 @@ TagManager:
   - Waypoint
   - Story
   - Waypoint2
+  - Mews
+  - Plexii
+  - Crobo
+  - Simum
   layers:
   - Default
   - TransparentFX

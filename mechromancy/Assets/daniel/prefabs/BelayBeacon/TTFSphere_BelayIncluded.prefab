@@ -299,7 +299,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   distanceFrom: 0
-  maxSelectionDistance: 30
+  maxSelectionDistance: 10
   runRaycasts: 1
   raycastAll: 0
   useDefaultGUI: 1
@@ -308,7 +308,7 @@ MonoBehaviour:
   alignment: 1
   textStyle: 1
   textStyleColor: {r: 0, g: 0, b: 0, a: 1}
-  inRangeColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  inRangeColor: {r: 0.13665895, g: 0.7830189, b: 0.43575892, a: 1}
   outOfRangeColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   reticle:
     inRange: {fileID: 0}

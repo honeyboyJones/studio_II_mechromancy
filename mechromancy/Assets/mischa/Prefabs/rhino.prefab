@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 6262648271942576226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.1699524, y: 16.494297, z: 3.6396484}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children:
   - {fileID: 6262648272950412325}
   m_Father: {fileID: 0}
@@ -52,6 +52,7 @@ MonoBehaviour:
   _patrolWaiting: 0
   _totalWaitTime: 2
   _switchProbability: 0.2
+  currentWaypointName: 
 --- !u!195 &6262648271942576228
 NavMeshAgent:
   m_ObjectHideFlags: 0

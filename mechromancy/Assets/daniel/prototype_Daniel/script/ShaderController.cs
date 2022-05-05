@@ -112,7 +112,7 @@ public class ShaderController : MonoBehaviour
         //Debug.Log(dayModels.Length);
         foreach (GameObject dayModel in dayModels) // get colliders of all day models and add them into dayColliders list
          {
-             dayColliders.Add(dayModel.gameObject.GetComponent<BoxCollider>());
+             dayColliders.Add(dayModel.gameObject.GetComponent<Collider>());
          }
 
         
@@ -120,7 +120,7 @@ public class ShaderController : MonoBehaviour
         GameObject[] nightModels = GameObject.FindGameObjectsWithTag("nightModel");//find all night models in scene
         foreach (GameObject nightModel in nightModels) 
         {
-            nightColliders.Add(nightModel.gameObject.GetComponent<BoxCollider>());// get colliders of all night models and add them into dayColliders list
+            nightColliders.Add(nightModel.gameObject.GetComponent<Collider>());// get colliders of all night models and add them into dayColliders list
         }
 
         EventManager.RegisterListener("SwitchToDay", switchToDay);//register events listener in EventManager, so that they can be triggered by any "TriggerEvent" call
