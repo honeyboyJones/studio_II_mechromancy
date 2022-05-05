@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 57
@@ -190,6 +194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &1376271 stripped
@@ -204,6 +212,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 75
@@ -264,6 +276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &12295224 stripped
@@ -281,6 +297,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -337,6 +357,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -444,6 +468,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 72
@@ -504,6 +532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &26773171 stripped
@@ -518,6 +550,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 59
@@ -577,6 +613,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -684,6 +724,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 81
@@ -744,6 +788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &35566877 stripped
@@ -758,6 +806,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -817,6 +869,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -936,6 +992,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 67
@@ -995,6 +1055,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -1206,6 +1270,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 101
@@ -1266,6 +1334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &75202432 stripped
@@ -1280,6 +1352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -1340,6 +1416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &75794484 stripped
@@ -1354,6 +1434,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -1414,6 +1498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &87009172 stripped
@@ -1428,6 +1516,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -1488,6 +1580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &90730587 stripped
@@ -1502,6 +1598,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -1562,6 +1662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &91531634 stripped
@@ -1576,6 +1680,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 105
@@ -1636,6 +1744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &91744827 stripped
@@ -1653,6 +1765,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -1709,6 +1825,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -1903,6 +2023,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1962,6 +2086,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -2184,6 +2312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -2239,6 +2371,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -2345,6 +2481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 78
@@ -2400,6 +2540,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -2680,6 +2824,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 93
@@ -2740,6 +2888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &168927123 stripped
@@ -2757,6 +2909,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -2814,6 +2970,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &185191141 stripped
@@ -2831,6 +2991,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -2887,6 +3051,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -3058,6 +3226,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3117,6 +3289,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -3427,6 +3603,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -3487,6 +3667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &293669747 stripped
@@ -3504,6 +3688,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -3561,6 +3749,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &316555550 stripped
@@ -3578,6 +3770,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -3635,6 +3831,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!1001 &328361543
@@ -3647,6 +3847,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -3703,6 +3907,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -8822,6 +9030,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -8881,6 +9093,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -9375,6 +9591,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -9434,6 +9654,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -9633,6 +9857,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -9692,6 +9920,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -10219,6 +10451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -10275,6 +10511,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &469875252 stripped
@@ -10289,6 +10529,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 104
@@ -10349,6 +10593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &476712186 stripped
@@ -10363,6 +10611,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -10423,6 +10675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &484872511 stripped
@@ -10437,6 +10693,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -10497,6 +10757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &485022246 stripped
@@ -10511,6 +10775,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 73
@@ -10570,6 +10838,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -10693,6 +10965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -10748,6 +11024,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -10959,6 +11239,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -11019,6 +11303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &532341819 stripped
@@ -11033,6 +11321,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -11092,6 +11384,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -11298,6 +11594,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -11357,6 +11657,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -11476,6 +11780,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -11535,6 +11843,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -12162,6 +12474,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 80
@@ -12222,6 +12538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &624659637 stripped
@@ -12236,6 +12556,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 99
@@ -12296,6 +12620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &634959535 stripped
@@ -12310,6 +12638,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -12369,6 +12701,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -12851,6 +13187,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -12910,6 +13250,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -13128,6 +13472,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -13187,6 +13535,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -13301,6 +13653,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 74
@@ -13360,6 +13716,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -13583,6 +13943,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 60
@@ -13643,6 +14007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &739875369 stripped
@@ -13660,6 +14028,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -13716,6 +14088,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -13835,6 +14211,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -13894,6 +14274,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -14112,6 +14496,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -14171,6 +14559,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -14582,6 +14974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -14638,6 +15034,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &858651757 stripped
@@ -14652,6 +15052,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 89
@@ -14711,6 +15115,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -14938,6 +15346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -14993,6 +15405,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -15111,6 +15527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -15166,6 +15586,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -15388,6 +15812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -15444,6 +15872,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &928285914 stripped
@@ -15458,6 +15890,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 42
@@ -15517,6 +15953,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -15720,6 +16160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -15776,6 +16220,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &984314870 stripped
@@ -15793,6 +16241,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -15849,6 +16301,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -15960,6 +16416,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 83
@@ -16015,6 +16475,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -16134,6 +16598,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 76
@@ -16194,6 +16662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &1035777415 stripped
@@ -16208,6 +16680,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -16268,6 +16744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &1039391159 stripped
@@ -16282,6 +16762,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 65
@@ -16341,6 +16825,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -16457,6 +16945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -16513,6 +17005,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &1065533903 stripped
@@ -16527,6 +17023,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -16587,6 +17087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &1092042044 stripped
@@ -16604,6 +17108,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -16660,6 +17168,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -17063,7 +17575,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 40
   m_IsActive: 1
 --- !u!4 &1130999208
 Transform:
@@ -17391,6 +17903,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -17451,6 +17967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!1001 &1159023534
@@ -17460,6 +17980,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 87
@@ -17519,6 +18043,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -17695,6 +18223,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -17755,6 +18287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &1181964945 stripped
@@ -17772,6 +18308,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -17829,6 +18369,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &1185030780 stripped
@@ -17843,6 +18387,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 100
@@ -17902,6 +18450,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -18321,6 +18873,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -18380,6 +18936,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -18683,6 +19243,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -18743,6 +19307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!1001 &1257879961
@@ -18752,6 +19320,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -18812,6 +19384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &1257879962 stripped
@@ -18826,6 +19402,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 86
@@ -18885,6 +19465,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -18996,6 +19580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -19052,6 +19640,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!1001 &1291052296
@@ -19061,6 +19653,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -19121,6 +19717,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &1291052297 stripped
@@ -19138,6 +19738,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -19195,6 +19799,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &1294318028 stripped
@@ -19212,6 +19820,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -19269,6 +19881,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!1001 &1309728738
@@ -19278,6 +19894,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -19337,6 +19957,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -19456,6 +20080,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -19515,6 +20143,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -19792,6 +20424,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 79
@@ -19852,6 +20488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &1359140679 stripped
@@ -19869,6 +20509,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -19926,6 +20570,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &1376203450 stripped
@@ -19940,6 +20588,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -19999,6 +20651,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -20526,6 +21182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -20582,6 +21242,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!1001 &1419472363
@@ -20591,6 +21255,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -20651,6 +21319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!1001 &1419493825
@@ -20663,6 +21335,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -20720,6 +21396,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!1001 &1425695950
@@ -20732,6 +21412,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -20789,6 +21473,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &1425695951 stripped
@@ -20806,6 +21494,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -20862,6 +21554,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -21181,6 +21877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -21237,6 +21937,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!1001 &1471294895
@@ -21249,6 +21953,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -21306,6 +22014,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &1471294896 stripped
@@ -21328,7 +22040,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 40
   m_IsActive: 1
 --- !u!4 &1471307287
 Transform:
@@ -21471,6 +22183,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -21530,6 +22246,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -21757,6 +22477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -21812,6 +22536,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -21972,6 +22700,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -22032,6 +22764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &1540204654 stripped
@@ -22046,6 +22782,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 82
@@ -22105,6 +22845,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -22216,6 +22960,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 97
@@ -22271,6 +23019,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -22524,6 +23276,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 88
@@ -22584,6 +23340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &1559155916 stripped
@@ -22598,6 +23358,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -22658,6 +23422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &1560494010 stripped
@@ -22672,6 +23440,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 106
@@ -22732,6 +23504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &1579061428 stripped
@@ -22749,6 +23525,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -22805,6 +23585,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -22924,6 +23708,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 91
@@ -22983,6 +23771,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -23102,6 +23894,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -23161,6 +23957,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -23275,6 +24075,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -23334,6 +24138,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -23441,6 +24249,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -23501,6 +24313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &1619046137 stripped
@@ -23515,6 +24331,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -23575,6 +24395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!1001 &1629114749
@@ -23584,6 +24408,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -23643,6 +24471,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -23858,6 +24690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 69
@@ -23914,6 +24750,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &1643858442 stripped
@@ -23931,6 +24771,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -23988,6 +24832,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &1663262787 stripped
@@ -24002,6 +24850,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -24061,6 +24913,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -24179,6 +25035,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -24234,6 +25094,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -24532,6 +25396,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -24591,6 +25459,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -24906,6 +25778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -24962,6 +25838,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &1757181672 stripped
@@ -24976,6 +25856,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 84
@@ -25036,6 +25920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &1759567103 stripped
@@ -25050,6 +25938,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -25109,6 +26001,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -25220,6 +26116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -25275,6 +26175,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -25594,6 +26498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -25650,6 +26558,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!1001 &1785275360
@@ -25662,6 +26574,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -25718,6 +26634,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -26137,6 +27057,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 92
@@ -26196,6 +27120,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -26372,6 +27300,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -26432,6 +27364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &1840471993 stripped
@@ -26446,6 +27382,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 96
@@ -26506,6 +27446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &1850009360 stripped
@@ -26523,6 +27467,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -26579,6 +27527,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -26697,6 +27649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 63
@@ -26753,6 +27709,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &1854077477 stripped
@@ -26767,6 +27727,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 71
@@ -26826,6 +27790,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -27029,6 +27997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -27084,6 +28056,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -27191,6 +28167,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -27250,6 +28230,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -27761,6 +28745,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -27820,6 +28808,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -28146,6 +29138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -28201,6 +29197,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -28324,6 +29324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -28379,6 +29383,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -28498,6 +29506,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 94
@@ -28558,6 +29570,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!4 &2008775815 stripped
@@ -28572,6 +29588,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5408458655114225133}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -28632,6 +29652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom003
       objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
 --- !u!1001 &2015619202
@@ -28644,6 +29668,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -28700,6 +29728,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -29342,7 +30374,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 40
   m_IsActive: 1
 --- !u!4 &2071977275
 Transform:
@@ -29365,6 +30397,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -29425,6 +30461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom002
       objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
 --- !u!4 &2074453656 stripped
@@ -29442,6 +30482,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -29499,6 +30543,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &2075016951 stripped
@@ -29513,6 +30561,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 107
@@ -29572,6 +30624,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -29783,6 +30839,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 1575054042085880967, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3705439072717598994, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -29842,6 +30902,10 @@ PrefabInstance:
     - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609921948935086633, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2193fc6e92fbc1446b03dd4a31adc663, type: 3}
@@ -30053,6 +31117,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1471307287}
     m_Modifications:
+    - target: {fileID: 535409345135074184, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 2659516071577156353, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -30112,6 +31180,10 @@ PrefabInstance:
     - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511730865197967418, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3829708cf0c9998478d75a8b9f43ef2e, type: 3}
@@ -30315,6 +31387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prefab_mushroom001
       objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
       value: 77
@@ -30371,6 +31447,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
 --- !u!4 &2134100751 stripped
@@ -30388,6 +31468,10 @@ PrefabInstance:
     - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_Name
       value: prefab_mushroom001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079980468685154548, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_RootOrder
@@ -30444,6 +31528,10 @@ PrefabInstance:
     - target: {fileID: 7091969060654857167, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571310784205972900, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91aa677cd125edf418124fb1b7d59528, type: 3}
@@ -31272,6 +32360,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 2979539185350354293, guid: ae135d3309ea43d478112aaa508e87c5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3262408256839719696, guid: ae135d3309ea43d478112aaa508e87c5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 40
@@ -31356,6 +32448,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 4993774851831521248, guid: ae135d3309ea43d478112aaa508e87c5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5408458655231520748, guid: ae135d3309ea43d478112aaa508e87c5, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -31425,6 +32521,10 @@ PrefabInstance:
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5774937056298442326, guid: ae135d3309ea43d478112aaa508e87c5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798280600388460418, guid: ae135d3309ea43d478112aaa508e87c5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 40
       objectReference: {fileID: 0}
