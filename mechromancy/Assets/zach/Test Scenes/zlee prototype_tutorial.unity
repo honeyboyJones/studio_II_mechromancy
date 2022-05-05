@@ -9458,6 +9458,18 @@ PrefabInstance:
       propertyPath: showCursorDuringConversation
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4960344507273136085, guid: 7ed0ee06be5f9465a861e6944e115f7a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.5964
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960344507273136085, guid: 7ed0ee06be5f9465a861e6944e115f7a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.5964
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960344507273136085, guid: 7ed0ee06be5f9465a861e6944e115f7a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.5964
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ed0ee06be5f9465a861e6944e115f7a, type: 3}
 --- !u!198 &364746251 stripped
@@ -14910,13 +14922,9 @@ PrefabInstance:
       propertyPath: conversationActor
       value: 
       objectReference: {fileID: 1648142783}
-    - target: {fileID: 6013469177433452140, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
-      propertyPath: showCursorDuringConversation
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6013469178572763746, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
       propertyPath: m_Name
-      value: 2.6_Prompt To Explore
+      value: 2.6_End Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 6013469178572763746, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
       propertyPath: m_IsActive
@@ -14932,7 +14940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6013469178572763757, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -207.6441
+      value: -207.075
       objectReference: {fileID: 0}
     - target: {fileID: 6013469178572763757, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14971,6 +14979,11 @@ PrefabInstance:
 --- !u!1 &753524075 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6013469178572763746, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
+  m_PrefabInstance: {fileID: 753524074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &753524076 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4915047763172930835, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
   m_PrefabInstance: {fileID: 753524074}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &791310106
@@ -17434,6 +17447,18 @@ PrefabInstance:
     - target: {fileID: 1042709742173775832, guid: 42619da80a79d437a8370b9fa6019b02, type: 3}
       propertyPath: m_Name
       value: 2.4_Waypoint_PS
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042709742173775835, guid: 42619da80a79d437a8370b9fa6019b02, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.5964
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042709742173775835, guid: 42619da80a79d437a8370b9fa6019b02, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.5964
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042709742173775835, guid: 42619da80a79d437a8370b9fa6019b02, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.5964
       objectReference: {fileID: 0}
     - target: {fileID: 5666721543199217528, guid: 42619da80a79d437a8370b9fa6019b02, type: 3}
       propertyPath: m_Name
@@ -27338,12 +27363,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1417411805393364250, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: conversationEvents.onConversationEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417411805393364250, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: conversationEvents.onConversationEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417411805393364250, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
       propertyPath: conversationEvents.onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 753524075}
     - target: {fileID: 1417411805393364250, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: conversationEvents.onConversationEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 753524076}
+    - target: {fileID: 1417411805393364250, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: conversationEvents.onConversationEnd.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417411805393364250, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
       propertyPath: conversationEvents.onConversationEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417411805393364250, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: conversationEvents.onConversationEnd.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417411805393364250, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: conversationEvents.onConversationEnd.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.ParticleSystem, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417411805393364250, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: conversationEvents.onConversationEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1417411805393364250, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: conversationEvents.onConversationEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1417411805393364251, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
       propertyPath: conversationActor
@@ -27352,6 +27409,18 @@ PrefabInstance:
     - target: {fileID: 1417411805393364251, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
       propertyPath: showCursorDuringConversation
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039903136385661227, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.5964
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039903136385661227, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.5964
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039903136385661227, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.5964
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
@@ -35035,6 +35104,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1306453667}
     - target: {fileID: 6506912179838961222, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8695971898224210122, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
