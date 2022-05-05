@@ -730,8 +730,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0.21799088}
-    canvasZoom: 0.9504856
+    canvasScrollPosition: {x: 0, y: 236.98187}
+    canvasZoom: 0.91990155
   - id: 2
     fields:
     - title: Title
@@ -5585,70 +5585,11 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 11
-        originDialogueID: 0
-        destinationConversationID: 11
-        destinationDialogueID: 1
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 30
-        y: 20
-        width: 160
-        height: 30
-    - id: 1
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: Suit secure. Airlock opening.
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 0
-        typeString: 
-      conversationID: 11
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 11
-        originDialogueID: 1
+        originDialogueID: 0
         destinationConversationID: 11
         destinationDialogueID: 3
         isConnector: 0
@@ -5661,7 +5602,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 70
+        y: 20
         width: 160
         height: 30
     - id: 3
@@ -13714,7 +13655,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Perhaps we could talk in the suit?
+        value: Perhaps we could talk by the suit?
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -13885,7 +13826,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Meet me in the suit if that would make you feel more at ease?
+        value: Meet me by the suit if that would make you feel more at ease?
         type: 0
         typeString: 
       - title: Sequence
@@ -14187,7 +14128,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 31
-        y: 168
+        y: 170.99146
         width: 160
         height: 30
     - id: 4
@@ -14707,8 +14648,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 112.72853}
-    canvasZoom: 0.66857797
+    canvasScrollPosition: {x: 0, y: 189.70894}
+    canvasZoom: 0.6675779
   - id: 17
     fields:
     - title: Title
