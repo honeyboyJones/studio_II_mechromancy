@@ -44,7 +44,7 @@ namespace Assets.Code
                 if (_currentWaypoint == null)
                 {
                     //set at random
-                    GameObject[] allWaypoints = GameObject.FindGameObjectsWithTag("Waypoint2"); //find all waypoints
+                    GameObject[] allWaypoints = GameObject.FindGameObjectsWithTag("Waypoint3"); //find all waypoints
 
                     if (allWaypoints.Length > 0)
                     {
