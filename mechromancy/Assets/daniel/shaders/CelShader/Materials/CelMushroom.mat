@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1530672789162214567
+--- !u!114 &-3932167134198940447
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: day
-  m_Shader: {fileID: -6465566751694194690, guid: 0b7eaaf4ac321de4299b40760bdb8496, type: 3}
+  m_Name: CelMushroom
+  m_Shader: {fileID: -6465566751694194690, guid: fd874fc4c7685a347b07e45cc873980c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -32,8 +32,12 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_d5b25513c2744fb4867eae7280984506:
-        m_Texture: {fileID: 2800000, guid: 240342d2608b663408a31ca1666be65c, type: 3}
+    - Texture2D_2123c343efd24d7da6b439a282bfc6cf:
+        m_Texture: {fileID: 2800000, guid: b13b903e7d2221d4aa3bbfb5aafcb7c3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_2124753f80bf458a863d30c0524c2d72:
+        m_Texture: {fileID: 2800000, guid: eb12618401f5e9345b59197d4041ac77, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -93,10 +97,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_3037ebdf7a0a4d84b5d50652f7293138: 0
-    - Vector1_86285ee5272447ce8056b8868e76ca68: 0.333
-    - Vector1_da503fe21fa0451eae669759e4127eeb: 12.1
-    - Vector1_e013899b2e184e2ea2601e1472e9c9b0: 0.01
+    - Vector1_36d787d22f7a4b47b6ceab81c03b4207: 0.403
+    - Vector1_45b8b8b65d0f43e9bec02d9746cad11f: -1.06
+    - Vector1_7950a957842c4d488dc25075102ab755: 1
+    - Vector1_98ccca659ca54adcb301d223f06dc06e: 3.01
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -123,10 +127,7 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _strength: 0.100010775
     m_Colors:
-    - Color_66a314c16a5c4711bc354325d5c3803f: {r: 1, g: 0, b: 0, a: 0}
-    - Color_6a7620a4cc8f49a59409249e4dda8a6f: {r: 766.9961, g: 459.04355, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
