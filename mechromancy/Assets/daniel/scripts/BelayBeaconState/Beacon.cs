@@ -49,11 +49,22 @@ public class Beacon : MonoBehaviour
         isSaved = true;
     }
 
-    public void load() 
+    IEnumerator Load() 
     {
+        yield return new WaitForSeconds(0.5f);
         player.gameObject.GetComponent<Transform>().position = savePosition;
         meshRenderer.enabled = false;
         isSaved = false;
+    }
+
+    public void load() 
+    {
+        /*
+        player.gameObject.GetComponent<Transform>().position = savePosition;
+        meshRenderer.enabled = false;
+        isSaved = false;
+        */
+        StartCoroutine(Load());
     }
 
    
