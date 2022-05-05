@@ -204,7 +204,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
-  rotationSpeed: 100
+  rotationSpeed: 400
 --- !u!1001 &6262648272496490574
 PrefabInstance:
   m_ObjectHideFlags: 0
