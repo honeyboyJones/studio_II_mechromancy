@@ -5504,8 +5504,8 @@ MonoBehaviour:
         width: 239.67438
         height: 370.2698
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 2404.1917, y: 160.66183}
-    canvasZoom: 0.47368923
+    canvasScrollPosition: {x: 1650.8578, y: 27.074066}
+    canvasZoom: 0.52362543
   - id: 11
     fields:
     - title: Title
@@ -9685,7 +9685,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
+        x: 29.020523
         y: 70
         width: 160
         height: 30
@@ -9713,7 +9713,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: See if you can reach it. It should be a beautiful spot, despite the
-          inclement weather.
+          high winds.
         type: 0
         typeString: 
       - title: Sequence
@@ -9744,8 +9744,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.98988193
+    canvasScrollPosition: {x: 6.244379, y: 0.9564637}
+    canvasZoom: 1.0209645
   - id: 7
     fields:
     - title: Title
@@ -9900,7 +9900,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
+        x: 28.994598
         y: 70
         width: 160
         height: 30
@@ -10201,7 +10201,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '...What does the rain feel like? '
+        value: '...What does the wind feel like? '
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -11625,7 +11625,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: like the rain.
+        value: like the wind.
         type: 0
         typeString: 
       - title: Sequence
@@ -11767,8 +11767,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 19.057617, y: 401.9172}
-    canvasZoom: 0.68214417
+    canvasScrollPosition: {x: 0, y: 615.40515}
+    canvasZoom: 0.6801441
   - id: 8
     fields:
     - title: Title
