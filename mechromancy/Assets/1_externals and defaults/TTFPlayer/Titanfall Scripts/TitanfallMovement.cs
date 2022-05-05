@@ -239,7 +239,7 @@ public class TitanfallMovement : MonoBehaviour
             //flying is slightly less boring but still boring
             case Mode.Flying:
                 camCon.SetTilt(0);
-                running = false;
+                //running = false;
                 AirMove(dir, airSpeed, airAccel);
                 break;
         }
