@@ -13,6 +13,7 @@ TagManager:
   - Plexii
   - Crobo
   - Simum
+  - Waypoint3
   layers:
   - Default
   - TransparentFX
