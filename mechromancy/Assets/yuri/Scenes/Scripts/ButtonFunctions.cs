@@ -48,9 +48,9 @@ public class ButtonFunctions : MonoBehaviour
         //Back to Main Menu
         ButtonFunctions.backMainMenu += OnClose_PauseMenu;
         ButtonFunctions.backMainMenu += ShowMainMenu;
-        ButtonFunctions.backMainMenu += UnloadAllScenes;
+        //ButtonFunctions.backMainMenu += UnloadAllScenes;
 
-
+        DontDestroyOnLoad(this.gameObject);
     }
 
 
@@ -76,7 +76,13 @@ public class ButtonFunctions : MonoBehaviour
     }
 
     #region ButtonFunctions
-    public void StartGame()
+    public void StartGame_Prologue()
+    {
+        OnClick_StartGame();
+        //SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
+        StartCoroutine(LoadAsync("Prologue"));
+    }
+    public void StartGame_TraversalLayout()
     {
         OnClick_StartGame();
         //SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
@@ -89,7 +95,7 @@ public class ButtonFunctions : MonoBehaviour
         OnClick_StartGame();
         //SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
         curSceneName = SceneManager.GetActiveScene().name;
-        UnloadAllScenes();
+        //UnloadAllScenes();
         StartCoroutine(LoadAsync(curSceneName));
     }
 
@@ -103,6 +109,7 @@ public class ButtonFunctions : MonoBehaviour
     {
         Debug.Log("BackToMenu");
         backMainMenu();
+        StartCoroutine(LoadAsync("BlackScene"));
     }
     #endregion
 
@@ -117,7 +124,7 @@ public class ButtonFunctions : MonoBehaviour
 
     IEnumerator LoadAsync(string sceneName)
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
 
         while(!operation.isDone)
         {

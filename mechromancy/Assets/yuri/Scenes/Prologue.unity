@@ -475,6 +475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Day Night Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7772496855888482037, guid: ba495faf18e8247e5948eb40994141ac, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7772496855888482040, guid: ba495faf18e8247e5948eb40994141ac, type: 3}
       propertyPath: starParticleSystem
       value: 
@@ -1128,6 +1132,10 @@ PrefabInstance:
     - target: {fileID: 8565190825722055185, guid: 9f56bae7e7274485e9ffb0cd0fe5714c, type: 3}
       propertyPath: m_Name
       value: Star Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565190825722055185, guid: 9f56bae7e7274485e9ffb0cd0fe5714c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8565190825722055196, guid: 9f56bae7e7274485e9ffb0cd0fe5714c, type: 3}
       propertyPath: m_RootOrder
@@ -5108,6 +5116,10 @@ PrefabInstance:
     - target: {fileID: 8365751934205815590, guid: 376f77b5b39da490ea8a2fd56bd1bead, type: 3}
       propertyPath: m_Name
       value: spaceship terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 8365751934205815590, guid: 376f77b5b39da490ea8a2fd56bd1bead, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8365751934205815592, guid: 376f77b5b39da490ea8a2fd56bd1bead, type: 3}
       propertyPath: m_RootOrder
