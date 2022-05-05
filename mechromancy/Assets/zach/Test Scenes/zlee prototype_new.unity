@@ -31999,6 +31999,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mischa
       objectReference: {fileID: 0}
+    - target: {fileID: 3606820532334181584, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: debugDrawRadius
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820532334181584, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: _connectivityRadius
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820532616279284, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: debugDrawRadius
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820532616279284, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: _connectivityRadius
+      value: 900
+      objectReference: {fileID: 0}
     - target: {fileID: 3606820532734243860, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1110.4
@@ -32013,7 +32029,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3606820532734243861, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820532844127523, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: debugDrawRadius
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820532844127523, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: _connectivityRadius
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820532942017225, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: debugDrawRadius
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820532942017225, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: _connectivityRadius
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820533155749192, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: debugDrawRadius
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820533155749192, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: _connectivityRadius
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820533293349603, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: debugDrawRadius
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820533293349603, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: _connectivityRadius
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820533297493448, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: debugDrawRadius
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820533297493448, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: _connectivityRadius
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820533568505441, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: debugDrawRadius
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606820533568505441, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
+      propertyPath: _connectivityRadius
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 4644364146597069058, guid: 8401c4f369eeb411aa0f8db2d76f5172, type: 3}
       propertyPath: m_LocalScale.x
