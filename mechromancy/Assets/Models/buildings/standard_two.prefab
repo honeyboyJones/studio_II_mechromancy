@@ -200,6 +200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_RockFormation_03
       objectReference: {fileID: 0}
+    - target: {fileID: 4613831581237251615, guid: 0c8efc641c270444a814b036e6aff5ef, type: 3}
+      propertyPath: m_TagString
+      value: nightModel
+      objectReference: {fileID: 0}
     - target: {fileID: 4613831581237744191, guid: 0c8efc641c270444a814b036e6aff5ef, type: 3}
       propertyPath: m_RootOrder
       value: 0

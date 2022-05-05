@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8505960774231499887}
   m_Layer: 0
   m_Name: standard_three
-  m_TagString: Untagged
+  m_TagString: nightModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

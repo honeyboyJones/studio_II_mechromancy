@@ -33166,6 +33166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: standard_three
       objectReference: {fileID: 0}
+    - target: {fileID: 1059108019710083371, guid: 9976ed4c564b6a245ad4c9577049ae72, type: 3}
+      propertyPath: m_TagString
+      value: nightModel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9976ed4c564b6a245ad4c9577049ae72, type: 3}
 --- !u!33 &7365998679742857355
