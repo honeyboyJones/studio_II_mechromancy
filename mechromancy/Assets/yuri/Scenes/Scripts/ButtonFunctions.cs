@@ -20,7 +20,9 @@ public class ButtonFunctions : MonoBehaviour
     public Slider LoadingSlider;
     public Text LoadingText;
 
-    public GameObject MainMenu, PauseMenu, LoadingScreen;
+    public GameObject MainMenu, PauseMenu, LoadingScreen,CreditScreen;
+    public SceneData sceneData;
+    public List<string> sceneNames;
 
     private void Awake()
     {
@@ -113,7 +115,7 @@ public class ButtonFunctions : MonoBehaviour
 
     IEnumerator LoadAsync()
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneNames[1], LoadSceneMode.Additive);
 
         while(!operation.isDone)
         {
@@ -124,7 +126,7 @@ public class ButtonFunctions : MonoBehaviour
             yield return null;
         }
         HideLoadingScreen();
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Level1"));
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneNames[1]));
 
     }
     #endregion
@@ -179,6 +181,8 @@ public class ButtonFunctions : MonoBehaviour
         MainMenu = this.transform.Find("MainMenu").gameObject;
         LoadingScreen = this.transform.Find("LoadingScreen").gameObject;
         PauseMenu = this.transform.Find("PauseMenu").gameObject;
+
+        sceneNames = sceneData.Fetch();
     }
     public void PauseGame()
     {

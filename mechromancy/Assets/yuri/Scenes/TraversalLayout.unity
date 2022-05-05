@@ -29311,6 +29311,14 @@ PrefabInstance:
       propertyPath: conversationActor
       value: 
       objectReference: {fileID: 4311339819000533032}
+    - target: {fileID: 1673471064634060613, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: showCursorDuringConversation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1996572077283446688, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: showCursorDuringConversation
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3516349347428520028, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
       propertyPath: conversationActor
       value: 
@@ -29367,6 +29375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4880147490688121851, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: controlCursorState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5166513335382107751, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
       propertyPath: conversationActor
       value: 
@@ -29375,6 +29387,10 @@ PrefabInstance:
       propertyPath: conversationActor
       value: 
       objectReference: {fileID: 4311339819000533032}
+    - target: {fileID: 8928123245324761301, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: showCursorDuringConversation
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
 --- !u!1001 &5408458655114225131

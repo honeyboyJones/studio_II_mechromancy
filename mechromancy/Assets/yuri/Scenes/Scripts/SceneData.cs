@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class SceneData : MonoBehaviour
+[CreateAssetMenu(fileName = "SceneDB", menuName = "Create Scene DB")]
+public class SceneData : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public List<string> SceneName = new List<string>();
 
-    // Update is called once per frame
-    void Update()
+    public List<string> Fetch()
     {
-        
+        return SceneName;
     }
 }
