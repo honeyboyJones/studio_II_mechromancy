@@ -8,9 +8,10 @@ public class BelayStateStandby : BelayStateBase
     //transit to save state when F key released.
     public override void EnterState(BelayStateManager stateManager)
     {
-        Debug.Log("enter standby state");
+        //Debug.Log("enter standby state");
         stateManager.particleManager.ParticleBegin();
         stateManager.beacon.meshRenderer.enabled = true;
+        EventManager.TriggerEvent("prepare");
     }
     public override void UpdateState(BelayStateManager stateManager)
     {
@@ -36,6 +37,7 @@ public class BelayStateStandby : BelayStateBase
                 stateManager.BelayDefault();
                 stateManager.beacon.gameObject.GetComponent<Transform>().position = stateManager.beacon.savePosition;
                 stateManager.beacon.meshRenderer.enabled = false;
+                EventManager.TriggerEvent("savefailed");
             }
         }
 
