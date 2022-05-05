@@ -21,8 +21,8 @@ public class ButtonFunctions : MonoBehaviour
     public Text LoadingText;
 
     public GameObject MainMenu, PauseMenu, LoadingScreen,CreditScreen;
-    public SceneData sceneData;
-    public List<string> sceneNames;
+
+    string curSceneName;
 
     private void Awake()
     {
@@ -80,7 +80,7 @@ public class ButtonFunctions : MonoBehaviour
     {
         OnClick_StartGame();
         //SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
-        StartCoroutine(LoadAsync());
+        StartCoroutine(LoadAsync("TraversalLayout"));
     }
     public void ReStartGame()
     {
@@ -88,7 +88,9 @@ public class ButtonFunctions : MonoBehaviour
         OnClose_PauseMenu();
         OnClick_StartGame();
         //SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
-        StartCoroutine(LoadAsync());
+        curSceneName = SceneManager.GetActiveScene().name;
+        UnloadAllScenes();
+        StartCoroutine(LoadAsync(curSceneName));
     }
 
     public void Quit()
@@ -113,9 +115,9 @@ public class ButtonFunctions : MonoBehaviour
     #region Loading
 
 
-    IEnumerator LoadAsync()
+    IEnumerator LoadAsync(string sceneName)
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneNames[1], LoadSceneMode.Additive);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
 
         while(!operation.isDone)
         {
@@ -126,7 +128,7 @@ public class ButtonFunctions : MonoBehaviour
             yield return null;
         }
         HideLoadingScreen();
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneNames[1]));
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
 
     }
     #endregion
@@ -181,8 +183,6 @@ public class ButtonFunctions : MonoBehaviour
         MainMenu = this.transform.Find("MainMenu").gameObject;
         LoadingScreen = this.transform.Find("LoadingScreen").gameObject;
         PauseMenu = this.transform.Find("PauseMenu").gameObject;
-
-        sceneNames = sceneData.Fetch();
     }
     public void PauseGame()
     {
