@@ -34743,6 +34743,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4880147490688121851, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: controlCursorState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4880147491004222208, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
       propertyPath: dialogueObject
       value: 
