@@ -2658,6 +2658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TTFSphere_BelayIncluded
       objectReference: {fileID: 0}
+    - target: {fileID: 1922666293318483971, guid: 96198589c29918e4b8ceef971e6ef944, type: 3}
+      propertyPath: wallStickDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1922666293318483975, guid: 96198589c29918e4b8ceef971e6ef944, type: 3}
       propertyPath: m_RootOrder
       value: 14
