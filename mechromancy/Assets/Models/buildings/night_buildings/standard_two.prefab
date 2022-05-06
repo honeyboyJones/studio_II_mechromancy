@@ -167,6 +167,10 @@ PrefabInstance:
       value: Prefab_RocksRound_03
       objectReference: {fileID: 0}
     - target: {fileID: 575200273978201667, guid: 42e7ebb745b48ed4c9307c0b6ac97dd0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 575200273978201667, guid: 42e7ebb745b48ed4c9307c0b6ac97dd0, type: 3}
       propertyPath: m_TagString
       value: nightModel
       objectReference: {fileID: 0}
@@ -185,12 +189,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 4817144667983067274}
     m_Modifications:
     - target: {fileID: 4613831581237251609, guid: 0c8efc641c270444a814b036e6aff5ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613831581237251609, guid: 0c8efc641c270444a814b036e6aff5ef, type: 3}
       propertyPath: m_TagString
       value: nightModel
       objectReference: {fileID: 0}
     - target: {fileID: 4613831581237251611, guid: 0c8efc641c270444a814b036e6aff5ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613831581237251611, guid: 0c8efc641c270444a814b036e6aff5ef, type: 3}
       propertyPath: m_TagString
       value: nightModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613831581237251613, guid: 0c8efc641c270444a814b036e6aff5ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4613831581237251613, guid: 0c8efc641c270444a814b036e6aff5ef, type: 3}
       propertyPath: m_TagString
@@ -199,6 +215,10 @@ PrefabInstance:
     - target: {fileID: 4613831581237251615, guid: 0c8efc641c270444a814b036e6aff5ef, type: 3}
       propertyPath: m_Name
       value: Prefab_RockFormation_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613831581237251615, guid: 0c8efc641c270444a814b036e6aff5ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4613831581237251615, guid: 0c8efc641c270444a814b036e6aff5ef, type: 3}
       propertyPath: m_TagString
@@ -277,6 +297,10 @@ PrefabInstance:
     - target: {fileID: 4826684910675401383, guid: f7431b3add6bba54baee7d4be047dc4a, type: 3}
       propertyPath: m_Name
       value: Prefab_RocksRound_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4826684910675401383, guid: f7431b3add6bba54baee7d4be047dc4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4826684910675401383, guid: f7431b3add6bba54baee7d4be047dc4a, type: 3}
       propertyPath: m_TagString
