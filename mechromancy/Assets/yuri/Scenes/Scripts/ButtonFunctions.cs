@@ -11,6 +11,7 @@ public class ButtonFunctions : MonoBehaviour
     public static event Btn_Clicked OnClick_PauseMenu;
     public static event Btn_Clicked OnClose_PauseMenu;
     public static event Btn_Clicked backMainMenu;
+    public static event Btn_Clicked OpenLevelMenu;
 
     [Header ("AudioScources DB")]   
     public AudioData audioDB;
@@ -20,7 +21,7 @@ public class ButtonFunctions : MonoBehaviour
     public Slider LoadingSlider;
     public Text LoadingText;
 
-    public GameObject MainMenu, PauseMenu, LoadingScreen,CreditScreen;
+    public GameObject MainMenu, PauseMenu, LoadingScreen,CreditScreen, LevelMenu;
 
     string curSceneName;
 
@@ -49,6 +50,11 @@ public class ButtonFunctions : MonoBehaviour
         ButtonFunctions.backMainMenu += OnClose_PauseMenu;
         ButtonFunctions.backMainMenu += ShowMainMenu;
         //ButtonFunctions.backMainMenu += UnloadAllScenes;
+
+        //Open Level Menu
+        ButtonFunctions.OpenLevelMenu += ClickAudio;
+        ButtonFunctions.OpenLevelMenu += HidePasueMenu;
+        ButtonFunctions.OpenLevelMenu += ShowLevelMenu;
 
         DontDestroyOnLoad(this.gameObject);
     }
@@ -111,6 +117,11 @@ public class ButtonFunctions : MonoBehaviour
         backMainMenu();
         StartCoroutine(LoadAsync("BlackScene"));
     }
+
+    public void B_LevelMenu()
+    {
+
+    }
     #endregion
 
     #region Audio Thing
@@ -169,6 +180,16 @@ public class ButtonFunctions : MonoBehaviour
         //StartCoroutine(LoadAsync());
     }
 
+    public void HideLevelMenu()
+    {
+        PauseMenu.SetActive(false);
+    }
+    public void ShowLevelMenu()
+    {
+        PauseMenu.SetActive(true);
+        //StartCoroutine(LoadAsync());
+    }
+
     #endregion
 
     #region GameSystem
@@ -194,6 +215,7 @@ public class ButtonFunctions : MonoBehaviour
         MainMenu = this.transform.Find("MainMenu").gameObject;
         LoadingScreen = this.transform.Find("LoadingScreen").gameObject;
         PauseMenu = this.transform.Find("PauseMenu").gameObject;
+        LevelMenu = this.transform.Find("LevelMenu").gameObject;
     }
     public void PauseGame()
     {
