@@ -9,8 +9,20 @@ EditorBuildSettings:
     path: Assets/yuri/Scenes/MainMenu.unity
     guid: 76d3d8183fdba0443957247ef383cf0d
   - enabled: 1
-    path: Assets/yuri/Scenes/Level1.unity
+    path: Assets/yuri/Scenes/Prologue.unity
+    guid: a1f28480327b73c448d70108e8c8f4b1
+  - enabled: 1
+    path: Assets/yuri/Scenes/Tutorial.unity
+    guid: 50b0579c18fc35448bf5c4d06b5bb7a3
+  - enabled: 1
+    path: Assets/yuri/Scenes/TraversalLayout.unity
     guid: f8d721219b01d634bb83a6482a48b0a4
+  - enabled: 1
+    path: Assets/yuri/Scenes/Resolution.unity
+    guid: 8e6bfc99a08115241862026f4a11431b
+  - enabled: 1
+    path: Assets/yuri/Scenes/BlackScene.unity
+    guid: 688b5052081e5794d9913351f0257a45
   - enabled: 1
     path: Assets/tori/Scenes/Cockpit_Prologue 1.unity
     guid: c2b7ebadbec19427d96460a6825e0309

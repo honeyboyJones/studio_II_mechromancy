@@ -20,7 +20,9 @@ public class ButtonFunctions : MonoBehaviour
     public Slider LoadingSlider;
     public Text LoadingText;
 
-    public GameObject MainMenu, PauseMenu, LoadingScreen;
+    public GameObject MainMenu, PauseMenu, LoadingScreen,CreditScreen;
+
+    string curSceneName;
 
     private void Awake()
     {
@@ -46,9 +48,9 @@ public class ButtonFunctions : MonoBehaviour
         //Back to Main Menu
         ButtonFunctions.backMainMenu += OnClose_PauseMenu;
         ButtonFunctions.backMainMenu += ShowMainMenu;
-        ButtonFunctions.backMainMenu += UnloadAllScenes;
+        //ButtonFunctions.backMainMenu += UnloadAllScenes;
 
-
+        DontDestroyOnLoad(this.gameObject);
     }
 
 
@@ -74,11 +76,17 @@ public class ButtonFunctions : MonoBehaviour
     }
 
     #region ButtonFunctions
-    public void StartGame()
+    public void StartGame_Prologue()
     {
         OnClick_StartGame();
         //SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
-        StartCoroutine(LoadAsync());
+        StartCoroutine(LoadAsync("Prologue"));
+    }
+    public void StartGame_TraversalLayout()
+    {
+        OnClick_StartGame();
+        //SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
+        StartCoroutine(LoadAsync("TraversalLayout"));
     }
     public void ReStartGame()
     {
@@ -86,7 +94,9 @@ public class ButtonFunctions : MonoBehaviour
         OnClose_PauseMenu();
         OnClick_StartGame();
         //SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
-        StartCoroutine(LoadAsync());
+        curSceneName = SceneManager.GetActiveScene().name;
+        //UnloadAllScenes();
+        StartCoroutine(LoadAsync(curSceneName));
     }
 
     public void Quit()
@@ -99,6 +109,7 @@ public class ButtonFunctions : MonoBehaviour
     {
         Debug.Log("BackToMenu");
         backMainMenu();
+        StartCoroutine(LoadAsync("BlackScene"));
     }
     #endregion
 
@@ -111,9 +122,9 @@ public class ButtonFunctions : MonoBehaviour
     #region Loading
 
 
-    IEnumerator LoadAsync()
+    IEnumerator LoadAsync(string sceneName)
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
 
         while(!operation.isDone)
         {
@@ -124,7 +135,7 @@ public class ButtonFunctions : MonoBehaviour
             yield return null;
         }
         HideLoadingScreen();
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Level1"));
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
 
     }
     #endregion
@@ -173,6 +184,10 @@ public class ButtonFunctions : MonoBehaviour
                 SceneManager.UnloadSceneAsync(loadedScene[i]);
             }
         }
+    }
+    void FindDS()
+    {
+       // GameObject.Fin
     }
     void InitGameObject()
     {
