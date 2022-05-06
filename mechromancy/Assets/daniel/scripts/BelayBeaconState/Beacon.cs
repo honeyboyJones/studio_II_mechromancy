@@ -28,6 +28,7 @@ public class Beacon : MonoBehaviour
         //add listener on event manager
         EventManager.RegisterListener("save", save);
         EventManager.RegisterListener("load", load);
+        EventManager.RegisterListener("cancle", Cancle);
 
         //scale the beacon
         GetComponentInParent<Transform>().localScale = scale;
@@ -41,12 +42,18 @@ public class Beacon : MonoBehaviour
     }
     public void save() 
     {
-        Debug.Log("save message recieved");
+        //Debug.Log("save message recieved");
         savePosition = this.gameObject.GetComponent<Transform>().position;
         meshRenderer.enabled = true;
         meshRenderer.material.SetColor("_Albedo", new Color(0.5f, 0.5f, 0.5f, 1));
         meshRenderer.material.SetFloat("_Transparency", 1f);
         isSaved = true;
+    }
+
+    public void Cancle() 
+    {
+        isSaved = false;
+        meshRenderer.enabled = false;
     }
 
     IEnumerator Load() 
@@ -73,5 +80,6 @@ public class Beacon : MonoBehaviour
     {
         EventManager.UnregisterListener("save", save);
         EventManager.UnregisterListener("load", load);
+        EventManager.UnregisterListener("cancle", Cancle);
     }
 }
