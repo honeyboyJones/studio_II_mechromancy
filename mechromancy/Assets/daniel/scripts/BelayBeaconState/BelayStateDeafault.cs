@@ -24,9 +24,22 @@ public class BelayStateDeafault : BelayStateBase
             //if not saved, go standby ad ready to save
             if (stateManager.isSaved == false) 
             {
-                stateManager.BelayStandby();
+                if (stateManager.BeaconAmount > 0)
+                {
+                    stateManager.BelayStandby();
+                }
+                else 
+                {
+                    EventManager.TriggerEvent("savefailed");
+                }
+                
             }
             
+        }
+
+        if (Input.GetKey(KeyCode.R)) 
+        {
+            EventManager.TriggerEvent("cancle");
         }
     }
     public override void ExitState(BelayStateManager stateManager) 

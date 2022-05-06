@@ -6,13 +6,15 @@ public class BelaySoundController : MonoBehaviour
 {
     public List<AudioClip> BelaySounds;
     [Range(0,1)]
-    public float PrepareVolume;
+    public float PrepareVolume=1;
     [Range(0, 1)]
-    public float SaveVolume;
+    public float SaveVolume=1;
     [Range(0, 1)]
-    public float SaveErrorVolume;
+    public float SaveErrorVolume=1;
     [Range(0, 1)]
-    public float LoadVolume;
+    public float LoadVolume=1;
+    [Range(0, 1)]
+    public float CancleVolume =1;
 
     private AudioSource audio;
     // Start is called before the first frame update
@@ -23,6 +25,7 @@ public class BelaySoundController : MonoBehaviour
         EventManager.RegisterListener("save", SaveSound);
         EventManager.RegisterListener("savefailed", SaveErrorSound);
         EventManager.RegisterListener("load", LoadSound);
+        EventManager.RegisterListener("cancle", CancleSound);
         //Debug.Log(audio.gameObject);
     }
 
@@ -60,6 +63,15 @@ public class BelaySoundController : MonoBehaviour
         audio.Play();
     }
 
+    void CancleSound() 
+    {
+        audio.Pause();
+        audio.loop = false;
+        audio.clip = BelaySounds[4];
+        audio.volume = CancleVolume;
+        audio.Play();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -72,5 +84,6 @@ public class BelaySoundController : MonoBehaviour
         EventManager.UnregisterListener("save", SaveSound);
         EventManager.UnregisterListener("savefailed", SaveErrorSound);
         EventManager.UnregisterListener("load", LoadSound);
+        EventManager.UnregisterListener("cancle", CancleSound);
     }
 }
