@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba01fa64696534e4c9383e5787298a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: TraversalLayout
+  sceneName: Tutorial
 --- !u!4 &41370515
 Transform:
   m_ObjectHideFlags: 0
