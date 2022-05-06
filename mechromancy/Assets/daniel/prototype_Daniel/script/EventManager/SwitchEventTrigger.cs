@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SwitchEventTrigger : MonoBehaviour
 {
+    private bool isday = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,14 +14,22 @@ public class SwitchEventTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G)) 
+        if (Input.GetKeyDown(KeyCode.E)) 
         {
-            EventManager.TriggerEvent("SwitchToDay");
+            if (isday)
+            {
+                EventManager.TriggerEvent("SwitchToNight");
+                isday = false;
+            }
+            else 
+            {
+                EventManager.TriggerEvent("SwitchToDay");
+                isday = true;
+            }
+            
+            
         }
 
-        if (Input.GetKeyDown(KeyCode.H)) 
-        {
-            EventManager.TriggerEvent("SwitchToNight");
-        }
+       
     }
 }

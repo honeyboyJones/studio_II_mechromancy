@@ -29315,6 +29315,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BelayBeaconStateManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4668033384746285416, guid: c9f7294aa80d2714dbee776712cfe95b, type: 3}
+      propertyPath: BelaySounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668033384746285416, guid: c9f7294aa80d2714dbee776712cfe95b, type: 3}
+      propertyPath: BelaySounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 151cc191695e1a04eaacfa1332a93445, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9f7294aa80d2714dbee776712cfe95b, type: 3}
 --- !u!1001 &4880147490826832974
