@@ -6471,7 +6471,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: However, we can only carry so many. Use them wisely.
+        value: However, we can only carry so many. Use them wisely and press the
+          R key to retrieve them.
         type: 0
         typeString: 
       - title: Sequence
@@ -6502,8 +6503,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.6867523
+    canvasScrollPosition: {x: 0, y: 92.2872}
+    canvasZoom: 0.6826512
   - id: 13
     fields:
     - title: Title
@@ -7021,7 +7022,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: Try affecting the environment by switching between these modes using
-          the G and H keys and proceed to the next waypoint.
+          the E key and proceed to the next waypoint.
         type: 0
         typeString: 
       - title: Sequence
@@ -7052,8 +7053,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 42.106598}
-    canvasZoom: 0.94996953
+    canvasScrollPosition: {x: 5.3063354, y: 118.93146}
+    canvasZoom: 0.9422724
   - id: 16
     fields:
     - title: Title
