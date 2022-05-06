@@ -10963,6 +10963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TTFSphere_BelayIncluded
       objectReference: {fileID: 0}
+    - target: {fileID: 1922666293318483972, guid: 96198589c29918e4b8ceef971e6ef944, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1922666293318483975, guid: 96198589c29918e4b8ceef971e6ef944, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -19299,6 +19303,42 @@ PrefabInstance:
     - target: {fileID: 3378295426343649736, guid: fcc0073a6b96e46bd821f36349fbcc6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692442131124006770, guid: fcc0073a6b96e46bd821f36349fbcc6e, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692442131205675637, guid: fcc0073a6b96e46bd821f36349fbcc6e, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692442131224251528, guid: fcc0073a6b96e46bd821f36349fbcc6e, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692442131417715017, guid: fcc0073a6b96e46bd821f36349fbcc6e, type: 3}
+      propertyPath: m_Volume
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692442131971506022, guid: fcc0073a6b96e46bd821f36349fbcc6e, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692442132117925193, guid: fcc0073a6b96e46bd821f36349fbcc6e, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692442132786140837, guid: fcc0073a6b96e46bd821f36349fbcc6e, type: 3}
+      propertyPath: m_Volume
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692442133018703838, guid: fcc0073a6b96e46bd821f36349fbcc6e, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3692442133023066878, guid: fcc0073a6b96e46bd821f36349fbcc6e, type: 3}
+      propertyPath: m_Volume
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcc0073a6b96e46bd821f36349fbcc6e, type: 3}
