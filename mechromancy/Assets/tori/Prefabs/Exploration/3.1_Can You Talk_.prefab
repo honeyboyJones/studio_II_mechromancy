@@ -251,7 +251,7 @@ MonoBehaviour:
   stopConversationIfTooFar: 0
   maxConversationDistance: 5
   monitorConversationDistanceFrequency: 1
-  showCursorDuringConversation: 0
+  showCursorDuringConversation: 1
   pauseGameDuringConversation: 0
   setActiveActions: []
   setEnabledActions: []
@@ -375,6 +375,18 @@ PrefabInstance:
     - target: {fileID: 4673698217424002673, guid: 92c218a51d24c4f63b551f5434e49b0e, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673698217424002673, guid: 92c218a51d24c4f63b551f5434e49b0e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.5964
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673698217424002673, guid: 92c218a51d24c4f63b551f5434e49b0e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.5964
+      objectReference: {fileID: 0}
+    - target: {fileID: 4673698217424002673, guid: 92c218a51d24c4f63b551f5434e49b0e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.5964
       objectReference: {fileID: 0}
     - target: {fileID: 4673698217424002673, guid: 92c218a51d24c4f63b551f5434e49b0e, type: 3}
       propertyPath: m_LocalPosition.x
