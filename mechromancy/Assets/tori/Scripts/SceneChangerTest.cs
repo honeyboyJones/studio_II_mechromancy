@@ -23,6 +23,6 @@ public class SceneChangerTest : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadSceneAsync(sceneName,LoadSceneMode.Single);
     }
 }

@@ -185,6 +185,10 @@ public class ButtonFunctions : MonoBehaviour
             }
         }
     }
+    void FindDS()
+    {
+       // GameObject.Fin
+    }
     void InitGameObject()
     {
         MainMenu = this.transform.Find("MainMenu").gameObject;
