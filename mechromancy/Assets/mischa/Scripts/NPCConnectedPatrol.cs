@@ -76,7 +76,8 @@ namespace Assets.Code
         private void Update()
         {
             #region //travelling
-            if (_travelling && _navMeshAgent.remainingDistance <= 30f) //if close to destination, 2 > 5
+            //if (_travelling && _navMeshAgent.remainingDistance <= 200f) //if close to destination, 2 > 5
+            if (_travelling && Vector3.Distance(transform.position, _currentWaypoint.gameObject.transform.position) <= 200f)
             {
                 Debug.Log("waypoint reached");
                 _travelling = false;

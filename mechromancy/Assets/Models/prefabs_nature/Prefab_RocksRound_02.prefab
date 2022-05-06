@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1306335065981211121}
   m_Layer: 0
   m_Name: Prefab_RocksRound_02
-  m_TagString: Untagged
+  m_TagString: nightModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

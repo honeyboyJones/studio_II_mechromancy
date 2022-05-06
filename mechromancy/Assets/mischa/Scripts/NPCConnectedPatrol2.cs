@@ -73,7 +73,8 @@ namespace Assets.Code
         private void Update()
         {
             #region //travelling
-            if (_travelling && _navMeshAgent.remainingDistance <= 30f) //if close to destination, 2 > 5
+            //if (_travelling && _navMeshAgent.remainingDistance <= 2f) //if close to destination, 2 > 5 //error in rescaled, 0
+            if (_travelling && Vector3.Distance(transform.position, _currentWaypoint.gameObject.transform.position) <= 300f)
             {
                 _travelling = false;
                 _waypointsVisited++;
@@ -102,7 +103,7 @@ namespace Assets.Code
                 }
             }
             #endregion
-
+            Debug.Log(_navMeshAgent.remainingDistance);
             currentWaypointName = _currentWaypoint.name; //update target location
         }
 

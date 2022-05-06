@@ -76,7 +76,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTexture:
-        m_Texture: {fileID: 2800000, guid: 3e2fb54f7b463e94790a3d34826d6871, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -125,7 +125,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _AlbedoTint: {r: 0.9245283, g: 0.81306475, b: 0.5704165, a: 0}
+    - _AlbedoTint: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _CoverageTint: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

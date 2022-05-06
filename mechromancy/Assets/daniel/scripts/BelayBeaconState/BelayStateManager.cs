@@ -13,6 +13,7 @@ public class BelayStateManager : MonoBehaviour
     public float maxSaveDistance = 2.5f;
     [HideInInspector]
     public TitanfallMovement player;
+    public int BeaconAmount = 100;
     //public Vector3 standByPos;
     //public Vector3 standByNormal;
     

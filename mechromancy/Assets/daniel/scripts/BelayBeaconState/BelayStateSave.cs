@@ -8,8 +8,9 @@ public class BelayStateSave: BelayStateBase
     //save position when enter this state, then transit to deafault directly
     public override void EnterState(BelayStateManager stateManager)
     {
-        Debug.Log("entered save state");
+        //Debug.Log("entered save state");
         EventManager.TriggerEvent("save");
+        stateManager.BeaconAmount -= 1;
         
     }
     public override void UpdateState(BelayStateManager stateManager)
