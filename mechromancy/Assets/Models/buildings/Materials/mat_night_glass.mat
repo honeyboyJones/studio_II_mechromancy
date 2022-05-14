@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mat_night_bldg12 - Copy (10)
+  m_Name: mat_night_glass
   m_Shader: {fileID: -6465566751694194690, guid: 0b7eaaf4ac321de4299b40760bdb8496, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -33,7 +33,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_d5b25513c2744fb4867eae7280984506:
-        m_Texture: {fileID: 2800000, guid: f7d2870eef3966b43b2e15d46d928732, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -125,7 +125,7 @@ Material:
     - _ZWrite: 1
     - _strength: 0.100000374
     m_Colors:
-    - Color_66a314c16a5c4711bc354325d5c3803f: {r: 0.990566, g: 0.990566, b: 0.990566, a: 0}
+    - Color_66a314c16a5c4711bc354325d5c3803f: {r: 0.53387326, g: 0.80419165, b: 0.8396226, a: 0.21176471}
     - Color_6a7620a4cc8f49a59409249e4dda8a6f: {r: 766.9961, g: 0, b: 759.1804, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}

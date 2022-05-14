@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ea865fa77dd7ba74aa44d58f533b7b82, type: 2}
+  - {fileID: 2100000, guid: 5fc87f62b1057d9489dcdd9df667e198, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,7 +112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 146682141102394163, guid: 83121035698113346b13452737e7e5a6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5473197966895437817, guid: 83121035698113346b13452737e7e5a6, type: 3}
       propertyPath: m_RootOrder
@@ -182,7 +182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2948512100674802596, guid: 2237a0107209242408e8285b1bd47b72, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2948512100675096452, guid: 2237a0107209242408e8285b1bd47b72, type: 3}
       propertyPath: m_RootOrder
@@ -288,7 +288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1917151574581835006, guid: f5225502be80edc4688dd187eee22484, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3730947831873054419, guid: f5225502be80edc4688dd187eee22484, type: 3}
       propertyPath: m_Name
@@ -296,15 +296,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3730947831873054419, guid: f5225502be80edc4688dd187eee22484, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4132569805243808846, guid: f5225502be80edc4688dd187eee22484, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7538118376237470881, guid: f5225502be80edc4688dd187eee22484, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5225502be80edc4688dd187eee22484, type: 3}
