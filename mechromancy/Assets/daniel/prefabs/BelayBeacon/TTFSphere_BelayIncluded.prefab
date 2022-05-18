@@ -115,19 +115,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crouchSpeed: 3
   groundSpeed: 6
-  runSpeed: 15
+  runSpeed: 20
   grAccel: 15
-  airSpeed: 1
-  airAccel: 0
-  jumpUpSpeed: 10
+  airSpeed: 10
+  airAccel: 8
+  jumpUpSpeed: 8
   dashSpeed: 6
-  wallSpeed: 15
+  DJCalculator: 1.2
+  wallSpeed: 25
   wallClimbSpeed: 4
   wallAccel: 20
-  wallRunTime: 3
+  wallRunTime: 5
   wallStickDistance: 5
   wallFloorBarrier: 40
-  wallBanTime: 4
+  wallBanTime: 2
   canJump: 1
   canDJump: 1
   JumpColdDown_Time: 1
@@ -146,8 +147,8 @@ MonoBehaviour:
   SlopeLimitation: 0
   BodScaleX: 4
   BodScaleY: 2.5
-  DebugMode: {fileID: 2412340021086642068}
-  DebugSpeed: {fileID: 2412340021442285024}
+  DebugMode: {fileID: 0}
+  DebugSpeed: {fileID: 0}
   mode: 0
   dir: {x: 0, y: 0, z: 0}
 --- !u!54 &1922666293318483972
