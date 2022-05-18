@@ -19381,17 +19381,57 @@ PrefabInstance:
       propertyPath: conversationActor
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 492334449225480200, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: lengthInSec
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 492334449225480200, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: ShapeModule.type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 492334449225480200, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: ShapeModule.angle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 492334449225480200, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: ShapeModule.arc.spread
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 492334449225480200, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 492334449225480200, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 492334449225480200, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 492334449225480200, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.43575892
+      objectReference: {fileID: 0}
+    - target: {fileID: 492334449225480200, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.7830189
+      objectReference: {fileID: 0}
+    - target: {fileID: 492334449225480200, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.13665895
+      objectReference: {fileID: 0}
     - target: {fileID: 492334449225480206, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 492334449225480206, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 492334449225480206, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1673471064634060612, guid: 339b24211652f440d9b9d78d9b823f39, type: 3}
       propertyPath: m_LocalPosition.x
