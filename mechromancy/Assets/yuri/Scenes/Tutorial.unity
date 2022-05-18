@@ -7944,11 +7944,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4960344507273136083, guid: 7ed0ee06be5f9465a861e6944e115f7a, type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 5
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 4960344507273136083, guid: 7ed0ee06be5f9465a861e6944e115f7a, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4960344507273136083, guid: 7ed0ee06be5f9465a861e6944e115f7a, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -7978,6 +7978,10 @@ PrefabInstance:
       propertyPath: InitialModule.startColor.minColor.r
       value: 0.60296786
       objectReference: {fileID: 0}
+    - target: {fileID: 4960344507273136084, guid: 7ed0ee06be5f9465a861e6944e115f7a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 4960344507273136085, guid: 7ed0ee06be5f9465a861e6944e115f7a, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.5964
@@ -10617,11 +10621,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4915047763172930835, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 5
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 4915047763172930835, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4915047763172930835, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -10651,6 +10655,10 @@ PrefabInstance:
       propertyPath: InitialModule.startColor.minColor.r
       value: 0.60296786
       objectReference: {fileID: 0}
+    - target: {fileID: 4915047763172930836, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6013469177433452140, guid: 459e1ce7440134cebbea02c7fb0b823b, type: 3}
       propertyPath: conversationActor
       value: 
@@ -12045,6 +12053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 2.4_Waypoint_PS
       objectReference: {fileID: 0}
+    - target: {fileID: 1042709742173775834, guid: 42619da80a79d437a8370b9fa6019b02, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 1042709742173775835, guid: 42619da80a79d437a8370b9fa6019b02, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.5964
@@ -12071,11 +12083,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1042709742173775837, guid: 42619da80a79d437a8370b9fa6019b02, type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 5
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 1042709742173775837, guid: 42619da80a79d437a8370b9fa6019b02, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1042709742173775837, guid: 42619da80a79d437a8370b9fa6019b02, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
@@ -18884,6 +18896,10 @@ PrefabInstance:
       propertyPath: showCursorDuringConversation
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2039903136385661226, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2039903136385661227, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.9032718
@@ -18910,11 +18926,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2039903136385661229, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 5
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 2039903136385661229, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2039903136385661229, guid: d686e277fb9e3450ba4b0d450abfa781, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
