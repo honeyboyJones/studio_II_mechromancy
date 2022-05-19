@@ -148,7 +148,7 @@ public class TitanfallMovement : MonoBehaviour
         {
             if (!PlayerAudio.isPlaying)
             {
-                PlayerAudio.PlayOneShot(a_Air, 0.5f);
+                PlayerAudio.Stop();
             }
 
         }
@@ -175,7 +175,10 @@ public class TitanfallMovement : MonoBehaviour
         }
         else
         {
-            PlayerAudio.Stop();
+            if (!PlayerAudio.isPlaying)
+            {
+                PlayerAudio.Stop();
+            }
         }
 
         #endregion
