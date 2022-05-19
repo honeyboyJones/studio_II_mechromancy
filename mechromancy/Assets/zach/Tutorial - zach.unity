@@ -18665,6 +18665,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 348496973}
     - target: {fileID: 1922666293318483971, guid: 96198589c29918e4b8ceef971e6ef944, type: 3}
+      propertyPath: wallSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922666293318483971, guid: 96198589c29918e4b8ceef971e6ef944, type: 3}
       propertyPath: DebugSpeed
       value: 
       objectReference: {fileID: 1101585917}
