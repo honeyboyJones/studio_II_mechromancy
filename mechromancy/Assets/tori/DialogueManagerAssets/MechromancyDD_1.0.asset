@@ -6411,7 +6411,7 @@ MonoBehaviour:
         typeString: 
       - title: Dialogue Text
         value: These will utilize the All-Tears to transport you back to the beacon's
-          location using the I key, saving you time and energy in the event of mistimed
+          location using the F key, saving you time and energy in the event of mistimed
           jumps.
         type: 0
         typeString: 
@@ -6503,7 +6503,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 92.2872}
+    canvasScrollPosition: {x: 4.394623, y: 19.043396}
     canvasZoom: 0.6826512
   - id: 13
     fields:
@@ -7049,12 +7049,12 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 31
-        y: 212
+        y: 213.07965
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 5.3063354, y: 118.93146}
-    canvasZoom: 0.9422724
+    canvasScrollPosition: {x: 12.955719, y: 0}
+    canvasZoom: 0.92623734
   - id: 16
     fields:
     - title: Title

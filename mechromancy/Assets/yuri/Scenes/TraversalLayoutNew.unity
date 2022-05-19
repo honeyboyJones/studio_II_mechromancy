@@ -458,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 4880147490826832975}
     - target: {fileID: 1928645942657943719, guid: b26a81b5077ce4d11b4a8017ae4af8f1, type: 3}
       propertyPath: maxUseDistance
-      value: 15
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1928645942657943721, guid: b26a81b5077ce4d11b4a8017ae4af8f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -985,7 +985,7 @@ PrefabInstance:
       objectReference: {fileID: 4880147490826832975}
     - target: {fileID: 1928645942657943719, guid: b26a81b5077ce4d11b4a8017ae4af8f1, type: 3}
       propertyPath: maxUseDistance
-      value: 15
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1928645942657943721, guid: b26a81b5077ce4d11b4a8017ae4af8f1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8751,14 +8751,6 @@ PrefabInstance:
       propertyPath: onExecute.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 4880147490826832975}
-    - target: {fileID: 1928645942657943719, guid: b26a81b5077ce4d11b4a8017ae4af8f1, type: 3}
-      propertyPath: maxUseDistance
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1928645942657943721, guid: b26a81b5077ce4d11b4a8017ae4af8f1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.072
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b26a81b5077ce4d11b4a8017ae4af8f1, type: 3}
 --- !u!1001 &563919207
@@ -18279,10 +18271,6 @@ PrefabInstance:
       propertyPath: onExecute.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 4880147490826832975}
-    - target: {fileID: 1928645942657943719, guid: b26a81b5077ce4d11b4a8017ae4af8f1, type: 3}
-      propertyPath: maxUseDistance
-      value: 15
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b26a81b5077ce4d11b4a8017ae4af8f1, type: 3}
 --- !u!1001 &2134100750
