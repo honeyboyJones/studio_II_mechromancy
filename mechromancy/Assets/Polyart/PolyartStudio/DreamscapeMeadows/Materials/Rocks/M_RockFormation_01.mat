@@ -29,19 +29,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _CoverageMask:
         m_Texture: {fileID: 2800000, guid: f3a1f84b44733e44e9e06b47e364540b, type: 3}
-        m_Scale: {x: 3, y: 3}
+        m_Scale: {x: 4, y: 4}
         m_Offset: {x: 0, y: 0}
     - _CoverageNormalTexture:
-        m_Texture: {fileID: 2800000, guid: d6545aaaf3fe7644db0ce9cedba45f55, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 11, y: 11}
         m_Offset: {x: 0, y: 0}
     - _CoverageSmoothnessTexture:
-        m_Texture: {fileID: 2800000, guid: 345039ed55f8d784981195f0f9464f46, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 11, y: 11}
         m_Offset: {x: 0, y: 0}
     - _CoverageTexture:
         m_Texture: {fileID: 2800000, guid: 28eb0e1235144c1489ede6afbdf5ff25, type: 3}
-        m_Scale: {x: 11, y: 11}
+        m_Scale: {x: 4, y: 4}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
@@ -88,7 +88,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SmoothnessTexture:
-        m_Texture: {fileID: 2800000, guid: abc4a114b1d2776448b1c932411bdfb5, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -129,6 +129,6 @@ Material:
     m_Colors:
     - _AlbedoTint: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _CoverageTint: {r: 0.6245491, g: 0.5087932, b: 0.6792453, a: 1}
+    - _CoverageTint: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

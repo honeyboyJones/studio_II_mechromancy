@@ -122,15 +122,16 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorBottom: {r: 0.54544586, g: 0.8018868, b: 0, a: 1}
+    - _ColorBottom: {r: 1, g: 1, b: 1, a: 1}
     - _ColorBottom1: {r: 0.26925772, g: 0.49056602, b: 0.011569952, a: 1}
     - _ColorOVerlay: {r: 1, g: 0.9371227, b: 0, a: 1}
-    - _ColorTop: {r: 0.43535584, g: 0.5849056, b: 0, a: 1}
+    - _ColorTop: {r: 1, g: 1, b: 1, a: 1}
     - _ColorTop1: {r: 0.37178555, g: 0.6603774, b: 0.04049486, a: 1}
-    - _ColorTopVariation: {r: 1, g: 0.9229307, b: 0, a: 0}
+    - _ColorTopVariation: {r: 1, g: 1, b: 1, a: 0}
     - _ColorWave: {r: 0.07332758, g: 0.25471693, b: 0, a: 1}
     - _ColorWave1: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Vector0: {r: 0, g: 0.2, b: 0, a: 0}
     - _Vector1: {r: 0, g: 0.1, b: 0, a: 0}
     - _WaveSpeed: {r: 0.32075462, g: 0.025720898, b: 0.025720898, a: 1}
+  m_BuildTextureStacks: []
