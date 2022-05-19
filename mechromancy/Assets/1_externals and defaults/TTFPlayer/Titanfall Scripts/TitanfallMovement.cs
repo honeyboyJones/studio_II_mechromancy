@@ -148,7 +148,7 @@ public class TitanfallMovement : MonoBehaviour
         {
             if (!PlayerAudio.isPlaying)
             {
-                PlayerAudio.Stop();
+                //PlayerAudio.Stop();
             }
 
         }
