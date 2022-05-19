@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/yuri/Scenes/MainMenu.unity
+    guid: 76d3d8183fdba0443957247ef383cf0d
+  - enabled: 1
+    path: Assets/yuri/Scenes/Prologue.unity
+    guid: a1f28480327b73c448d70108e8c8f4b1
+  - enabled: 1
+    path: Assets/yuri/Scenes/Tutorial.unity
+    guid: e911ea3b8ba5d2b4496f39a6b03e13bb
+  - enabled: 1
+    path: Assets/yuri/Scenes/TraversalLayout.unity
+    guid: f8d721219b01d634bb83a6482a48b0a4
+  - enabled: 1
+    path: Assets/yuri/Scenes/TraversalLayoutNew.unity
+    guid: bbd2e90af47919c48834efd7da0054b2
+  - enabled: 1
+    path: Assets/yuri/Scenes/Resolution.unity
+    guid: 1ae75052467bdd5469e6dc4a3de278e8
+  - enabled: 1
+    path: Assets/yuri/Scenes/BlackScene.unity
+    guid: 688b5052081e5794d9913351f0257a45
   m_configObjects: {}

@@ -36,6 +36,9 @@ public class TTFCameraController : MonoBehaviour
 
     #endregion
 
+    bool OnLockCamera =false;
+
+    AudioData audioData;
     void Start()
     {
         rb = GetComponentInParent<Rigidbody>();
@@ -46,7 +49,25 @@ public class TTFCameraController : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("OnLockCamera:"+OnLockCamera);
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(OnLockCamera)
+            {
+                OnLockCamera = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            else
+            {
+                OnLockCamera = true;
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+
+            }
+        }
         RotateMainCamera();
+        
     }
 
     void FixedUpdate()
@@ -69,9 +90,13 @@ public class TTFCameraController : MonoBehaviour
         mouseInput.x *= sensX;
         mouseInput.y *= sensY;
 
-        currentLook.x += mouseInput.x;
-        //currentLook.y += mouseInput.y;
-        currentLook.y = Mathf.Clamp(currentLook.y += mouseInput.y, -90, 90);
+        if (!OnLockCamera)
+        {
+            currentLook.x += mouseInput.x;
+            //currentLook.y += mouseInput.y;
+            currentLook.y = Mathf.Clamp(currentLook.y += mouseInput.y, -90, 90);
+        }
+
 
         transform.localRotation = Quaternion.AngleAxis(-currentLook.y, Vector3.right);
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, curTilt);

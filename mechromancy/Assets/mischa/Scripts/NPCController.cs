@@ -12,10 +12,4 @@ public class NPCController : MonoBehaviour
     {
         npcConnectedPatrol = GetComponent<NPCConnectedPatrol>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //transform.LookAt(npcConnectedPatrol._currentWaypoint.gameObject.transform.position);
-    }
 }

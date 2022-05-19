@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class BelayStateManager : MonoBehaviour
 {
+    [HideInInspector]
     public bool isSaved = false;
-    //public bool isReachable = false;
+    [HideInInspector]
     public Beacon beacon;
+    [HideInInspector]
     public ParticleManager particleManager;
-    public float maxSaveDistance = 100;
+    public float maxSaveDistance = 2.5f;
+    [HideInInspector]
     public TitanfallMovement player;
+    public int BeaconAmount = 100;
     //public Vector3 standByPos;
     //public Vector3 standByNormal;
     
@@ -22,6 +26,7 @@ public class BelayStateManager : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<TitanfallMovement>();
+        beacon = FindObjectOfType<Beacon>();
         currentState = belayStateDeafault;
         currentState.EnterState(this);
         particleManager = FindObjectOfType<ParticleManager>();
@@ -34,6 +39,7 @@ public class BelayStateManager : MonoBehaviour
         //Debug.Log(currentState);
         currentState.UpdateState(this);
         isSaved = beacon.isSaved;
+        Debug.Log(isSaved);
         //standByPos = particleManager.collisionPosition;
         //standByNormal = particleManager.collisionNormal;
     }

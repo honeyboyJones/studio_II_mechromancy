@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:mechromancy/Assets/tori/Scenes/DS_TraversalLayoutTest.unity.meta
+guid: 6a9325da679b44f7189e4b18ab2bafc2
+========
 guid: 79e4a25f666bb4b4db875688ece67899
+>>>>>>>> main:mechromancy/Assets/StylizedWater2/_Demo/RiverDemo.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

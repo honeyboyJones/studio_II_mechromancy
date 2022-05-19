@@ -12,7 +12,6 @@ public class RobotFreeAnim : MonoBehaviour {
 	void Awake()
 	{
 		anim = gameObject.GetComponent<Animator>();
-		//gameObject.transform.eulerAngles = rot; //get global orientation
 		gameObject.transform.localEulerAngles = rot; //get local angle orientation
 
 	}
@@ -21,14 +20,13 @@ public class RobotFreeAnim : MonoBehaviour {
 	void Update()
 	{
 		CheckKey();
-		//gameObject.transform.eulerAngles = rot; //get global orientation
 		gameObject.transform.localEulerAngles = rot; //get local angle orientation
 	}
 
 	void CheckKey()
 	{
-		// Walk
-		if (Input.GetKey(KeyCode.W))
+        #region //walk
+        if (Input.GetKey(KeyCode.W))
 		{
 			anim.SetBool("Walk_Anim", true);
 		}
@@ -36,21 +34,24 @@ public class RobotFreeAnim : MonoBehaviour {
 		{
 			anim.SetBool("Walk_Anim", false);
 		}
+        #endregion
 
-		// Rotate Left
-		if (Input.GetKey(KeyCode.A))
+        #region //rotate left
+        if (Input.GetKey(KeyCode.A))
 		{
 			rot[1] -= rotSpeed * Time.fixedDeltaTime;
 		}
+        #endregion
 
-		// Rotate Right
-		if (Input.GetKey(KeyCode.D))
+        #region //rotate right
+        if (Input.GetKey(KeyCode.D))
 		{
 			rot[1] += rotSpeed * Time.fixedDeltaTime;
 		}
+        #endregion
 
-		// Roll
-		if (Input.GetKeyDown(KeyCode.Space))
+        #region //roll
+        if (Input.GetKeyDown(KeyCode.Space))
 		{
 			if (anim.GetBool("Roll_Anim"))
 			{
@@ -61,9 +62,10 @@ public class RobotFreeAnim : MonoBehaviour {
 				anim.SetBool("Roll_Anim", true);
 			}
 		}
+        #endregion
 
-		// Close
-		if (Input.GetKeyDown(KeyCode.LeftControl))
+        #region //close
+        if (Input.GetKeyDown(KeyCode.LeftControl))
 		{
 			if (!anim.GetBool("Open_Anim"))
 			{
@@ -74,6 +76,7 @@ public class RobotFreeAnim : MonoBehaviour {
 				anim.SetBool("Open_Anim", false);
 			}
 		}
-	}
+        #endregion
+    }
 
 }

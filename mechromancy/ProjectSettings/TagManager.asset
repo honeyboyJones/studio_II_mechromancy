@@ -8,6 +8,12 @@ TagManager:
   - nightModel
   - Waypoint
   - Story
+  - Waypoint2
+  - Mews
+  - Plexii
+  - Crobo
+  - Simum
+  - Waypoint3
   layers:
   - Default
   - TransparentFX
