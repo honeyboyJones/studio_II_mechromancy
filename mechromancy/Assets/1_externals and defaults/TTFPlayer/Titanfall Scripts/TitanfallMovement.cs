@@ -153,7 +153,7 @@ public class TitanfallMovement : MonoBehaviour
 
         }
         //play walking audio
-        else if (mode == Mode.Walking && rb.velocity.magnitude > 1&&!running&&dir.magnitude>0)
+        else if (mode == Mode.Walking && rb.velocity.magnitude > 0.1&&!running&&dir.magnitude>0)
         {
             Debug.Log("walking audio");
             PlayerAudio.pitch = 0.8f;
@@ -164,7 +164,7 @@ public class TitanfallMovement : MonoBehaviour
 
         }
         //play running audio
-        else if(((running&&rb.velocity.magnitude > groundSpeed)||mode==Mode.Wallruning)&&dir.magnitude>0)
+        else if(((running&&rb.velocity.magnitude > 0.1)||mode==Mode.Wallruning)&&dir.magnitude>0)
         {
             Debug.Log("running audio");
             PlayerAudio.pitch = 1.3f;
