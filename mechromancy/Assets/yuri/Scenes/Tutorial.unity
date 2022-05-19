@@ -18562,7 +18562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1922666293318483971, guid: 96198589c29918e4b8ceef971e6ef944, type: 3}
       propertyPath: airAccel
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1922666293318483972, guid: 96198589c29918e4b8ceef971e6ef944, type: 3}
       propertyPath: m_Drag
