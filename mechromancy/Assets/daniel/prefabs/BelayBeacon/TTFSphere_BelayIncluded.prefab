@@ -117,7 +117,7 @@ MonoBehaviour:
   crouchSpeed: 3
   groundSpeed: 8
   runSpeed: 20
-  grAccel: 10
+  grAccel: 15
   airSpeed: 10
   airAccel: 8
   jumpUpSpeed: 8
