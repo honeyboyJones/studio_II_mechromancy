@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aduioSources:
   - {fileID: 8300000, guid: efa765f4db9374a2aa8290daf0c551e6, type: 3}
+  Walk: {fileID: 8300000, guid: f2bf8b8da26721d459f51bee095b8603, type: 3}
+  Jump: {fileID: 8300000, guid: 2b24d97b624397c4585206b27423aa31, type: 3}
+  DJump: {fileID: 8300000, guid: d02dc64604f2bf946a8d10a56c3bd557, type: 3}
+  Land: {fileID: 8300000, guid: 9f494646750ff314a9c14e694fa187a4, type: 3}
+  Air: {fileID: 8300000, guid: d995c68add1c0154e82d9d07f0057d8b, type: 3}
