@@ -103,7 +103,7 @@ namespace Assets.Code
                 }
             }
             #endregion
-            Debug.Log(_navMeshAgent.remainingDistance);
+            //Debug.Log(_navMeshAgent.remainingDistance);
             currentWaypointName = _currentWaypoint.name; //update target location
         }
 
