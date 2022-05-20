@@ -214,6 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Tutorial
+  buttonFunctions: {fileID: 0}
 --- !u!4 &41370515
 Transform:
   m_ObjectHideFlags: 0

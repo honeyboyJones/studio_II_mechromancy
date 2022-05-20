@@ -30,8 +30,7 @@ public class SceneChangerTest : MonoBehaviour
     {
         if (sceneName == "MainMenu")
         {
-            buttonFunctions.ShowMainMenu();
-            buttonFunctions.HideDS();
+            buttonFunctions.BackMainMenu();
             buttonFunctions.SceneChanger("BlackScene");
         }
         else
