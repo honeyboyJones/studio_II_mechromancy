@@ -112,7 +112,7 @@ public class TitanfallMovement : MonoBehaviour
     //Audio
     public AudioData audioData;
     public AudioSource PlayerAudio;
-    public AudioClip a_Walk, a_Jump, a_DJump, a_Land,a_Air;
+    public AudioClip a_Walk, a_Jump, a_DJump, a_Land,a_Air,a_Sprint;
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -126,6 +126,8 @@ public class TitanfallMovement : MonoBehaviour
         a_DJump = audioData.FectchAudio_DJump();
         a_Land = audioData.FectchAudio_Land();
         a_Air = audioData.FectchAudio_Air();
+        a_Sprint = audioData.FectchAudio_Sprint();
+
 
         //a_Walk.loop = enabled;
     }
@@ -207,6 +209,10 @@ public class TitanfallMovement : MonoBehaviour
             if (!running)
             {
                 running = true;
+                if (!PlayerAudio.isPlaying)
+                {
+                    PlayerAudio.PlayOneShot(a_Sprint, 0.5f);
+                }
             }
             else
             {
@@ -851,7 +857,7 @@ public class TitanfallMovement : MonoBehaviour
 
     void HandleHeadbob(Vector3 dir, float BodScaleX, float BodScaleY)
     {
-        Debug.Log(mode);
+       // Debug.Log(mode);
         if (Mathf.Abs(dir.magnitude)>0)
         {
             timer += Time.deltaTime * (crouched? crouchBobSpeed:running||mode==Mode.Wallruning? sprintBobSpeed:walkBobSpeed) ;
