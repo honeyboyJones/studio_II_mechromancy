@@ -36,8 +36,9 @@ public class ButtonFunctions : MonoBehaviour
         //Start button
         ButtonFunctions.OnClick_StartGame += ClickAudio;
         ButtonFunctions.OnClick_StartGame += HideMainMenu;
-        //ButtonFunctions.OnClick_StartGame += DestoryDS;
+        ButtonFunctions.OnClick_StartGame += DestoryDS;
         ButtonFunctions.OnClick_StartGame += ShowLoadingScreen;
+        //ButtonFunctions.OnClick_StartGame += ShowDS;
 
         //pop ou Pause menu
         ButtonFunctions.OnClick_PauseMenu += ClickAudio;
@@ -54,7 +55,7 @@ public class ButtonFunctions : MonoBehaviour
         ButtonFunctions.backMainMenu += ShowMainMenu;
         ButtonFunctions.backMainMenu += ShowLoadingScreen;
         //ButtonFunctions.backMainMenu += DestoryDS;
-        //ButtonFunctions.backMainMenu += HideDS;
+        ButtonFunctions.backMainMenu += HideDS;
         //ButtonFunctions.backMainMenu += UnloadAllScenes;
 
         //Open Level Menu
@@ -63,7 +64,7 @@ public class ButtonFunctions : MonoBehaviour
 
         ButtonFunctions.LevelButtons += ClickAudio;
         ButtonFunctions.LevelButtons += ShowLoadingScreen;
-        //ButtonFunctions.LevelButtons += DestoryDS;
+        ButtonFunctions.LevelButtons += DestoryDS;
         ButtonFunctions.LevelButtons += OnClose_PauseMenu;
         ButtonFunctions.LevelButtons += HideLevelMenu;
 
@@ -241,14 +242,15 @@ public class ButtonFunctions : MonoBehaviour
     {
         if(DS!=null)
         {
-            DS.SetActive(false);
+            DS.transform.Find("Canvas").GetComponent<Canvas>().enabled = false;
+            //DS.SetActive(false);
         }
     }
     public void ShowDS()
     {
         if (DS != null)
         {
-            DS.SetActive(true);
+            DS.transform.Find("Canvas").GetComponent<Canvas>().enabled = true;
         }
     }
     public void DestoryDS()

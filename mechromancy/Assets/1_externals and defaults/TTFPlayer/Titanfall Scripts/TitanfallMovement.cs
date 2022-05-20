@@ -139,8 +139,8 @@ public class TitanfallMovement : MonoBehaviour
     void OnGUI()
     {
         //for debug purposes, would love to see an accelerometer in final game too tho
-        GUILayout.Label("Spid: " + new Vector3(rb.velocity.x, 0, rb.velocity.z).magnitude);
-        GUILayout.Label("SpidUp: " + rb.velocity.y);
+        //GUILayout.Label("Spid: " + new Vector3(rb.velocity.x, 0, rb.velocity.z).magnitude);
+        //GUILayout.Label("SpidUp: " + rb.velocity.y);
     }
 
     void Update()
