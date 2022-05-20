@@ -12,6 +12,7 @@ public class ButtonFunctions : MonoBehaviour
     public static event Btn_Clicked OnClose_PauseMenu;
     public static event Btn_Clicked backMainMenu;
     public static event Btn_Clicked OpenLevelMenu;
+    public static event Btn_Clicked LevelButtons;
 
     [Header ("AudioScources DB")]   
     public AudioData audioDB;
@@ -23,6 +24,7 @@ public class ButtonFunctions : MonoBehaviour
 
     public GameObject MainMenu, PauseMenu, LoadingScreen,CreditScreen, LevelMenu;
 
+    public GameObject DS;
     string curSceneName;
 
     private void Awake()
@@ -34,6 +36,7 @@ public class ButtonFunctions : MonoBehaviour
         //Start button
         ButtonFunctions.OnClick_StartGame += ClickAudio;
         ButtonFunctions.OnClick_StartGame += HideMainMenu;
+        //ButtonFunctions.OnClick_StartGame += DestoryDS;
         ButtonFunctions.OnClick_StartGame += ShowLoadingScreen;
 
         //pop ou Pause menu
@@ -49,12 +52,20 @@ public class ButtonFunctions : MonoBehaviour
         //Back to Main Menu
         ButtonFunctions.backMainMenu += OnClose_PauseMenu;
         ButtonFunctions.backMainMenu += ShowMainMenu;
+        ButtonFunctions.backMainMenu += ShowLoadingScreen;
+        //ButtonFunctions.backMainMenu += DestoryDS;
+        //ButtonFunctions.backMainMenu += HideDS;
         //ButtonFunctions.backMainMenu += UnloadAllScenes;
 
         //Open Level Menu
         ButtonFunctions.OpenLevelMenu += ClickAudio;
-        ButtonFunctions.OpenLevelMenu += HidePasueMenu;
         ButtonFunctions.OpenLevelMenu += ShowLevelMenu;
+
+        ButtonFunctions.LevelButtons += ClickAudio;
+        ButtonFunctions.LevelButtons += ShowLoadingScreen;
+        //ButtonFunctions.LevelButtons += DestoryDS;
+        ButtonFunctions.LevelButtons += OnClose_PauseMenu;
+        ButtonFunctions.LevelButtons += HideLevelMenu;
 
         DontDestroyOnLoad(this.gameObject);
     }
@@ -66,6 +77,11 @@ public class ButtonFunctions : MonoBehaviour
     }
     private void Update()
     {
+        Debug.Log(SceneManager.GetActiveScene().name);
+        if(DS==null&&SceneManager.GetActiveScene().name!="MainMenu")
+        {
+            DS = GameObject.Find("Dialogue Manager");
+        }
         Debug.Log("TimeScale"+ Time.timeScale);
         if(Input.GetKeyDown(KeyCode.Escape)&& !MainMenu.activeSelf)
         {
@@ -92,7 +108,7 @@ public class ButtonFunctions : MonoBehaviour
     {
         OnClick_StartGame();
         //SceneManager.LoadSceneAsync("Level1", LoadSceneMode.Additive);
-        StartCoroutine(LoadAsync("TraversalLayout"));
+        StartCoroutine(LoadAsync("TraversalLayoutNew"));
     }
     public void ReStartGame()
     {
@@ -117,10 +133,42 @@ public class ButtonFunctions : MonoBehaviour
         backMainMenu();
         StartCoroutine(LoadAsync("BlackScene"));
     }
-
+    #region Level Menu
     public void B_LevelMenu()
     {
+        OpenLevelMenu();
+    }
+    public void B_LevelPrologue()
+    {
+        LevelButtons();
+        StartCoroutine(LoadAsync("Prologue"));
+    }
+    public void B_LevelTraversalLayoutNew()
+    {
+        LevelButtons();
+        StartCoroutine(LoadAsync("TraversalLayoutNew"));
+    }
+    public void B_LevelTutorial()
+    {
+        LevelButtons();
+        StartCoroutine(LoadAsync("Tutorial"));
+    }
+    public void B_LevelResolution()
+    {
+        LevelButtons();
+        StartCoroutine(LoadAsync("Resolution"));
+    }
+    public void B_LevelBackToPause()
+    {
+        ClickAudio();
+        HideLevelMenu();
+    }
+    #endregion
 
+    public void SceneChanger(string sceneName)
+    {
+        ShowLoadingScreen();
+        StartCoroutine(LoadAsync(sceneName));
     }
     #endregion
 
@@ -136,8 +184,7 @@ public class ButtonFunctions : MonoBehaviour
     IEnumerator LoadAsync(string sceneName)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
-
-        while(!operation.isDone)
+        while (!operation.isDone)
         {
             LoadingSlider.value = operation.progress/0.9f;
             LoadingText.text = (LoadingSlider.value/1).ToString("00"+"%");
@@ -182,12 +229,31 @@ public class ButtonFunctions : MonoBehaviour
 
     public void HideLevelMenu()
     {
-        PauseMenu.SetActive(false);
+        LevelMenu.SetActive(false);
     }
     public void ShowLevelMenu()
     {
-        PauseMenu.SetActive(true);
+        LevelMenu.SetActive(true);
         //StartCoroutine(LoadAsync());
+    }
+
+    public void HideDS()
+    {
+        if(DS!=null)
+        {
+            DS.SetActive(false);
+        }
+    }
+    public void ShowDS()
+    {
+        if (DS != null)
+        {
+            DS.SetActive(true);
+        }
+    }
+    public void DestoryDS()
+    {
+        Destroy(DS);
     }
 
     #endregion
