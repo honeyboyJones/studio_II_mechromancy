@@ -836,7 +836,7 @@ public class TitanfallMovement : MonoBehaviour
             float upForce = Mathf.Clamp(jumpUpSpeed*DJCalculator - rb.velocity.y, 0, Mathf.Infinity);
 
             rb.AddForce(new Vector3(0, upForce, 0), ForceMode.VelocityChange);
-
+            PlayerAudio.PlayOneShot(a_DJump);
             //Horizontal force on a double jump - because we should *always* be flying, we want a diff feeling vs. the vertical (y axis) above
             //we're also checking to see if wishDir is non-zero. If wishDir is zero, then the player has not input any direction keys so we'll just add vertical force, no X/Z force
             if (wishDir != Vector3.zero)
@@ -864,7 +864,7 @@ public class TitanfallMovement : MonoBehaviour
 
                 rb.AddForce(newSpid - horSpid, ForceMode.VelocityChange);
                 PlayerAudio.pitch = 1f;
-                PlayerAudio.PlayOneShot(a_DJump);
+                
             }
             //set double jump to false so we can't do it until after a new surface contact event
             canDJump = false;
