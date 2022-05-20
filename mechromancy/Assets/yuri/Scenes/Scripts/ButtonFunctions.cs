@@ -13,6 +13,8 @@ public class ButtonFunctions : MonoBehaviour
     public static event Btn_Clicked backMainMenu;
     public static event Btn_Clicked OpenLevelMenu;
     public static event Btn_Clicked LevelButtons;
+    
+    public static event Btn_Clicked On_CreditScreen;
 
     [Header ("AudioScources DB")]   
     public AudioData audioDB;
@@ -45,6 +47,8 @@ public class ButtonFunctions : MonoBehaviour
         ButtonFunctions.OnClick_PauseMenu += ShowPasueMenu;
         ButtonFunctions.OnClick_PauseMenu += PauseGame;
 
+        ButtonFunctions.On_CreditScreen += ShowCreditScreen;
+        ButtonFunctions.On_CreditScreen += PauseGame;
         //close the Pause Menu
         ButtonFunctions.OnClose_PauseMenu += ClickAudio;
         ButtonFunctions.OnClose_PauseMenu += HidePasueMenu;
@@ -52,6 +56,7 @@ public class ButtonFunctions : MonoBehaviour
 
         //Back to Main Menu
         ButtonFunctions.backMainMenu += OnClose_PauseMenu;
+        ButtonFunctions.backMainMenu += HideCreditScreen;
         ButtonFunctions.backMainMenu += ShowMainMenu;
         ButtonFunctions.backMainMenu += ShowLoadingScreen;
         //ButtonFunctions.backMainMenu += DestoryDS;
@@ -171,6 +176,11 @@ public class ButtonFunctions : MonoBehaviour
         ShowLoadingScreen();
         StartCoroutine(LoadAsync(sceneName));
     }
+
+    public void Fina_ShowCreditScreen()
+    {
+        ShowCreditScreen();
+    }
     #endregion
 
     #region Audio Thing
@@ -238,6 +248,15 @@ public class ButtonFunctions : MonoBehaviour
         //StartCoroutine(LoadAsync());
     }
 
+    public void ShowCreditScreen()
+    {
+        CreditScreen.SetActive(true);
+    }
+    public void HideCreditScreen()
+    {
+        CreditScreen.SetActive(false);
+    }
+
     public void HideDS()
     {
         if(DS!=null)
@@ -284,6 +303,7 @@ public class ButtonFunctions : MonoBehaviour
         LoadingScreen = this.transform.Find("LoadingScreen").gameObject;
         PauseMenu = this.transform.Find("PauseMenu").gameObject;
         LevelMenu = this.transform.Find("LevelMenu").gameObject;
+        CreditScreen = this.transform.Find("CreditScreen").gameObject;
     }
     public void PauseGame()
     {
