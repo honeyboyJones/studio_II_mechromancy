@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:mechromancy/Assets/daniel/DuplicatedAnim/RobotArmature_Jump.anim.meta
 guid: e3277223764f11741a536e929f23f641
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000
-========
-guid: a1b7276ba53f24ddca3c76650afc2a44
-NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 24100000
->>>>>>>> main:mechromancy/Assets/zach/Audio/Outside Mixer.mixer.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

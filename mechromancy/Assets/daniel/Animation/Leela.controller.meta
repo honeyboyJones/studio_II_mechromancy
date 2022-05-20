@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:mechromancy/Assets/daniel/Animation/Leela.controller.meta
 guid: c7db34a262ebc4c42a08d92794a1d969
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000
-========
-guid: abebbbdbdaab07c479a00a8aac3e0466
-NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 8400000
->>>>>>>> main:mechromancy/Assets/daniel/CameraRender/RenderTextinCockpit.renderTexture.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 
