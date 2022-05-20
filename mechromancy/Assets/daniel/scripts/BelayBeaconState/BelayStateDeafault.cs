@@ -37,18 +37,9 @@ public class BelayStateDeafault : BelayStateBase
             
         }
 
-        if (Input.GetKeyDown(KeyCode.R)) 
+        if (Input.GetKey(KeyCode.R)) 
         {
-            Debug.Log(stateManager.isSaved);
-            if (stateManager.isSaved == true)
-            {
-                EventManager.TriggerEvent("cancle");
-            }
-            else 
-            {
-                EventManager.TriggerEvent("savefailed");
-            }
-                
+            EventManager.TriggerEvent("cancle");
         }
     }
     public override void ExitState(BelayStateManager stateManager) 
