@@ -251,7 +251,7 @@ public class TitanfallMovement : MonoBehaviour
         
         if (mode != Mode.Flying)
         {
-            HandleHeadbob(dir, BodScaleX, BodScaleY);
+            //HandleHeadbob(dir, BodScaleX, BodScaleY);
         }
 
         //set collider height lower when crouched
