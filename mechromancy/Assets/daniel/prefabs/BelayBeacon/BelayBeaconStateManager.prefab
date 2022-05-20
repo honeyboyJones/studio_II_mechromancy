@@ -163,7 +163,6 @@ MonoBehaviour:
   particleManager: {fileID: 0}
   maxSaveDistance: 2.5
   player: {fileID: 0}
-  BeaconAmount: 100
 --- !u!1 &4668033384746285417
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,9 +308,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d988745d1990f704a83a35fdeca3dfe6, type: 3}
   - {fileID: 8300000, guid: 7a0da9020075dad4e9b134dd7d6f181d, type: 3}
   - {fileID: 8300000, guid: c7afa6e32e4becd4c9a8057711dc1822, type: 3}
-  - {fileID: 8300000, guid: 151cc191695e1a04eaacfa1332a93445, type: 3}
   PrepareVolume: 1
   SaveVolume: 1
   SaveErrorVolume: 1
   LoadVolume: 1
-  CancleVolume: 1
