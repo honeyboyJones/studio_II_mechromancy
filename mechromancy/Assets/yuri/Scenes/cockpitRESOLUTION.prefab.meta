@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:mechromancy/Assets/yuri/Scenes/cockpitRESOLUTION.prefab.meta
 guid: 53981c8e257d81242bf03b281fe7c44e
 PrefabImporter:
+========
+guid: 2f8e9d8dd4014a444bd7dc347a60004b
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> main:mechromancy/Assets/Plugins/Pixel Crushers/Dialogue System/Scripts/Importers/Arcweave.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

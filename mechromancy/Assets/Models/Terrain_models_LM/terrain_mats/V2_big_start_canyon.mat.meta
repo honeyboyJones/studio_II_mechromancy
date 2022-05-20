@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:mechromancy/Assets/Models/Terrain_models_LM/terrain_mats/V2_big_start_canyon.mat.meta
 guid: 5e23f609e3eb6364f8831fe26372c44b
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0
+========
+guid: 2ddf460389ff5974e8157b027015a158
+timeCreated: 1524431381
+licenseType: Store
+NativeFormatImporter:
+>>>>>>>> main:mechromancy/Assets/Plugins/Pixel Crushers/Dialogue System/Demo/Art/Recon Troop/Animator/ReconTroopAnimator.controller.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

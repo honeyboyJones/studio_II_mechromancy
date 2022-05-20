@@ -19,6 +19,7 @@ public class TitanfallMovement : MonoBehaviour
     //Jump
     public float jumpUpSpeed = 9.2f;
     public float dashSpeed = 6f;
+    public float DJCalculator = 1.5f;
 
     //Wall
     public float wallSpeed = 10f;
@@ -43,6 +44,8 @@ public class TitanfallMovement : MonoBehaviour
     bool canJump = true;
     [SerializeField]
     bool canDJump = true;
+    [SerializeField]
+    bool canFlyJump = true;
     //wallban is used in fixedUpdate to check and see if player is already wallrunning, do not modify
     float wallBan = 0f;
     //wallrunTimer is used to apply inverse gravity and keep player off the wall, do not modify
@@ -105,6 +108,11 @@ public class TitanfallMovement : MonoBehaviour
     TTFCameraController camCon;
     Rigidbody rb;
     public Vector3 dir = Vector3.zero;
+    
+    //Audio
+    public AudioData audioData;
+    public AudioSource PlayerAudio;
+    public AudioClip a_Walk, a_Jump, a_DJump, a_Land,a_Air;
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -113,6 +121,13 @@ public class TitanfallMovement : MonoBehaviour
         defaultCamXpos = camCon.mainCamera.transform.localPosition.x;
         defaultCamYpos = camCon.mainCamera.transform.localPosition.y;
 
+        a_Walk = audioData.FectchAudio_Walk();
+        a_Jump = audioData.FectchAudio_Jump();
+        a_DJump = audioData.FectchAudio_DJump();
+        a_Land = audioData.FectchAudio_Land();
+        a_Air = audioData.FectchAudio_Air();
+
+        //a_Walk.loop = enabled;
     }
     void Start()
     {
@@ -129,6 +144,46 @@ public class TitanfallMovement : MonoBehaviour
 
     void Update()
     {
+        #region AudioControl
+        //Debug.Log("Audio clip length : " + PlayerAudio.clip.length);
+        if (mode == Mode.Flying)
+        {
+            if (!PlayerAudio.isPlaying)
+            {
+                //PlayerAudio.Stop();
+            }
+
+        }
+        //play walking audio
+        else if (mode == Mode.Walking && rb.velocity.magnitude > 0.1&&!running&&dir.magnitude>0)
+        {
+            Debug.Log("walking audio");
+            PlayerAudio.pitch = 0.8f;
+            if (!PlayerAudio.isPlaying)
+            {
+                PlayerAudio.PlayOneShot(a_Walk, 0.5f);
+            }
+
+        }
+        //play running audio
+        else if(((running&&rb.velocity.magnitude > 0.1)||mode==Mode.Wallruning)&&dir.magnitude>0)
+        {
+            Debug.Log("running audio");
+            PlayerAudio.pitch = 1.3f;
+            if (!PlayerAudio.isPlaying)
+            {
+                PlayerAudio.PlayOneShot(a_Walk, 0.5f);
+            }
+        }
+        else
+        {
+            if (!PlayerAudio.isPlaying)
+            {
+                PlayerAudio.Stop();
+            }
+        }
+
+        #endregion
         if(running&mode==Mode.Walking)
         {
             DebugMode.text = "Mode: Running";
@@ -149,8 +204,10 @@ public class TitanfallMovement : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.LeftShift) && Input.GetAxisRaw("Vertical") > 0.9)
         {
-            if(!running)
-            running = true;
+            if (!running)
+            {
+                running = true;
+            }
             else
             {
                 running = false;
@@ -463,9 +520,8 @@ public class TitanfallMovement : MonoBehaviour
             EnterFlying();
         }*/
         RaycastHit[] hits = Physics.SphereCastAll(transform.position, 1f, transform.forward, 0f);
-        if(hits.Length > 0)
+        if(hits.Length > 1)
         {
-
         }
         else
         {
@@ -558,12 +614,15 @@ public class TitanfallMovement : MonoBehaviour
         //just a lil jump debug and function
         if (jump && canJump)
         {
+            canFlyJump = false;
             //gameObject.SendMessage("OnJump");
             Jump();
+            
         }
         //if we're not calling the jump function, we'll continue walking
         else
         {
+            
             //if (crouched) acceleration = 0.5f;
 
             //here we're going to clamp player speed while walking to our walk max. if players continue to walk without using jump or b-Hop strategies to maintain speed, they'll slow down
@@ -599,16 +658,23 @@ public class TitanfallMovement : MonoBehaviour
 
             //at the end we AddForce based off current input keys! 
             rb.AddForce(direction, ForceMode.Acceleration);
+            canFlyJump = true;
         }
     }
 
     //here's a fun one finally, moving in the air!
     void AirMove(Vector3 wishDir, float maxSpeed, float acceleration)
     {
-        if (jump && !crouched)
+        if (jump && !crouched&& !canFlyJump)
         {
             //gameObject.SendMessage("OnDoubleJump");
             DoubleJump(wishDir);
+        }
+        else if (jump && canFlyJump)
+        {
+            //gameObject.SendMessage("OnJump");
+            Jump();
+            canFlyJump = false;
         }
 
         //**IMPORTANT FEATURE REQUEST** we should make this inputKey public, this is a unique airJump functionv- we should standardize the jump key across all modes into a public KeyCode
@@ -640,6 +706,7 @@ public class TitanfallMovement : MonoBehaviour
         //if we jump while wallrunning, we'll need to exit the wallrun
         if (jump)
         {
+            canFlyJump = false;
             //Vertical velocity change on exiting a wallrun - different from jumping in midair, since we need to push the player up slightly but more off the wall
             float upForce = Mathf.Clamp(jumpUpSpeed - rb.velocity.y, 0, Mathf.Infinity);
             rb.AddForce(new Vector3(0, upForce, 0), ForceMode.VelocityChange);
@@ -653,6 +720,8 @@ public class TitanfallMovement : MonoBehaviour
             wrTimer = 0f;
             //don't forget to enter flying mode! we're not wallrunning anymore
             EnterFlying(true);
+            PlayerAudio.pitch = 1f;
+            PlayerAudio.PlayOneShot(a_Jump);
         }
         //if wallrunning timer runs out, it means we've reset the timer becaues the player has lost contact with a wall - the wall has run out or the player fell off for some reason
         //crouching mid-wall-run disconnects the player from the wall in titanfall, this is something we *could* change if we decide it's a layer of unnecessary difficulty
@@ -661,6 +730,7 @@ public class TitanfallMovement : MonoBehaviour
             //add force to kick the player off the ground when we enter flying
             rb.AddForce(groundNormal * 3f, ForceMode.VelocityChange);
             EnterFlying(true);
+            canFlyJump = true;
         }
         else
         {
@@ -695,6 +765,7 @@ public class TitanfallMovement : MonoBehaviour
             //not sure exactly what this does, it either keeps the player stuck to the wall or it stops the player from clipping through the wall
             if (distance.magnitude > wallStickDistance) distance = Vector3.zero;
             rb.AddForce(distance * wallStickiness, ForceMode.Acceleration);
+            canFlyJump = true;
         }
 
         //if player loses the grounding state, force them back into flying. add a slight timer to stop player from entering a new wallrun for about half a second
@@ -702,6 +773,7 @@ public class TitanfallMovement : MonoBehaviour
         {
             wallStickTimer = 0.2f;
             EnterFlying();
+            //canFlyJump = true;
         }
     }
 
@@ -717,6 +789,19 @@ public class TitanfallMovement : MonoBehaviour
             //start a coroutine to stop the player from jumping again for a sec and enter flying state!
             StartCoroutine(jumpCooldownCoroutine(JumpColdDown_Time));
             EnterFlying(true);
+            PlayerAudio.pitch = 1f;
+            PlayerAudio.PlayOneShot(a_Jump);
+        }
+        else if (mode == Mode.Flying && canJump)
+        {
+            //add a little jumpy jump math right here
+            float upForce = Mathf.Clamp(jumpUpSpeed - rb.velocity.y, 0, Mathf.Infinity);
+            rb.AddForce(new Vector3(0, upForce, 0), ForceMode.VelocityChange);
+            //start a coroutine to stop the player from jumping again for a sec and enter flying state!
+            StartCoroutine(jumpCooldownCoroutine(JumpColdDown_Time));
+            EnterFlying(true);
+            PlayerAudio.pitch = 1f;
+            PlayerAudio.PlayOneShot(a_Jump);
         }
     }
     //jump, but for a second time!
@@ -726,7 +811,7 @@ public class TitanfallMovement : MonoBehaviour
         if (canDJump)
         {
             //Vertical force on double jump - because we should *always* be flying when in double jump, we want a slightly different feeling here
-            float upForce = Mathf.Clamp(jumpUpSpeed*2 - rb.velocity.y, 0, Mathf.Infinity);
+            float upForce = Mathf.Clamp(jumpUpSpeed*DJCalculator - rb.velocity.y, 0, Mathf.Infinity);
 
             rb.AddForce(new Vector3(0, upForce, 0), ForceMode.VelocityChange);
 
@@ -756,6 +841,8 @@ public class TitanfallMovement : MonoBehaviour
                 newSpid *= newSpidMagnitude;
 
                 rb.AddForce(newSpid - horSpid, ForceMode.VelocityChange);
+                PlayerAudio.pitch = 1f;
+                PlayerAudio.PlayOneShot(a_DJump);
             }
             //set double jump to false so we can't do it until after a new surface contact event
             canDJump = false;

@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:mechromancy/Assets/Polyart/PolyartStudio/DreamscapeMeadows/Materials/Foliage/M_Grass_01.mat.meta
 guid: ecbaa5667e5070a449fa7af51ec5f97d
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
+========
+guid: 853fc541aa274d449b139d19d76a1381
+timeCreated: 1525284362
+licenseType: Store
+NativeFormatImporter:
+>>>>>>>> main:mechromancy/Assets/Plugins/Pixel Crushers/Dialogue System/Prefabs/Art/Animation/Canvas Group Animator/Focus.anim.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

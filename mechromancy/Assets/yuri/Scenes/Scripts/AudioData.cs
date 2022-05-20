@@ -12,15 +12,37 @@ public class AudioData : ScriptableObject
         public AudioClip DJump;
         //UI
         public AudioClip Click;*/
-    public AudioClip Step;
+    public AudioClip Walk,Jump,DJump,Land,Air;
+
+    public AudioClip[] nav_step;
 
     public List<AudioClip> Fectch()
     {
         return aduioSources;
     }
 
-    public AudioClip FectchAudio_Step()
+    public AudioClip FectchAudio_Walk()
     {
-        return Step;
+        return Walk;
+    }
+    public AudioClip FectchAudio_Jump()
+    {
+        return Jump;
+    }
+    public AudioClip FectchAudio_DJump()
+    {
+        return DJump;
+    }
+    public AudioClip FectchAudio_Land()
+    {
+        return Land;
+    }
+    public AudioClip FectchAudio_Air()
+    {
+        return Air;
+    }
+    public AudioClip[] Fectch_nav_step()
+    {
+        return nav_step;
     }
 }

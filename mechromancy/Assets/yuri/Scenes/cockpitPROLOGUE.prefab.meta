@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:mechromancy/Assets/yuri/Scenes/cockpitPROLOGUE.prefab.meta
 guid: 491b5db3ec929dd4a81e67531623b760
+========
+guid: 91aa677cd125edf418124fb1b7d59528
+>>>>>>>> main:mechromancy/Assets/Models/prefabs_nature/Prefab_Mushrooms_LM/prefab_mushroom001.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
