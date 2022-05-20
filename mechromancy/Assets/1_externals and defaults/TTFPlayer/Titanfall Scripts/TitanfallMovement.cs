@@ -96,6 +96,9 @@ public class TitanfallMovement : MonoBehaviour
     public TextMeshPro DebugMode;
     public TextMeshPro DebugSpeed;
     public TextMeshPro DebugAltitude;
+    public float Velocity;
+    public Color V_color;
+    public Color M_color;
 
     public enum Mode
     //this controlled uses modes to manage which inputs are valid at any point in time and to change vector from wall to ground to air
@@ -189,31 +192,56 @@ public class TitanfallMovement : MonoBehaviour
         if(rb.velocity.magnitude<1)
         {
             DebugMode.text = "IDLE";
-            DebugMode.color = Color.gray;
+            ColorUtility.TryParseHtmlString("#65cdb6", out M_color);
+            DebugMode.color = M_color;
         }
         else if(running&mode==Mode.Walking)
         {
-            DebugMode.color = Color.green;
+            ColorUtility.TryParseHtmlString("#6DFD02", out M_color);
+            DebugMode.color = M_color;
             DebugMode.text = "Running";
         }
         else
         {
             if (mode == Mode.Walking)
             {
-                DebugMode.color = Color.yellow;
+                ColorUtility.TryParseHtmlString("#ffe900", out M_color);
+                DebugMode.color = M_color;
             }
             else if (mode == Mode.Wallruning)
             {
-                DebugMode.color = Color.blue;
+                ColorUtility.TryParseHtmlString("#ffe900", out M_color);
+                DebugMode.color = M_color;
             }
             else if (mode == Mode.Flying)
             {
-                DebugMode.color = Color.white;
+                ColorUtility.TryParseHtmlString("#00b4d8", out M_color);
+                DebugMode.color = M_color;
             }
             DebugMode.text = mode.ToString();
         }
 
-
+        Velocity = rb.velocity.magnitude;
+        if (Velocity < 1)
+        {
+            ColorUtility.TryParseHtmlString("#65cdb6", out V_color);
+            DebugSpeed.color = V_color;
+        }
+        else if (Velocity < groundSpeed+3 &&Velocity > 1)
+        {
+            ColorUtility.TryParseHtmlString("#ffe900", out V_color);
+            DebugSpeed.color = V_color;
+        }
+        else if(Velocity > groundSpeed&&Velocity <runSpeed)
+        {
+            ColorUtility.TryParseHtmlString("#6DFD02", out V_color);
+            DebugSpeed.color = V_color;
+        }
+        else if (Velocity > runSpeed)
+        {
+            ColorUtility.TryParseHtmlString("#e53d00", out V_color);
+            DebugSpeed.color = V_color;
+        }
         DebugSpeed.text =(rb.velocity.magnitude*8).ToString("00")+"kn";
 
         //dynamicFriction is only mentioned once here - is this a built in Unity thing? if we modify what does it do? (0f by default)
