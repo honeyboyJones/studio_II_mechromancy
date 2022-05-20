@@ -19,7 +19,6 @@ MonoBehaviour:
   DJump: {fileID: 8300000, guid: d02dc64604f2bf946a8d10a56c3bd557, type: 3}
   Land: {fileID: 8300000, guid: 9f494646750ff314a9c14e694fa187a4, type: 3}
   Air: {fileID: 8300000, guid: d995c68add1c0154e82d9d07f0057d8b, type: 3}
-  Sprint: {fileID: 0}
   nav_step:
   - {fileID: 8300000, guid: 8faef8b76b8e28043acb8ddc85fef8b3, type: 3}
   - {fileID: 8300000, guid: 76b347a4edddbd247868b2dff824f6cf, type: 3}
