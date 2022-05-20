@@ -95,6 +95,7 @@ public class TitanfallMovement : MonoBehaviour
     //Screen
     public TextMeshPro DebugMode;
     public TextMeshPro DebugSpeed;
+    public TextMeshPro DebugAltitude;
 
     public enum Mode
     //this controlled uses modes to manage which inputs are valid at any point in time and to change vector from wall to ground to air
@@ -138,12 +139,13 @@ public class TitanfallMovement : MonoBehaviour
     void OnGUI()
     {
         //for debug purposes, would love to see an accelerometer in final game too tho
-        GUILayout.Label("Spid: " + new Vector3(rb.velocity.x, 0, rb.velocity.z).magnitude);
-        GUILayout.Label("SpidUp: " + rb.velocity.y);
+        //GUILayout.Label("Spid: " + new Vector3(rb.velocity.x, 0, rb.velocity.z).magnitude);
+        //GUILayout.Label("SpidUp: " + rb.velocity.y);
     }
 
     void Update()
     {
+        DebugAltitude.text = (this.transform.position.y + 1010f).ToString("00.00")+"ft";
         #region AudioControl
         //Debug.Log("Audio clip length : " + PlayerAudio.clip.length);
         if (mode == Mode.Flying)
@@ -212,7 +214,7 @@ public class TitanfallMovement : MonoBehaviour
         }
 
 
-        DebugSpeed.text =(rb.velocity.magnitude*8).ToString("00");
+        DebugSpeed.text =(rb.velocity.magnitude*8).ToString("00")+"kn";
 
         //dynamicFriction is only mentioned once here - is this a built in Unity thing? if we modify what does it do? (0f by default)
         col.material.dynamicFriction = 0f;
