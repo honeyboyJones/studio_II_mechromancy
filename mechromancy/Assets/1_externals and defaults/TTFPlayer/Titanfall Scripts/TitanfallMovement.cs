@@ -857,7 +857,7 @@ public class TitanfallMovement : MonoBehaviour
 
     void HandleHeadbob(Vector3 dir, float BodScaleX, float BodScaleY)
     {
-       // Debug.Log(mode);
+        Debug.Log(mode);
         if (Mathf.Abs(dir.magnitude)>0)
         {
             timer += Time.deltaTime * (crouched? crouchBobSpeed:running||mode==Mode.Wallruning? sprintBobSpeed:walkBobSpeed) ;
