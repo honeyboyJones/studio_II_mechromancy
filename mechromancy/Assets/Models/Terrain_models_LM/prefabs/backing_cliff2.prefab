@@ -12,14 +12,12 @@ GameObject:
   - component: {fileID: 1684489612316999265}
   - component: {fileID: 3984867295372725349}
   - component: {fileID: 220292308641888761}
-  - component: {fileID: 5990025134466567417}
-  - component: {fileID: 8748141785596775486}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: backing_cliff2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 40
   m_IsActive: 1
 --- !u!4 &8594470557282406991
 Transform:
@@ -28,11 +26,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2263145979466168924}
-  m_LocalRotation: {x: 0.00000008146035, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.000019073486, z: -0.00001335144}
   m_LocalScale: {x: 1.864728, y: 1.864728, z: 1.864728}
-  m_Children:
-  - {fileID: 9023841272420950774}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3042305089849842527, guid: edea507fcd381684ebb2d13a787f5a96, type: 3}
+  - {fileID: 2100000, guid: dc5dcee1e647af441b21f8b22110f346, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -99,174 +96,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4421792264581821776, guid: edea507fcd381684ebb2d13a787f5a96, type: 3}
---- !u!114 &5990025134466567417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2263145979466168924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cb39e98c38ad479eb99693347b2484a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8748141785596775486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2263145979466168924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd9dc710c3c8349089599300e26804c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  groupName: <group name>
-  showGlobalPaintingLayersInspector: 1
-  layerMask: 0101000101010101010101010101010101010101010101010101010101010101
-  radius: 0.3
-  color: {r: 1, g: 1, b: 1, a: 1}
-  quantityRange: {x: 1, y: 1}
-  useDensity: 0
-  densityRange: {x: 0.5, y: 0.5}
-  delay: 0.25
-  offsetRange: {x: 0, y: 0}
-  slopeInfluenceRange: {x: 95, y: 100}
-  useSlopeFilter: 0
-  angleThresholdRange: {x: 25, y: 30}
-  inverseSlopeFilter: 0
-  slopeReferenceVector: {x: 0, y: 1, z: 0}
-  slopeReferenceVectorSampleLocation: {x: 0, y: 0, z: 0}
-  yAxisTangent: 0
-  strokeAlignment: 0
-  autoIgnoreRaycast: 0
-  scatteringRange: {x: 70, y: 80}
-  useOverlapFilter: 0
-  minimumAbsoluteDistanceRange: {x: 0.25, y: 0.5}
-  uniformRandomScale: 1
-  uniformAdditiveScale: 1
-  randomScaleRange: {x: 1, y: 1}
-  randomScaleRangeX: {x: 1, y: 1}
-  randomScaleRangeY: {x: 1, y: 1}
-  randomScaleRangeZ: {x: 1, y: 1}
-  additiveScaleRange: {x: 0, y: 0}
-  additiveScaleNonUniform: {x: 0, y: 0, z: 0}
-  randomScaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  randomScaleCurveVariation: 0
-  randomRotationRangeX: {x: 0, y: 0}
-  randomRotationRangeY: {x: 0, y: 5}
-  randomRotationRangeZ: {x: 0, y: 0}
-  positionBrushRandomizer: 0
-  rotationBrushRandomizer: 1
-  scaleBrushRandomizer: 1
-  paintKey: 112
-  deleteKey: 108
-  combineKey: 107
-  randomizeKey: 106
-  increaseRadiusKey: 111
-  decreaseRadiusKey: 105
-  maxQuantityLimit: 100
-  maxDelayLimit: 1
-  maxDensityLimit: 10
-  minOffsetLimit: -50
-  maxOffsetLimit: 50
-  maxMinimumAbsoluteDistanceLimit: 3
-  maxAdditiveScaleLimit: 3
-  maxRandomScaleLimit: 3
-  helpFoldout: 0
-  helpTemplatesFoldout: 0
-  helpGeneralUsageFoldout: 0
-  helpOptimizationFoldout: 0
-  meshesFoldout: 1
-  templatesFoldout: 1
-  keyBindingsFoldout: 0
-  brushFoldout: 1
-  slopesFoldout: 1
-  randomizersFoldout: 1
-  overlapFilterFoldout: 1
-  additiveScaleFoldout: 1
-  optimizationFoldout: 1
-  globalPaintingMode: 0
-  collapsed: 0
-  stats: 0
-  lockSceneView: 0
-  classicUI: 0
-  previewIconSize: 60
-  manualReferenceVectorSampling: 0
-  showReferenceVectorInSceneView: 1
-  autoStatic: 0
-  autoSelectOnCombine: 1
-  lastPaintLocation: {x: 0, y: 0, z: 0}
-  brushStrokeDirection: {x: 0, y: 0, z: 0}
-  meshes:
-  - {fileID: 0}
-  deactivatedMeshes: []
---- !u!1 &7064629281224933146
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9023841272420950774}
-  - component: {fileID: 487378044778952850}
-  m_Layer: 0
-  m_Name: <group name>
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9023841272420950774
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064629281224933146}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5362713, y: 0.5362713, z: 0.5362713}
-  m_Children: []
-  m_Father: {fileID: 8594470557282406991}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &487378044778952850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064629281224933146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cb39e98c38ad479eb99693347b2484a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
