@@ -30,8 +30,13 @@ public class SceneChangerTest : MonoBehaviour
     {
         if (sceneName == "MainMenu")
         {
-            buttonFunctions.BackMainMenu();
-            buttonFunctions.SceneChanger("BlackScene");
+            buttonFunctions.Fina_ShowCreditScreen();
+            buttonFunctions.HideDS();
+            //OnLockCamera = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            //buttonFunctions.ShowMainMenu();
+            //buttonFunctions.SceneChanger("BlackScene");
         }
         else
         {
