@@ -20,7 +20,7 @@ public class LeelaAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(rigidbody.velocity.magnitude);
+        //Debug.Log(rigidbody.velocity.magnitude);
         animator.SetFloat("speed", rigidbody.velocity.magnitude);
         if (movement.mode == TitanfallMovement.Mode.Flying)
         {

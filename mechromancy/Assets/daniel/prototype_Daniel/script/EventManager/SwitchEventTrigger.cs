@@ -20,11 +20,13 @@ public class SwitchEventTrigger : MonoBehaviour
             {
                 EventManager.TriggerEvent("SwitchToNight");
                 isday = false;
+                //Debug.Log("switch to night");
             }
             else 
             {
                 EventManager.TriggerEvent("SwitchToDay");
                 isday = true;
+                //Debug.Log("witch to day");
             }
             
             

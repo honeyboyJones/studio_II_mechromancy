@@ -60,6 +60,8 @@ public class Beacon : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         player.gameObject.GetComponent<Transform>().position = savePosition;
+        player.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
+        player.gameObject.GetComponent<Rigidbody>().angularVelocity = new Vector3(0f, 0f, 0f);
         meshRenderer.enabled = false;
         isSaved = false;
     }
