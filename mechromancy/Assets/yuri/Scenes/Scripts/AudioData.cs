@@ -12,7 +12,7 @@ public class AudioData : ScriptableObject
         public AudioClip DJump;
         //UI
         public AudioClip Click;*/
-    public AudioClip Walk,Jump,DJump,Land,Air;
+    public AudioClip Walk,Jump,DJump,Land,Air,Sprint;
 
     public AudioClip[] nav_step;
 
@@ -40,6 +40,10 @@ public class AudioData : ScriptableObject
     public AudioClip FectchAudio_Air()
     {
         return Air;
+    }
+    public AudioClip FectchAudio_Sprint()
+    {
+        return Sprint;
     }
     public AudioClip[] Fectch_nav_step()
     {

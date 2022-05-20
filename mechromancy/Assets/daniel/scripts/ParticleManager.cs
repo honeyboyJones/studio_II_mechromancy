@@ -33,14 +33,11 @@ public class ParticleManager : MonoBehaviour
             
         }
     }
-    public void ParticleBegin() 
-    {
-        particle.Play();
-    }
+   
 
     public void ParticlePause() 
     {
-        particle.Pause();
-        particle.Clear();
+        
+        particle.startColor = new Color(0, 0, 0, 0);
     }
 }
