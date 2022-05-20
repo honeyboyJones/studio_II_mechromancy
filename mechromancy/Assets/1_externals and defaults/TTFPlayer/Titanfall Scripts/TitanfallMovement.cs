@@ -184,15 +184,35 @@ public class TitanfallMovement : MonoBehaviour
         }
 
         #endregion
-        if(running&mode==Mode.Walking)
+        if(rb.velocity.magnitude<1)
         {
-            DebugMode.text = "Mode: Running";
+            DebugMode.text = "IDLE";
+            DebugMode.color = Color.gray;
+        }
+        else if(running&mode==Mode.Walking)
+        {
+            DebugMode.color = Color.green;
+            DebugMode.text = "Running";
         }
         else
         {
-            DebugMode.text = "Mode: " + mode.ToString();
+            if (mode == Mode.Walking)
+            {
+                DebugMode.color = Color.yellow;
+            }
+            else if (mode == Mode.Wallruning)
+            {
+                DebugMode.color = Color.blue;
+            }
+            else if (mode == Mode.Flying)
+            {
+                DebugMode.color = Color.white;
+            }
+            DebugMode.text = mode.ToString();
         }
-        DebugSpeed.text ="Speed:"+ rb.velocity.magnitude.ToString("00");
+
+
+        DebugSpeed.text =(rb.velocity.magnitude*8).ToString("00");
 
         //dynamicFriction is only mentioned once here - is this a built in Unity thing? if we modify what does it do? (0f by default)
         col.material.dynamicFriction = 0f;
