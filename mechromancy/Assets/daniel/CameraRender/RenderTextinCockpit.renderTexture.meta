@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:mechromancy/Assets/daniel/CameraRender/RenderTextinCockpit.renderTexture.meta
 guid: abebbbdbdaab07c479a00a8aac3e0466
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 8400000
+========
+guid: 63a7954cf559d429881bc8daaa2965c7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 24100000
+>>>>>>>> main:mechromancy/Assets/zach/Audio/AudioMixer.mixer.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

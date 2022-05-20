@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:mechromancy/Assets/daniel/DuplicatedAnim.meta
 guid: 1887eaacbfb96a44bb80bb5afd78677c
+========
+guid: f5d8c22779a31e44fab8d9d850ff0826
+>>>>>>>> main:mechromancy/Assets/yuri/UI.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

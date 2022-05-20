@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:mechromancy/Assets/daniel/DuplicatedAnim/RobotArmature_Idle.anim.meta
 guid: 6633c25df1464e0418da3ae255510895
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000
+========
+guid: 38d550bccb6da48fc8d77ee73609680e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 24100000
+>>>>>>>> main:mechromancy/Assets/zach/Audio/Motif Mixer.mixer.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 
