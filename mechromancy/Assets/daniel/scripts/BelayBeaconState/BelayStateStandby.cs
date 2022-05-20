@@ -9,7 +9,7 @@ public class BelayStateStandby : BelayStateBase
     public override void EnterState(BelayStateManager stateManager)
     {
         //Debug.Log("enter standby state");
-        stateManager.particleManager.ParticleBegin();
+        //stateManager.particleManager.ParticleBegin();
         stateManager.beacon.meshRenderer.enabled = true;
         EventManager.TriggerEvent("prepare");
     }
