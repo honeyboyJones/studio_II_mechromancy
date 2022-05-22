@@ -1,0 +1,480 @@
+fileFormatVersion: 2
+guid: 93ad5ad668fcc2844b9f23d3e8a4f3c2
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 7878040837741005123
+    second: robotSphere|eyeDome|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: -1444466023102155015
+    second: robotSphere|eyeDome|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: 4650978424137497487
+    second: robotSphere|eyeDome|anim_close|Animation Base Layer
+  - first:
+      74: 5888164092800952759
+    second: robotSphere|eyeDome|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: 6087760292501250959
+    second: robotSphere|eyeDome|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: 6473860046784242448
+    second: robotSphere|eyeDome|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: 3942588545617985734
+    second: robotSphere|eyeDome|anim_open|Animation Base Layer
+  - first:
+      74: 5816733828994012536
+    second: robotSphere|eyeLid|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: -6320768691167856670
+    second: robotSphere|eyeLid|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: -8118855418623008389
+    second: robotSphere|eyeLid|anim_close|Animation Base Layer
+  - first:
+      74: 4561635882709689210
+    second: robotSphere|eyeLid|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -2163143495998341090
+    second: robotSphere|eyeLid|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: -8628907970592448916
+    second: robotSphere|eyeLid|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -7505700273985096388
+    second: robotSphere|eyeLid|anim_open|Animation Base Layer
+  - first:
+      74: -4694759310046793855
+    second: robotSphere|l_eye|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: 7279966678217658061
+    second: robotSphere|l_eye|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: -745324445458583977
+    second: robotSphere|l_eye|anim_close|Animation Base Layer
+  - first:
+      74: -8085773620215870455
+    second: robotSphere|l_eye|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -7442486904957042045
+    second: robotSphere|l_eye|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: -7742875791444625526
+    second: robotSphere|l_eye|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -5620375438808938162
+    second: robotSphere|l_eye|anim_open|Animation Base Layer
+  - first:
+      74: -491436360939206808
+    second: robotSphere|left_arm_end|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: 6039190672539863726
+    second: robotSphere|left_arm_end|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: -3478185753026480018
+    second: robotSphere|left_arm_end|anim_close|Animation Base Layer
+  - first:
+      74: -1193297655703876944
+    second: robotSphere|left_arm_end|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: 2860152579388197103
+    second: robotSphere|left_arm_end|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: -1874378839618715105
+    second: robotSphere|left_arm_end|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: 3181857675784712106
+    second: robotSphere|left_arm_end|anim_open|Animation Base Layer
+  - first:
+      74: 4118002669480103963
+    second: robotSphere|left_arm_jt|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: -7914426363120327063
+    second: robotSphere|left_arm_jt|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: 1816331457615130690
+    second: robotSphere|left_arm_jt|anim_close|Animation Base Layer
+  - first:
+      74: 7724746524965418575
+    second: robotSphere|left_arm_jt|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: 6746120361276855141
+    second: robotSphere|left_arm_jt|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: 5016324082003565486
+    second: robotSphere|left_arm_jt|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: 3076677766060035747
+    second: robotSphere|left_arm_jt|anim_open|Animation Base Layer
+  - first:
+      74: 68724424588717010
+    second: robotSphere|left_elbow_jt|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: 3054088555687573732
+    second: robotSphere|left_elbow_jt|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: 625487143052600190
+    second: robotSphere|left_elbow_jt|anim_close|Animation Base Layer
+  - first:
+      74: -280298699691687972
+    second: robotSphere|left_elbow_jt|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -424085718767120073
+    second: robotSphere|left_elbow_jt|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: -7562135249748801478
+    second: robotSphere|left_elbow_jt|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -1258221718568879042
+    second: robotSphere|left_elbow_jt|anim_open|Animation Base Layer
+  - first:
+      74: -6505128325731027515
+    second: robotSphere|left_plate|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: 3258855338709882864
+    second: robotSphere|left_plate|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: -1591548744827554570
+    second: robotSphere|left_plate|anim_close|Animation Base Layer
+  - first:
+      74: 4166937741461675942
+    second: robotSphere|left_plate|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: 6996191379884747603
+    second: robotSphere|left_plate|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: -4149924180438853596
+    second: robotSphere|left_plate|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -8557068354826061570
+    second: robotSphere|left_plate|anim_open|Animation Base Layer
+  - first:
+      74: -6620289781310912699
+    second: robotSphere|main_jt|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: -4891446356435667112
+    second: robotSphere|main_jt|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: 2508888669143522123
+    second: robotSphere|main_jt|anim_close|Animation Base Layer
+  - first:
+      74: 2573027306249973525
+    second: robotSphere|main_jt|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -7231635001463383729
+    second: robotSphere|main_jt|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: 2922392321591914724
+    second: robotSphere|main_jt|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -7945829927491569056
+    second: robotSphere|main_jt|anim_open|Animation Base Layer
+  - first:
+      74: -5033074617837762664
+    second: robotSphere|r_eye|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: 2591868659737308793
+    second: robotSphere|r_eye|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: 3719627108557202387
+    second: robotSphere|r_eye|anim_close|Animation Base Layer
+  - first:
+      74: -4152020779762038565
+    second: robotSphere|r_eye|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -3734809817080052137
+    second: robotSphere|r_eye|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: 8969182859117779313
+    second: robotSphere|r_eye|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -2953240523768345299
+    second: robotSphere|r_eye|anim_open|Animation Base Layer
+  - first:
+      74: -5957100088258563722
+    second: robotSphere|rear_arm_end|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: -1737123004230304095
+    second: robotSphere|rear_arm_end|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: -3254677243265240982
+    second: robotSphere|rear_arm_end|anim_close|Animation Base Layer
+  - first:
+      74: -3351752430226797782
+    second: robotSphere|rear_arm_end|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -6910082955976971517
+    second: robotSphere|rear_arm_end|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: 7826604927187241820
+    second: robotSphere|rear_arm_end|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -4176031540025601521
+    second: robotSphere|rear_arm_end|anim_open|Animation Base Layer
+  - first:
+      74: 7984753672974479002
+    second: robotSphere|rear_arm_jt|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: 5267571161441903105
+    second: robotSphere|rear_arm_jt|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: -3379233120491334031
+    second: robotSphere|rear_arm_jt|anim_close|Animation Base Layer
+  - first:
+      74: 7414772414629141778
+    second: robotSphere|rear_arm_jt|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: 293775590596524164
+    second: robotSphere|rear_arm_jt|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: -2894037495159465768
+    second: robotSphere|rear_arm_jt|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -1571493089616342250
+    second: robotSphere|rear_arm_jt|anim_open|Animation Base Layer
+  - first:
+      74: -7365750176787130185
+    second: robotSphere|rear_elbow_jt|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: -1050746381903214511
+    second: robotSphere|rear_elbow_jt|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: 5685968718878014930
+    second: robotSphere|rear_elbow_jt|anim_close|Animation Base Layer
+  - first:
+      74: -5221740573347030335
+    second: robotSphere|rear_elbow_jt|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -7432200177497462039
+    second: robotSphere|rear_elbow_jt|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: 4545545689829086329
+    second: robotSphere|rear_elbow_jt|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -4677189309464861428
+    second: robotSphere|rear_elbow_jt|anim_open|Animation Base Layer
+  - first:
+      74: -3469714712938822815
+    second: robotSphere|rear_plate|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: -875383078422835158
+    second: robotSphere|rear_plate|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: 2641437502899384837
+    second: robotSphere|rear_plate|anim_close|Animation Base Layer
+  - first:
+      74: 2148391564815098453
+    second: robotSphere|rear_plate|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -9217729770230689054
+    second: robotSphere|rear_plate|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: -2679990865523881277
+    second: robotSphere|rear_plate|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -6542043717581222331
+    second: robotSphere|rear_plate|anim_open|Animation Base Layer
+  - first:
+      74: -1802233604435066927
+    second: robotSphere|right_arm_end|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: 3345211135441947468
+    second: robotSphere|right_arm_end|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: 4281225007852079437
+    second: robotSphere|right_arm_end|anim_close|Animation Base Layer
+  - first:
+      74: -71440833924423240
+    second: robotSphere|right_arm_end|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -1837598353959829535
+    second: robotSphere|right_arm_end|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: -814371746321047628
+    second: robotSphere|right_arm_end|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -1164510336840475892
+    second: robotSphere|right_arm_end|anim_open|Animation Base Layer
+  - first:
+      74: -6164794799311918150
+    second: robotSphere|right_arm_jt|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: 5531596704577223890
+    second: robotSphere|right_arm_jt|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: 2797524544716995179
+    second: robotSphere|right_arm_jt|anim_close|Animation Base Layer
+  - first:
+      74: 8679057126954461331
+    second: robotSphere|right_arm_jt|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: 8707747067138473734
+    second: robotSphere|right_arm_jt|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: -7751028902829519440
+    second: robotSphere|right_arm_jt|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: 2688927441408957314
+    second: robotSphere|right_arm_jt|anim_open|Animation Base Layer
+  - first:
+      74: -6809223008461858709
+    second: robotSphere|right_elbow_jt|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: 3042818195144582085
+    second: robotSphere|right_elbow_jt|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: 2163130579932830878
+    second: robotSphere|right_elbow_jt|anim_close|Animation Base Layer
+  - first:
+      74: -1164854470834403913
+    second: robotSphere|right_elbow_jt|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -1843821280991746822
+    second: robotSphere|right_elbow_jt|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: -171406102383052997
+    second: robotSphere|right_elbow_jt|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -1028417896734121574
+    second: robotSphere|right_elbow_jt|anim_open|Animation Base Layer
+  - first:
+      74: -8198657656517548341
+    second: robotSphere|right_plate|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: 2139272247831781330
+    second: robotSphere|right_plate|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: 3305883487289227428
+    second: robotSphere|right_plate|anim_close|Animation Base Layer
+  - first:
+      74: 5915406376224017943
+    second: robotSphere|right_plate|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -8824671450126977438
+    second: robotSphere|right_plate|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: -2250817925644292315
+    second: robotSphere|right_plate|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -6855951681059702347
+    second: robotSphere|right_plate|anim_open|Animation Base Layer
+  - first:
+      74: -7711773391969098571
+    second: robotSphere|robotSphere|anim_cloed_Roll_Loop|Animation Base Layer
+  - first:
+      74: 9110422256174501659
+    second: robotSphere|robotSphere|anim_closed_StopRoll|Animation Base Layer
+  - first:
+      74: -2431154656257669127
+    second: robotSphere|robotSphere|anim_close|Animation Base Layer
+  - first:
+      74: -4297331668942079618
+    second: robotSphere|robotSphere|anim_Idle_Loop_S|Animation Base Layer
+  - first:
+      74: -6256455898387748121
+    second: robotSphere|robotSphere|anim_open_GoToRoll|Animation Base Layer
+  - first:
+      74: 521811076192978265
+    second: robotSphere|robotSphere|anim_open_Walk_Loop|Animation Base Layer
+  - first:
+      74: -5288269672769144018
+    second: robotSphere|robotSphere|anim_open|Animation Base Layer
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
