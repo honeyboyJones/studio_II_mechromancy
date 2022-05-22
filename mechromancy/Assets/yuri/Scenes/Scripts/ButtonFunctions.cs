@@ -274,7 +274,11 @@ public class ButtonFunctions : MonoBehaviour
     }
     public void DestoryDS()
     {
-        Destroy(DS);
+        if (DS != null)
+        {
+            Destroy(DS);
+        }
+
     }
 
     #endregion
